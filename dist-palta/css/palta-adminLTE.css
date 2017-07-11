@@ -220,3 +220,9 @@
 	padding:10px !important;
 }
 
+.badge { 
+	padding: 6px; 
+	font-size: 18px;
+}
+
+.badgePosition { position: absolute; top: 15px; left: 30px;}
