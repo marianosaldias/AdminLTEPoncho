@@ -14192,7 +14192,7 @@ function program5(depth0,data) {
   return "\n      <span class=\"glyphicon glyphicon-quote\"></span>\n    ";
   }
 
-  buffer += "<li>\n  <a class=\"btn ";
+  buffer += "<li>\n  <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"formatBlock\" data-wysihtml5-command-value=\"blockquote\" data-wysihtml5-display-format-name=\"false\" tabindex=\"-1\">\n    ";
@@ -14262,7 +14262,7 @@ function program1(depth0,data) {
 function program3(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n    <a class=\"btn ";
+  buffer += "\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"small\" title=\"CTRL+S\" tabindex=\"-1\">"
@@ -14271,17 +14271,17 @@ function program3(depth0,data) {
   return buffer;
   }
 
-  buffer += "<li>\n  <div class=\"btn-group\">\n    <a class=\"btn ";
+  buffer += "<li>\n  <div class=\"btn-group\">\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"bold\" title=\"CTRL+B\" tabindex=\"-1\">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.emphasis)),stack1 == null || stack1 === false ? stack1 : stack1.bold)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</a>\n    <a class=\"btn ";
+    + "</a>\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"italic\" title=\"CTRL+I\" tabindex=\"-1\">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = (depth0 && depth0.locale)),stack1 == null || stack1 === false ? stack1 : stack1.emphasis)),stack1 == null || stack1 === false ? stack1 : stack1.italic)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</a>\n    <a class=\"btn ";
+    + "</a>\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"underline\" title=\"CTRL+U\" tabindex=\"-1\">"
@@ -14318,7 +14318,7 @@ function program5(depth0,data) {
   return "\n      <span class=\"glyphicon glyphicon-font\"></span>\n    ";
   }
 
-  buffer += "<li class=\"dropdown\">\n  <a class=\"btn btn-default dropdown-toggle ";
+  buffer += "<li class=\"dropdown\">\n  <a class=\"btn btn-sm dropdown-toggle ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\" data-toggle=\"dropdown\">\n    ";
@@ -14369,7 +14369,7 @@ function program5(depth0,data) {
   return "\n        <span class=\"glyphicon glyphicon-pencil\"></span>\n      ";
   }
 
-  buffer += "<li>\n  <div class=\"btn-group\">\n    <a class=\"btn ";
+  buffer += "<li>\n  <div class=\"btn-group\">\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-action=\"change_view\" title=\""
@@ -14548,7 +14548,7 @@ function program17(depth0,data) {
   return "\n      <span class=\"glyphicon glyphicon-indent-left\"></span>\n    ";
   }
 
-  buffer += "<li>\n  <div class=\"btn-group\">\n    <a class=\"btn ";
+  buffer += "<li>\n  <div class=\"btn-group\">\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"insertUnorderedList\" title=\""
@@ -14556,7 +14556,7 @@ function program17(depth0,data) {
     + "\" tabindex=\"-1\">\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.fa), {hash:{},inverse:self.program(5, program5, data),fn:self.program(3, program3, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    </a>\n    <a class=\"btn ";
+  buffer += "\n    </a>\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"insertOrderedList\" title=\""
@@ -14564,7 +14564,7 @@ function program17(depth0,data) {
     + "\" tabindex=\"-1\">\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.fa), {hash:{},inverse:self.program(9, program9, data),fn:self.program(7, program7, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    </a>\n    <a class=\"btn ";
+  buffer += "\n    </a>\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"Outdent\" title=\""
@@ -14572,7 +14572,7 @@ function program17(depth0,data) {
     + "\" tabindex=\"-1\">\n    ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.fa), {hash:{},inverse:self.program(13, program13, data),fn:self.program(11, program11, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n    </a>\n    <a class=\"btn ";
+  buffer += "\n    </a>\n    <a class=\"btn btn-sm ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += " btn-default\" data-wysihtml5-command=\"Indent\" title=\""
@@ -14819,8 +14819,8 @@ function program17(depth0,data) {
         'blockquote': true,
         'lists': true,
         'html': false,
-        'link': true,
-        'image': true,
+        'link': false,
+        'image': false,
         'smallmodals': false
       },
       useLineBreaks: false,
@@ -14926,7 +14926,7 @@ function program17(depth0,data) {
 }(function ($) {
   $.fn.wysihtml5.locale.en = $.fn.wysihtml5.locale['en-US'] = {
     font_styles: {
-      normal: 'Normal text',
+      normal: 'Text normal',
       h1: 'Heading 1',
       h2: 'Heading 2',
       h3: 'Heading 3',
@@ -14935,41 +14935,41 @@ function program17(depth0,data) {
       h6: 'Heading 6'
     },
     emphasis: {
-      bold: 'Bold',
-      italic: 'Italic',
-      underline: 'Underline',
-      small: 'Small'
+      bold: 'B',
+      italic: 'I',
+      underline: 'S',
+      small: 'Pequeña'
     },
     lists: {
-      unordered: 'Unordered list',
-      ordered: 'Ordered list',
+      unordered: 'Lista desordenada',
+      ordered: 'Lista ordenada',
       outdent: 'Outdent',
       indent: 'Indent'
     },
-    link: {
-      insert: 'Insert link',
-      cancel: 'Cancel',
-      target: 'Open link in new window'
+	link: {
+      insert: 'Enlace',
+      cancel: 'Cancelar',
+      target: 'Abrir link en una nueva ventana'
     },
     image: {
-      insert: 'Insert image',
-      cancel: 'Cancel'
+      insert: 'Insertar imagen',
+      cancel: 'Cancelar'
     },
     html: {
-      edit: 'Edit HTML'
+      edit: 'Editar HTML'
     },
     colours: {
-      black: 'Black',
-      silver: 'Silver',
-      gray: 'Grey',
-      maroon: 'Maroon',
-      red: 'Red',
-      purple: 'Purple',
-      green: 'Green',
-      olive: 'Olive',
+      black: 'Negro',
+      silver: 'Plata',
+      gray: 'Gris',
+      maroon: 'Marron',
+      red: 'Rojo',
+      purple: 'Purpura',
+      green: 'Verde',
+      olive: 'Oliva',
       navy: 'Navy',
-      blue: 'Blue',
-      orange: 'Orange'
+      blue: 'Azul',
+      orange: 'Naranja'
     }
   };
 }));
