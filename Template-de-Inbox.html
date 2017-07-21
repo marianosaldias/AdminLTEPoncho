@@ -21,6 +21,9 @@
   <!-- fullCalendar 2.2.5-->
   <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
   <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css" media="print">
+
+  <!-- BOOTSTRAP-Choosen Autocomplete -->
+  <link rel="stylesheet" href="plugins/bootstrap-chosen-master/bootstrap-chosen.css">
   <!-- Theme style -->
 
   <!-- ADMIN-LTE dist -->
@@ -546,7 +549,7 @@
                             <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="" data-original-title="Borrar">
                                 <i class="fa fa-trash-o"></i>
                             </button>
-                            <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Reply">
+                            <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Responder">
                                 <i class="fa fa-reply"></i>
                             </button>
                             <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="" data-original-title="Forward">
@@ -554,7 +557,7 @@
                             </button>
                         </div>
                         <!-- /.btn-group -->
-                        <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="Print">
+                        <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="Imprimir">
                             <i class="fa fa-print"></i>
                         </button>
                     </div>
@@ -648,11 +651,24 @@
             <!-- /.box-header -->
             <div class="panel-body">
               <div class="form-group">
+                <label class="control-label">Destinatario</label>
                 <input class="form-control" placeholder="Enviar a:">
               </div>
               <div class="form-group">
+                <label class="control-label">Asunto</label>
                 <input class="form-control" placeholder="Asunto:">
               </div>
+              <div class="form-group">
+              	<label class="control-label">Etiquetas</label>
+                <select data-placeholder="Ej: Semi..., Experto, Digitali..., etc." class=" form-control chosen-select" multiple="" tabindex="-1">
+                    <option value=""></option>
+                    <option value="1">Fondo Semilla</option>
+                    <option value="5">Expertos</option>
+                    <option value="8">Pac Emprendedor</option>
+                    <option value="6">Digitalizacion</option>
+                    <option value="9">PyMEs</option>
+                </select>
+              </div>              
               <div class="form-group">
                     <textarea id="compose-textarea" class="form-control" style="height: 300px">
                       <h1><u>Heading Of Message</u></h1>
@@ -781,6 +797,15 @@
   $(function () {
     //Add text editor
     $("#compose-textarea").wysihtml5();
+  });
+</script>
+
+<!-- Autocomplete -->
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+<script>
+  $(function() {
+	$('.chosen-select').chosen();
+	$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
   });
 </script>
 

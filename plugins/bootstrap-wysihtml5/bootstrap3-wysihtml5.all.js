@@ -14318,7 +14318,7 @@ function program5(depth0,data) {
   return "\n      <span class=\"glyphicon glyphicon-font\"></span>\n    ";
   }
 
-  buffer += "<li class=\"dropdown\">\n  <a class=\"btn btn-sm dropdown-toggle ";
+  buffer += "<li class=\"dropdown\">\n  <a class=\"btn btn-default btn-sm dropdown-toggle ";
   stack1 = helpers['if'].call(depth0, ((stack1 = ((stack1 = (depth0 && depth0.options)),stack1 == null || stack1 === false ? stack1 : stack1.toolbar)),stack1 == null || stack1 === false ? stack1 : stack1.size), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\" data-toggle=\"dropdown\">\n    ";
@@ -14926,25 +14926,25 @@ function program17(depth0,data) {
 }(function ($) {
   $.fn.wysihtml5.locale.en = $.fn.wysihtml5.locale['en-US'] = {
     font_styles: {
-      normal: 'Text normal',
-      h1: 'Heading 1',
-      h2: 'Heading 2',
-      h3: 'Heading 3',
-      h4: 'Heading 4',
-      h5: 'Heading 5',
-      h6: 'Heading 6'
+      normal: 'Texto normal',
+      h1: 'Título 1',
+      h2: 'Título 2',
+      h3: 'Título 3',
+      h4: 'Título 4',
+      h5: 'Título 5',
+      h6: 'Título 6'
     },
     emphasis: {
-      bold: 'B',
-      italic: 'I',
-      underline: 'S',
+      bold: 'Negrita',
+      italic: 'Italica',
+      underline: 'Subrayado',
       small: 'Pequeña'
     },
     lists: {
       unordered: 'Lista desordenada',
       ordered: 'Lista ordenada',
-      outdent: 'Outdent',
-      indent: 'Indent'
+      outdent: 'Quitar sangría',
+      indent: 'Agregar sangría'
     },
 	link: {
       insert: 'Enlace',

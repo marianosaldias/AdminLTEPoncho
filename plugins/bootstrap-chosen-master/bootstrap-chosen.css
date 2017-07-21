@@ -350,3 +350,9 @@
     background-repeat: no-repeat !important; } }
 
 /*# sourceMappingURL=bootstrap-chosen.css.map */
+
+
+.chosen-container.chosen-container-multi { 
+	width:100% !important; 
+	clear:both;
+}
