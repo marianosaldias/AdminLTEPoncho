@@ -51,6 +51,23 @@
     margin-top: 10px;
 }
 
+.state-loading {
+    background-color: rgba(204,204,204,0.2) !important;
+    border-radius: 0px;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 150;
+	opacity: .6;
+}
+
+.state-loading * {
+	opacity: .9;
+}
+
 </style>
   
 </head>
@@ -800,38 +817,6 @@
             </div>
         </div>
         <div class="clearfix"></div>
-        
-        
-        <div class="row panels-row">
-            <div class="col-xs-12 col-md-4 col-sm-4">
-                <a class="panel panel-default panel-icon" href="">
-                    <div class="panel-heading bg-warning"><i class="fa fa-clock-o"></i></div>
-                    <div class="panel-body">
-                        <h4>Pac Emprendedor</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-4 col-sm-4">
-                <a class="panel panel-default panel-success panel-icon" href="#">
-                    <div class="panel-heading"><i class="fa fa-file"></i></div>
-                    <div class="panel-body">
-                        <h4>Ministerio de Economía
-                        <span class="badge text-success bg-warning text-white pull-right" style="padding: 6px; font-size: 13px;">142</span>
-                        </h4>
-                    </div>
-                </a>
-            </div> 
-            <div class="col-xs-12 col-md-4 col-sm-4">
-                <a class="panel panel-default panel-icon" href="#">
-                    <div class="panel-heading"><span class="badge text-success bg-warning text-white" style="padding: 8px; font-size: 18px; position: absolute; top: 15px; left: 30px;">142</span><i class="fa fa-file"></i></div>
-                    <div class="panel-body">
-                        <h4>Ministerio de Economía</h4>
-                    </div>
-                </a>
-            </div>            
-        </div>
-        <div class="clearfix"></div>
-        
                 
         <div class="row">
             <div class="col-lg-12" align="center">
@@ -860,86 +845,6 @@
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-12" align="center">
-                <div class="panel panel-default">
-        
-                    <div class="panel-heading bg-primary text-white text-left">
-                        <h4>Capacitación PYME: Cadenas de valor
-                            <div class="pull-right">
-                                <p>Codigo de Identificación DSVE</p>
-                            </div>                
-                        </h4>
-                    </div>
-        
-                    <div class="panel-body text-left">
-                        <h2>Flowics</h2>
-                        <p>Unidad Capacitadora: <span><a href="#">Univ. San Andres</a></span> | Inicio: <span>11/12/2017</span> | Estado: <span>En Progreso</span>
-                        </p>
-        
-                        <div class="progress m-t-2">
-                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                <span class="sr-only">100% Completado</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-        
-        <div class="row">
-            <div class="col-md-12" align="center">
-                <div class="panel panel-default">
-        
-                    <div class="panel-heading bg-primary text-white text-left">
-                        <h4>Capacitación PYME: Cadenas de valor
-                            <div class="pull-right">
-                                <p>Codigo de Identificación DSVE</p>
-                            </div>                
-                        </h4>
-                    </div>
-        
-                    <div class="panel-body text-left">
-                        <h2>Flowics</h2>
-                        <p>Unidad Capacitadora: <span><a href="#">Univ. San Andres</a></span> | Inicio: <span>11/12/2017</span> | Estado: <span>En Progreso</span>
-                        </p>
-        
-                        <div class="progress m-t-2">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
-                                <span class="sr-only">10% Completado</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-        
-        <div class="row">
-            <div class="col-md-12" align="center">
-                <div class="panel panel-default">
-        
-                    <div class="panel-heading bg-primary text-white text-left">
-                        <h4>Capacitación PYME: Cadenas de valor
-                            <div class="pull-right">
-                                <p>Codigo de Identificación DSVE</p>
-                            </div>                
-                        </h4>
-                    </div>
-        
-                    <div class="panel-body text-left">
-                        <h2>Flowics</h2>
-                        <p>Unidad Capacitadora: <span><a href="#">Univ. San Andres</a></span> | Inicio: <span>11/12/2017</span> | Estado: <span>En Progreso</span>
-                        </p>
-        
-                        <div class="progress m-t-2">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-                                <span class="sr-only">25% Completado</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
         
         <div class="row">
             <div class="col-md-12">
@@ -974,7 +879,116 @@
             </div>
         </div>
         
-     
+        
+        
+        <div class="row">
+            <div class="col-md-12 m-t-2">
+            	<h4>Tus asistencias a PyMEs</h4>
+                <div class="panel-group" id="accordionCasosAbiertos">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 data-toggle="collapse" data-parent="#accordionCasosAbiertos" href="#collapseCasosAbiertos" class="panel-title expand" aria-expanded="true">
+                                   <div class="right-arrow pull-right"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+                                  <a href="#" class=""><span class="badge text-success bg-warning text-white pull-left m-r-1">142</span>Casos abiertos</a>
+                                </h3>
+                        </div>
+                        <div id="collapseCasosAbiertos" class="panel-body panel-collapse collapse in state-loading" aria-expanded="true">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th width="5%" align="center"></th>
+                                            <th width="70%">Título</th>
+                                            <th width="10%">Id</th>
+                                            <th width="15%"></th>
+                                        </tr>
+                                    </thead>                            
+                                    <tbody>
+                                        <tr>
+                                            <td align="center"><i class="fa fa-list-ul fa-1x text-muted"></i></td>
+                                            <td>Gestión de empresas</td>
+                                            <td>DFGF</td>
+                                            <td align="center"><button class="btn btn-sm btn-primary">Acción</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- /.table -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel-group" id="accordionCasosFinalizados">
+                	<div class="panel panel-default panel-loading" href="#">
+                        <div class="panel-heading">
+                            <h3 data-toggle="collapse" data-parent="#accordionCasosFinalizados" href="#collapseCasosFinalizados" class="panel-title expand" aria-expanded="true">
+                                   <div class="right-arrow pull-right"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+                                  <a href="#" class=""><span class="badge bg-success text-white pull-left m-r-1">142</span>Casos Finalizados</a>
+                                </h3>
+                        </div>
+                        <div id="collapseCasosFinalizados" class="panel-body panel-collapse collapse in" aria-expanded="true">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th width="5%" align="center"></th>
+                                            <th width="30%">Título</th>
+                                            <th width="25%">Descripción</th>
+                                            <th width="25%">Extra</th>
+                                            <th width="15%"></th>
+                                        </tr>
+                                    </thead>                            
+                                    <tbody>
+                                        <tr>
+                                            <td align="center"><i class="fa fa-list-ul fa-1x text-muted"></i></td>
+                                            <td>Gestión de empresas</td>
+                                            <td>Comercialización y comunicación</td>
+                                            <td>La Veloz del Norte</td>
+                                            <td align="center"><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- /.table -->
+                            </div>
+                        </div>
+                    </div>
+                </div>                                
+                
+                <div class="panel-group" id="accordionCasosCerrados">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 data-toggle="collapse" data-parent="#accordionCasosCerrados" href="#collapseCasosCerrados" class="panel-title expand">
+                                   <div class="right-arrow pull-right"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                  <a href="#" class=""><span class="badge text-success bg-danger text-white pull-left m-r-1">142</span>Casos cerrados</a>
+                                </h3>
+                        </div>
+                        <div id="collapseCasosCerrados" class="panel-body panel-collapse collapse">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th width="5%" align="center"></th>
+                                            <th width="70%">Título</th>
+                                            <th width="10%">Id</th>
+                                            <th width="15%"></th>
+                                        </tr>
+                                    </thead>                            
+                                    <tbody>
+                                        <tr>
+                                            <td align="center"><i class="fa fa-list-ul fa-1x text-muted"></i></td>
+                                            <td>Gestión de empresas</td>
+                                            <td>DFGF</td>
+                                            <td align="center"><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- /.table -->
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>            
+        </div>     
     
     </section>
     <!-- /.content -->
