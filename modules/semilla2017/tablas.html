@@ -16,8 +16,8 @@
 <link rel="stylesheet" href="../../dist-palta/css/font-awesome.css">
 <link rel="stylesheet" href="../../dist-palta/css/icono-arg.css">
 
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<!-- BOOTSTRAP-Choosen Autocomplete -->
+<link rel="stylesheet" href="../../plugins/bootstrap-chosen-master/bootstrap-chosen.css">
 
   <!-- Theme style -->
 
@@ -26,8 +26,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.css">
-  <!-- iCheck -->
-  
+
+
   <!-- PALTA dist-palta -->
   <link rel="stylesheet" href="../../dist-palta/css/poncho.min.css">
   <!-- bootstrap wysihtml5 - text editor -->
@@ -371,7 +371,7 @@
         
                     <div class="panel-body">
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-striped">
                               <thead>
                                 <tr>
                                     <th rowspan="2" class="text-center bg-gclaro" width="25%">Miembro del Equipo</th>
@@ -412,12 +412,173 @@
                             </table>
                             <!-- /.table -->
                       </div>
-                      <button type="button" class="btn btn-sm">Agregar miembro del equipo</button>
+                      <button type="button" class="btn btn-sm m-t-2">Agregar miembro del equipo</button>
                     </div>
         
                 </div>
             </div>
         </div>        
+
+
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-primary text-white text-left">
+                        <h4>Tabla</h4>
+                    </div>
+        
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr style="font-size:14px;">
+                                    <th class="text-center" width="20%">Tipo de inversión</th>
+                                    <th class="text-center" width="20%">Tipo de tarea<br /><small>(adquisiciones, insumos, servicios profesionales, obras civiles)</small></th>
+                                    <th class="text-center">Nombre de la tarea<br /><small>(bien a adquirir, marca, modelo, principales características)</small></th>
+                                    <th class="text-center">Etapa del proceso productivo a la que pertenece</th>
+                                    <th class="text-center">Precio Unitario</th>
+                                    <th class="text-center">Cantidad</th>
+                                    <th class="text-center">Precio total</th>
+                                    <th class="text-center">Nombre del proveedor<br /><small>(para adquisiciones, insumos y obras civiles)</small></th>
+                                    <th class="text-center">CUIT del proveedor</th>
+                                    <th class="text-center">Fuente de financimiento</th>
+                                </tr>                                
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td align="left">
+                                        <select class="form-control">
+                                            <option value="1">Activos fijos</option>
+                                            <option value="2">Activos intangibles</option>
+                                            <option value="3">Capital de trabajo</option>
+                                            <option value="4">Gastos</option>
+                                        </select>
+                                    </td>
+                                    <td align="left">
+                                        <select class="form-control">
+                                            <option value="1">Maquinaria y equipo</option>
+                                            <option value="2">Mobiliario</option>
+                                            <option value="3">Obras civiles edilicias</option>
+                                            <option value="4">Patentes</option>
+                                            <option value="5">Marcas</option>                                    
+                                            <option value="6">Insumos</option>
+                                            <option value="7">Materia prima</option>
+                                            <option value="8">Mano de obra tercerizada</option>
+                                            <option value="9">Servicios profesionales</option>
+                                            <option value="10">Certificaciones y legalizaciones</option>
+                                        </select>                                
+                                    </td>
+                                    <td align="left"></td>
+                                    <td align="left"></td>
+                                    <td align="left"></td>
+                                    <td align="left"></td>
+                                    <td align="left"></td>
+                                    <td align="left"></td>
+                                    <td align="left"></td>
+                                    <td align="left"></td>
+                                  </tr>  
+                              </tbody>
+                            </table>
+                            <!-- /.table -->
+                      </div>
+                      <button type="button" class="btn btn-sm m-t-2">Agregar nueva fila</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>        
+
+
+
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-primary text-white text-left">
+                        <h4>Tabla</h4>
+                    </div>
+        
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr style="font-size:14px;">
+                                	<th></th>
+                                    <th class="text-center">Precio total</th>
+                                    <th class="text-center">Nombre del proveedor<br /><small>(para adquisiciones, insumos y obras civiles)</small></th>
+                                    <th class="text-center">CUIT del proveedor</th>
+                                    <th class="text-center">Fuente de financimiento</th>
+                                </tr>                                
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td width="5%">1</td>
+                                    <td>
+                                        <input class="form-control" name="">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" name="">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" name="">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" name="">
+                                    </td>                                    
+                                  </tr>  
+                                  <tr>
+                                    <td width="5%">12</td>
+                                    <td>
+                                        <input class="form-control" name="">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" name="">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" name="">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" name="">
+                                    </td>                                    
+                                  </tr>                                    
+                              </tbody>
+                            </table>
+                            <!-- /.table -->
+                      </div>
+                      <button type="button" class="btn btn-sm m-t-2">Agregar nueva fila</button>
+                    </div>
+                </div>
+            </div>
+        </div>      
+
+
+        <div class="row">
+            <div class="col-md-12 m-t-2">
+            	<h4>Tus asistencias a PyMEs</h4>
+                <div class="panel-group" id="accordionCasosAbiertos">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 data-toggle="collapse" data-parent="#accordionCasosAbiertos" href="#collapseCasosAbiertos" class="panel-title expand">
+                                   <div class="right-arrow pull-right"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                  <a href="#" class=""><span class="badge text-success bg-warning text-white pull-left m-r-1">142</span>Casos abiertos</a>
+                                </h3>
+                        </div>
+                        <div id="collapseCasosAbiertos" class="panel-body panel-collapse collapse">
+                        	
+                            <form>
+                            	<select data-placeholder="Seleccione un país" class="form-control chosen-select col-xs-12" tabindex="-1" style="width:100%;">
+                                    <option value="1">Activos fijos</option>
+                                    <option value="2">Activos intangibles</option>
+                                    <option value="3">Capital de trabajo</option>
+                                    <option value="4">Gastos</option>
+                                </select>                            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>            
+        </div>
+
                   
     </section>
     <!-- /.content -->
@@ -486,6 +647,14 @@
 <script src="../../dist/js/app.min.js"></script>
 <!-- iCheck -->
 <script src="../../plugins/iCheck/icheck.min.js"></script>
+<!-- Autocomplete -->
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+<script>
+  $(function() {
+    $('.chosen-select').chosen();
+    $('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+  });
+</script>
 
 <script>
 $(function() {
