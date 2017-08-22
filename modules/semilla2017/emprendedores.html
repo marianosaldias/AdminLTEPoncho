@@ -9,7 +9,7 @@
 
   <!-- BOOTSTRAP -->
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
 <!-- Font Awesome -->
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">-->
@@ -399,21 +399,33 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="col-md-8 col-sm-7 text-left">
+                        <div class="col-md-9 col-sm-8 col-xs-12 text-left">
                             <h2>Progreso general de tu proyecto</h2>
                             <p>Inicio: <span>11/12/2017</span> | Estado: <span class="text-warning">Iniciado</span>
                             </p>
+                            
                             <div class="progress m-t-2">
                                 <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
                                     <span class="sr-only"></span>
                                 </div>
                             </div>
+                            <h5><b>Incubadora: </b>Incuba Inc.</h5>
+                            <h5 class="m-b-1"><i class="fa fa-map-marker" aria-hidden="true"></i> Corrientes 1232. CP 1423. CABA. | <i class="fa fa-phone" aria-hidden="true"></i> 11 6765 4567 | <i class="fa fa-envelope text-aqua" aria-hidden="true"></i> <a href="mailto:contacto@incubainc.com.ar" class="text-aqua">contacto@incubainc.com.ar</a></h5>                        
+                          
                         </div>
-                        <div class="col-md-4 com-sm-5 m-b-1">
-                        	<h4 class="text-left">Descargá tus archivos</h4>
-                            <button type="button" class="btn btn-sm btn-contorno col-xs-12">Plan de Negocio</button>
-                            <button type="button" class="btn btn-sm btn-contorno col-xs-12">Solicitud de Inscripción</button>
+                        <div class="col-md-3 com-sm-4 col-xs-12 m-t-2">
+                        	<a href="#" class="btn btn-primary" style="width:100% !important;">Mis datos personales</a>
+                            <div class="btn-group" style="width:100% !important;">
+                                <button class="btn btn-primary dropdown-toggle" style="width:100% !important;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Descargas <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" style="width:100% !important;">
+                                    <li><a href="#">Solicitud de Inscripción</a></li>
+                                    <li><a href="#">Plan de Negocio</a></li>
+                                </ul>
+                            </div>                            
                         </div>                        
+
                     </div>
                 </div>
             </div>
@@ -573,6 +585,19 @@ $(function() {
   });
 });
 </script>
+
+<script>
+    $('.dropdown-toggle').dropdown();
+    $('#divNewNotifications li > a').click(function(){
+    if (this.text !== ' More Options ') {
+        $('#text').text($(this).html());
+    }
+    $('#divNewNotifications li').css('background-color', 'f39c12');
+    $(this).closest('li').css('background-color', 'f39c12');
+    });	
+
+</script>
+
 
 </body>
 </html>
