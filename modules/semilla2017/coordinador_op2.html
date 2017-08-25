@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Incubadoras</title>
+  <title>Coordinador</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -49,6 +49,16 @@
     margin-bottom: 15px;
     margin-top: 10px;
 }
+
+.filter-col{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.width100 {
+	width:100% !important;
+}
+
 
 </style>
   
@@ -355,47 +365,17 @@
       <ol class="breadcrumb">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Fondo Semilla</a></li>
-        <li class="active">Incubadoras</li>
+        <li class="active">Coordinador</li>
       </ol>
       <h1>
-        Incubadoras
+        Coordinador
       </h1>
-
-        <div class="row m-t-2">
-        	<div class="col-xs-12">
-                <div class="alert alert-info">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="fa fa-arrow-circle-o-right fa-fw fa-4x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4>¡Bienvenido!</h4>
-                            <p class="margin-0">Ya podés buscar tu incubadora para el Programa Fondo Semilla 2017.</p>
-                        </div>
-                    </div>
-                </div>                            
-            </div>
-        </div> 
-
+      
         <div class="row panels-row">
-            <div class="col-md-12">
+            <div class="col-xs-12">
             	<h4>Acciones</h4>
             </div> 
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <a class="panel panel-default bg-success" href="#">
-                    <div class="panel-body">
-                        <div class="media aligner">
-                            <div class="media-left">
-                                <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i>
-                            </div>                                
-                            <div class="media-body">
-                                <h3>Creá un nuevo proyecto</h3>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>            
+
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <a class="panel panel-default bg-success" href="#">
                     <div class="panel-body">
@@ -404,7 +384,7 @@
                                 <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">48</span>
                             </div>                                
                             <div class="media-body">
-                                <h3 class="text-white">Cargar Solicitud de Inscripción</h3>
+                                <h3 class="text-white">Asignar PN a Evaluador Interno</h3>
                             </div>
                         </div>
                     </div>                            
@@ -418,26 +398,41 @@
                                 <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">48</span>
                             </div>                                
                             <div class="media-body">
-                                <h3 class="text-white">Cargar Plan de Negocio</h3>
+                                <h3 class="text-white">Reasignar PN a Evaluador Externo</h3>
                             </div>
                         </div>
                     </div>                            
                 </a>
             </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default bg-success" href="#">
+                    <div class="panel-body">
+                        <div class="media aligner">
+                            <div class="media-left">
+                                <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">48</span>
+                            </div>                               
+                            <div class="media-body">
+                                <h3>Puntuar PN</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>                 
+            
            <!-- /.col -->
         </div>
-        <!-- /.row -->            
+        <!-- /.row -->         
+      
 
-        <div class="row panels-row">
-            <div class="col-xs-12 m-t-2">
-            	<h4>Atajos con íconos e imágenes</h4>
-            </div>    
-
+        <div class="row panels-row m-t-2">
+            <div class="col-xs-12">
+            	<h4>Estados de Proyectps</h4>
+            </div>         
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Incubadora</h6>
-                        <h2 class="text-aqua text-left">Solicitud de Inscripción enviadas</h2>
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Solicitud de Inscripción</h2>
                     </div>
                     <div class="panel-body bg-white">
                         <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">En admisión</h4>
@@ -447,8 +442,8 @@
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Incubadora</h6>
-                        <h2 class="text-aqua text-left">Solicitud de Inscripción enviadas</h2>
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Solicitud de Inscripción</h2>
                     </div>
                     <div class="panel-body bg-white">
                         <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Admitidas</h4>
@@ -458,8 +453,8 @@
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Incubadora</h6>
-                        <h2 class="text-aqua text-left">Solicitud de Inscripción enviadas</h2>
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Solicitud de Inscripción</h2>
                     </div>
                     <div class="panel-body bg-white">
                         <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">No admitidas</h4>
@@ -469,170 +464,222 @@
     
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <a class="panel panel-default panel-icon" href="#">
-                    <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Incubadora</h6>
-                        <h2 class="text-aqua text-left">Plan de negocios cargados</h2>
-                    </div>
-                    <div class="panel-body bg-white">
-                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">En evaluación</h4>
-                    </div>                    
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <a class="panel panel-default panel-icon" href="#">
-                    <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Incubadora</h6>
-                        <h2 class="text-aqua text-left">Plan de negocios cargados</h2>
-                    </div>
-                    <div class="panel-body bg-white">
-                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Aprobados</h4>
-                    </div>                    
-                </a>
-            </div>
-            
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-aqua">
-                    	<h6 class="text-white text-left">Incubadora</h6>
-                        <h2 class="text-white text-left">Modificar proyectos</h2>
+                    	<h6 class="text-white text-left">Coordinador</h6>
+                        <h2 class="text-white text-left">Planes de negocio</h2>
                     </div>
                     <div class="panel-body bg-white">
-                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Proyectos observados</h4>
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Pendiente de carga</h4>
+                    </div>                    
+                </a>
+            </div> 
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Plan de Negocio</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">En Evaluación Interna</h4>
                     </div>                    
                 </a>
             </div>
-        
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Plan de Negocio</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">En Evaluación Externa</h4>
+                    </div>                    
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Plan de Negocio</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Evaluar por Coordinador</h4>
+                    </div>                    
+                </a>
+            </div>      
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Plan de Negocio</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Rechazados</h4>
+                    </div>                    
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Plan de Negocio</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Rechazados por puntaje</h4>
+                    </div>                    
+                </a>
+            </div>                        
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Plan de Negocio</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Preseleccionados</h4>
+                    </div>                    
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Plan de Negocio</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Evaluados por Ev. Interno</h4>
+                    </div>                    
+                </a>
+            </div>  
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Coordinador</h6>
+                        <h2 class="text-aqua text-left">Plan de Negocio</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Evaluados por Ev. Externo</h4>
+                    </div>                    
+                </a>
+            </div>                                       
         </div>
 
 
-        <div class="row m-t-1">
-            <div class="col-md-12 m-t-2">
-            	<h4>Tus asistencias a PyMEs</h4>
-                <div class="panel-group" id="accordionCasosAbiertos">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 data-toggle="collapse" data-parent="#accordionCasosAbiertos" href="#collapseCasosAbiertos" class="panel-title expand">
-                                   <div class="right-arrow pull-right"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                  <a href="#" class=""><span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span>Casos abiertos</a>
-                                </h3>
-                        </div>
-                        <div id="collapseCasosAbiertos" class="panel-body panel-collapse collapse">
-                            <div class="table-responsive">
-                                <table class="table" style="">
-                                    <thead>
-                                        <tr>
-                                            <th>Nº de Proyecto</th>
-                                            <th>Nombre y Apellido</th>
-                                            <th>Estado</th>
-                                            <th>ID</th>
-                                        </tr>
-                                    </thead>                            
-                                    <tbody>
-                                        <tr>
-                                            <td>FR2017/8ago</td>
-                                            <td>Jorge Raul Dominguez</td>
-                                            <td>Pendiente</td>
-                                            <td>GHYD</td>
-                                        </tr>
-                                        <tr>
-                                            <td>FR2017/8ago</td>
-                                            <td>Jorge Raul Dominguez</td>
-                                            <td>Pendiente</td>
-                                            <td>GHYD</td>
-                                        </tr>
-                                                                    
-                                    </tbody>
-                                </table>
-                                <!-- /.table -->
-
-                            </div>
-                        </div>
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="text-white text-left">Table</h3>
+						<div class="pull-right">
+                            <button type="button" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
+                                <i class="fa fa-filter" aria-hidden="true"></i>
+                            </button>
+						</div>                        
                     </div>
+
+
+
+
+                    <div class="panel-body">
+                        <div class="col-xs-12" style="padding:0">
+                        <div id="filter-panel" class="collapse filter-panel" style="padding:0">
+                
+                                    <form class="form-inline" role="form">
+                                        <div class="form-group col-sm-6 col-md-3">
+                                            <select id="pref-perpage" class="form-control width100">
+                                            	<option value="2">Planes de Negocio</option>
+                                                <option value="1">Solicitudes de Inscripción</option>
+                                            </select>                                
+                                        </div> <!-- form group [rows] -->
+                                        <div class="form-group col-sm-6 col-md-3">
+                                            <select id="pref-orderby" class="form-control width100">
+                                                <option>Aprobados</option>
+                                                <option>En evaluación</option>
+                                                <option>Rechazados</option>
+                                                <option>Rechazados por Puntaje</option>
+                                            </select>                                
+                                        </div>
+                                        <div class="form-group col-sm-12 col-md-6">
+
+                                            <div class="input-group custom-search-form">
+                                                
+                                                <div class="input-group-btn">
+                                                    <label class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px 10px; width: 220px;" aria-expanded="false">
+                                                        <span id="text">Emprendedor </span><span class="caret"></span>
+                                                    </label>
+                                                    <ul class="dropdown-menu" id="divNewNotifications">
+                                                        <li><a class="my_data_flag" id="three">Emprendedor </a></li>
+                                                        <li><a class="my_data_flag" id="three">Incubadora </a></li>
+                                                    </ul>
+                                                </div>                        
+                                                <input type="text" class="form-control" style="border-radius: 0 !important;">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button">Buscar</button>
+                                                </span>
+                                            </div>
+
+                                        </div><!-- form group [search] -->
+                
+
+                                      
+                                        <!-- form group [order by] --> 
+                                        <!--
+                                        <div class="form-group">    
+                                            <div class="checkbox" style="margin-left:10px; margin-right:10px;">
+                                                <label><input type="checkbox"> Remember parameters</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-default filter-col">
+                                                <span class="glyphicon glyphicon-record"></span> Save Settings
+                                            </button>  
+                                        </div>
+                                        -->
+                                    </form>
+                                    
+                
+                        </div>                     
+                        </div>
+                        <div class="clearfix"></div>
+                    
+                    
+                    
+                        <div class="table-responsive m-t-1">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>ID</th>
+                                        <th>Emprendedor</th>
+                                        <th>DNI/CUIT</th>
+                                        <th>Proyecto</th>
+                                        <th>Incubadora</th>
+                                        <th>Ult. modif.</th>
+                                        <th>Ev. Interno</th>
+                                        <th>Ev. Externo</th>
+                                    </tr>
+                                </thead>                            
+                                <tbody>
+                                    <tr>
+                                        <td>352</td>
+                                        <td>GHFH34</td>
+                                        <td>Jose Pep</td>
+                                        <td>12-34563456-3</td>
+                                        <td>Alfajores Pepito</td>
+                                        <td>Incuba Inc.</td>
+                                        <td>12/12/2017</td>  
+                                        <td>Eduardo Boroc</td>
+                                        <td>Juana Casimiro</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- /.table -->
+                        </div>                        
+                        
+                    </div>
+
                 </div>
-                
-                <div class="panel-group" id="accordionCasosFinalizados">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 data-toggle="collapse" data-parent="#accordionCasosFinalizados" href="#collapseCasosFinalizados" class="panel-title expand">
-                                   <div class="right-arrow pull-right"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                  <a href="#" class=""><span class="badge bg-aqua text-white pull-left m-r-1">142</span>Casos Finalizados</a>
-                                </h3>
-                        </div>
-                        <div id="collapseCasosFinalizados" class="panel-body panel-collapse collapse">
-                            <div class="table-responsive">
-                                <table class="table" style="">
-                                    <thead>
-                                        <tr>
-                                            <th>Nº de Proyecto</th>
-                                            <th>Nombre y Apellido</th>
-                                            <th>Estado</th>
-                                            <th>ID</th>
-                                        </tr>
-                                    </thead>                            
-                                    <tbody>
-                                        <tr>
-                                            <td>FR2017/8ago</td>
-                                            <td>Jorge Raul Dominguez</td>
-                                            <td>Pendiente</td>
-                                            <td>GHYD</td>
-                                        </tr>
-                                        <tr>
-                                            <td>FR2017/8ago</td>
-                                            <td>Jorge Raul Dominguez</td>
-                                            <td>Pendiente</td>
-                                            <td>GHYD</td>
-                                        </tr>
-                                                                    
-                                    </tbody>
-                                </table>
-                                <!-- /.table -->
-                            </div>
-                        </div>
-                    </div>
-                </div>                                
-                
-                <div class="panel-group" id="accordionCasosCerrados">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 data-toggle="collapse" data-parent="#accordionCasosCerrados" href="#collapseCasosCerrados" class="panel-title expand">
-                                   <div class="right-arrow pull-right"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                  <a href="#" class=""><span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span>Casos cerrados</a>
-                                </h3>
-                        </div>
-                        <div id="collapseCasosCerrados" class="panel-body panel-collapse collapse">
-                            <div class="table-responsive">
-                                <table class="table" style="">
-                                    <thead>
-                                        <tr>
-                                            <th>Nº de Proyecto</th>
-                                            <th>Nombre y Apellido</th>
-                                            <th>Estado</th>
-                                            <th>ID</th>
-                                        </tr>
-                                    </thead>                            
-                                    <tbody>
-                                        <tr>
-                                            <td>FR2017/8ago</td>
-                                            <td>Jorge Raul Dominguez</td>
-                                            <td>Pendiente</td>
-                                            <td>GHYD</td>
-                                        </tr>
-                                        <tr>
-                                            <td>FR2017/8ago</td>
-                                            <td>Jorge Raul Dominguez</td>
-                                            <td>Pendiente</td>
-                                            <td>GHYD</td>
-                                        </tr>
-                                                                    
-                                    </tbody>
-                                </table>
-                                <!-- /.table -->
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>            
-        </div>
+            </div>
+        </div>              
+
         
 
         <div class="row m-t-2">            
@@ -646,12 +693,14 @@
                         <div class="input-group custom-search-form">
                             
                             <div class="input-group-btn">
-                                <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 150px;" aria-expanded="false">
-                                    <span id="text">DNI </span><span class="caret"></span>
+                                <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 220px;" aria-expanded="false">
+                                    <span id="text">Emprendedor </span><span class="caret"></span>
                                 </label>
                                 <ul class="dropdown-menu" id="divNewNotifications">
-                                    <li><a class="my_data_flag" id="three">DNI </a></li>
-                                    <li><a class="my_data_flag" id="three">CUIT </a></li>
+                                    <li><a class="my_data_flag" id="three">Emprendedor </a></li>
+                                    <li><a class="my_data_flag" id="three">Incubadora </a></li>
+                                    <li><a class="my_data_flag" id="three">Evaluador Interno </a></li>
+                                    <li><a class="my_data_flag" id="three">Evaluador Externo </a></li>
                                 </ul>
                             </div>                        
                             <input type="text" class="form-control" style="border-radius: 0 !important;">
@@ -661,69 +710,44 @@
                         </div>
                         </form>
                         <div class="clearfix"></div>
-                        <div class="table-responsive m-t-1" style="padding-bottom:55px;">
-                        	<table class="table" style="">
+                        <div class="table-responsive m-t-1" style="padding-bottom:100px;">
+                            <table class="table" style="">
                                 <thead>
                                     <tr>
-                                        <th>Nº de Proyecto</th>
-                                        <th>Nombre y Apellido</th>
+                                        <th>#</th>
+                                        <th>Proyecto</th>
+                                        <th>Emprendedor</th>
+                                        <th>DNI/CUIT</th>
+                                        <th>Incubadora</th>
+                                        <th>Ult. modif.</th>
                                         <th>Estado</th>
-                                        <th>ID</th>
                                         <th></th>
                                     </tr>
                                 </thead>                            
                                 <tbody>
                                     <tr>
-                                        <td>FR2017/8ago</td>
-                                        <td>Jorge Raul Dominguez</td>
-                                        <td>Pendiente</td>
-                                        <td>GHYD</td>
+                                        <td>352</td>
+                                        <td>GHFH34</td>
+                                        <td>Jose Pep</td>
+                                        <td>12-34563456-3</td>
+                                        <td>Incuba Inc.<br />
+                                        	<p class="text-muted">info@incubainc.com</p>
+                                        </td>
+                                        <td>12/12/2017</td>  
+                                        <td>En evaluación</td>
                                         <td align="right">
-                                            <div class="btn-group">
+                                        	<div class="btn-group">
                                                 <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Descargas <span class="caret"></span>
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-right">
                                                     <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
                                                     <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Evaluaciones y puntuación</a></li>
                                                 </ul>
                                             </div>                                        
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>FR2017/8ago</td>
-                                        <td>Jorge Raul Dominguez</td>
-                                        <td>Pendiente</td>
-                                        <td>GHYD</td>
-                                        <td align="right">
-                                            <div class="btn-group">
-                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Descargas <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
-                                                </ul>
-                                            </div>                                        
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>FR2017/8ago</td>
-                                        <td>Jorge Raul Dominguez</td>
-                                        <td>Pendiente</td>
-                                        <td>GHYD</td>
-                                        <td align="right">
-                                            <div class="btn-group">
-                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Descargas <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
-                                                </ul>
-                                            </div>                                        
-                                        </td>
-                                    </tr>                                                                       
                                 </tbody>
                             </table>
                             <!-- /.table -->
@@ -830,8 +854,30 @@ $(function() {
     $(this).closest('li').css('background-color', 'f39c12');
     });	
 
+    $('#divCaso li > a').click(function(){
+    if (this.text !== ' More Options ') {
+        $('#textcaso').text($(this).html());
+    }
+    $('#divCaso li').css('background-color', 'f39c12');
+    $(this).closest('li').css('background-color', 'f39c12');
+    });	
+
 </script>
 
+<script>
+$(function(){
+    // attach table filter plugin to inputs
+	$('[data-action="filter"]').filterTable();
+	
+	$('.container').on('click', '.panel-heading span.filter', function(e){
+		var $this = $(this), 
+			$panel = $this.parents('.panel');
+		
+		$panel.find('#filters').slideToggle();
+	});
+	$('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 </body>
 </html>
