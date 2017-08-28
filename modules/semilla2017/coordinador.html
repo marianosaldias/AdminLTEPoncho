@@ -16,11 +16,9 @@
 <link rel="stylesheet" href="../../dist-palta/css/font-awesome.css">
 <link rel="stylesheet" href="../../dist-palta/css/icono-arg.css">
 
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
-  <!-- Theme style -->
-
+  <!-- BOOTSTRAP-Datepicker -->
+  <link rel="stylesheet" href="../../plugins/datepicker/datepicker3.css">
+  
   <!-- ADMIN-LTE dist -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -672,9 +670,50 @@
                             </table>
                             <!-- /.table -->
                         </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>              
+                  
+                  
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="text-white text-left">Exportar</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="col-md-5 col-xs-12">
+                                <div class="input-group width100">
+                                    <label class="control-label">Informe</label><br />
+                                    <div id="radioBtn" class="btn-group width100">
+                                        <span class="btn active btn-primary" data-toggle="estado" data-value="Y" style="width:55%;">Emprendedores</span>
+                                        <span class="btn notActive btn-default" data-toggle="estado" data-value="N" style="width:45%;">Proyectos</span>
+                                    </div>
+                                    <input type="hidden" name="estado" id="estado" value="Y">
+                                </div>                              
+                            </div>
+               
+                            <div class="col-md-5 col-xs-12" id="sandbox-container">
+                                <label class="control-label">Rango de fechas</label>
+                                <div class="input-group input-daterange width100">
+                                    <input type="text" id="fechaVigInicio" class="form-control">
+                                    <span class="input-group-addon bg-primary" style="padding: 16px;"> Hasta </span>
+                                    <input type="text" id="fechaVigFin" class="form-control">
+                                </div>                            
+                            </div>
+                              
+                            <div class="col-md-2 col-xs-12">
+                                <div class="form-group">
+                                    <button class="btn btn-primary m-t-2 width100">Exportar</button>
+                                    <!-- /.input group -->
+                                </div>
+                            </div>                                                                               
+                                       
+                        </form>
                         
                     </div>
-
                 </div>
             </div>
         </div>              
@@ -783,6 +822,19 @@ $(function() {
     });	
 
 </script>
+
+<!-- Datepicker -->
+<script src="../../plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="../../plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+<script type="application/javascript">
+	$('#sandbox-container input').datepicker({
+		language: "es"
+	});
+
+	jQuery(function($){
+	   $("[id^=fecha]").mask("99/99/9999",{placeholder:"__/__/____"});
+	});
+</script> 
 
 
 </body>

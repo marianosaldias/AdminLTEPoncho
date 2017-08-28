@@ -226,3 +226,5 @@
 }
 
 .badgePosition { position: absolute; top: 15px; left: 30px;}
+
+.width100 { width:100% !important;}

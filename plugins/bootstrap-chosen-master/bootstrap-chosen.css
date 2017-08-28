@@ -6,6 +6,7 @@
 
 .chosen-container {
   display: inline-block;
+  width: 100% !important;
   font-size: 14px;
   position: relative;
   vertical-align: middle; }
