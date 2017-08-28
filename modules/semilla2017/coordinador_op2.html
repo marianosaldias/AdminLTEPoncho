@@ -16,11 +16,13 @@
 <link rel="stylesheet" href="../../dist-palta/css/font-awesome.css">
 <link rel="stylesheet" href="../../dist-palta/css/icono-arg.css">
 
-  <!-- BOOTSTRAP-Choosen Autocomplete -->
-  <link rel="stylesheet" href="../../plugins/bootstrap-chosen-master/bootstrap-chosen.css">
 
   <!-- BOOTSTRAP-Datepicker -->
   <link rel="stylesheet" href="../../plugins/datepicker/datepicker3.css">
+
+  <!-- BOOTSTRAP-Choosen Autocomplete -->
+  <link rel="stylesheet" href="../../plugins/bootstrap-chosen-master/bootstrap-chosen.css">
+
   
   <!-- ADMIN-LTE dist -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
@@ -55,12 +57,6 @@
     padding-left:10px;
     padding-right:10px;
 }
-
-.width100 {
-	width:100% !important;
-}
-
-
 </style>
   
 </head>
@@ -639,7 +635,7 @@
                                             <li><a class="my_data_flag" id="three">Evaluador Externo </a></li>
                                         </ul>
                                     </div>                        
-                                    <div id="optionsSelect" class="state-loading">
+                                    <div id="" class="state-loading">
                                     <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
                                         <select data-placeholder="Seleccione una opción" class="form-control chosen-select" tabindex="-1">
                                             <option value=""></option>
@@ -660,11 +656,6 @@
                                             <option value="Azerbaijan">Azerbaijan</option>
                                         </select>                                     
                                     </div>
-                                    <!--
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-primary" type="button">Buscar</button>
-                                    </span>
-                                    -->
                                 </div>
                                 
                                 <button class="btn btn-primary m-t-2" style="width:100%;">Buscar</button>
@@ -761,11 +752,11 @@
                             <div class="col-md-5 col-xs-12">
                                 <div class="input-group width100">
                                     <label class="control-label">Informe</label><br />
-                                    <div id="radioBtn" class="btn-group width100">
+                                    <div id="tipoinforme" class="btn-group width100">
                                         <span class="btn active btn-primary" data-toggle="estado" data-value="Y" style="width:55%;">Emprendedores</span>
                                         <span class="btn notActive btn-default" data-toggle="estado" data-value="N" style="width:45%;">Proyectos</span>
                                     </div>
-                                    <input type="hidden" name="estado" id="estado" value="Y">
+                                    <input type="hidden" name="estadoinforme" id="estadoinforme" value="Y">
                                 </div>                              
                             </div>
                
@@ -946,6 +937,15 @@
   });
 </script>
 
+<!-- Datepicker -->
+<script src="../../plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="../../plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+<script type="application/javascript">
+	$('#sandbox-container input').datepicker({
+		language: "es"
+	});
+</script> 
+
 <script>
     $('.dropdown-toggle').dropdown();
     $('#divNewNotifications li > a').click(function(){
@@ -991,21 +991,17 @@ $(function(){
         $('span[data-toggle="'+tog+'"]').not('[data-value="'+sel+'"]').removeClass('active btn-primary').addClass('notActive btn-default');
         $('span[data-toggle="'+tog+'"][data-value="'+sel+'"]').removeClass('notActive btn-default').addClass('active btn-primary');
     });
+	
+    // Tomar el valor del checkbox
+	$('#tipoinforme span').on('click', function(){
+        var sel = $(this).data('value');
+        var tog = $(this).data('toggle');
+        $('#'+tog).val(sel);
+        // You can change these lines to change classes (Ex. btn-default to btn-danger)
+        $('span[data-toggle="'+tog+'"]').not('[data-value="'+sel+'"]').removeClass('active btn-primary').addClass('notActive btn-default');
+        $('span[data-toggle="'+tog+'"][data-value="'+sel+'"]').removeClass('notActive btn-default').addClass('active btn-primary');
+    });	
 </script>
-
-<!-- Datepicker -->
-<script src="../../plugins/datepicker/bootstrap-datepicker.js"></script>
-<script src="../../plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
-<script type="application/javascript">
-	$('#sandbox-container input').datepicker({
-		language: "es"
-	});
-
-	jQuery(function($){
-	   $("[id^=fecha]").mask("99/99/9999",{placeholder:"__/__/____"});
-	});
-</script> 
-
 
 </body>
 </html>
