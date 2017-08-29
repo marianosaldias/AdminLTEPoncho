@@ -576,7 +576,10 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">Estados de Proyectos</h3>
+                        <h3 class="text-white text-left">
+                        	<span class="badge text-success bg-warning text-white pull-left m-r-1">2</span>
+                        	Solicitudes de Inscripción Admitidas
+                        </h3>
 						<div class="pull-right">
                             <button type="button" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
                                 <i class="fa fa-filter" aria-hidden="true"></i> Filtros
@@ -745,7 +748,7 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">Exportar</h3>
+                        <h3 class="text-white text-left">Reportes</h3>
                     </div>
                     <div class="panel-body">
                         <form>
@@ -783,13 +786,11 @@
             </div>
         </div> 
 
-
-        <!--
         <div class="row m-t-2">            
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">Buscá proyecto</h3>
+                        <h3 class="text-white text-left">Cambiar estado</h3>
                     </div>
                     <div class="panel-body">
                         <form class="m-t-1" role="search">
@@ -797,14 +798,12 @@
                             
                             <div class="input-group-btn">
                                 <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 220px;" aria-expanded="false">
-                                    <span id="text">Emprendedor </span><span class="caret"></span>
+                                    <span id="textStateProy">Emprendedor </span><span class="caret"></span>
                                 </label>
-                                <ul class="dropdown-menu" id="divNewNotifications">
+                                <ul class="dropdown-menu" id="divChangeStateProy">
                                     <li><a class="my_data_flag" id="three">Emprendedor </a></li>
-                                    <li><a class="my_data_flag" id="three">Incubadora </a></li>
-                                    <li><a class="my_data_flag" id="three">Evaluador Interno </a></li>
-                                    <li><a class="my_data_flag" id="three">Evaluador Externo </a></li>
-                                </ul>
+                                    <li><a class="my_data_flag" id="three">DNI </a></li>
+                                    <li><a class="my_data_flag" id="three">CUIT </a></li>
                             </div>                        
                             <input type="text" class="form-control" style="border-radius: 0 !important;">
                             <span class="input-group-btn">
@@ -813,7 +812,7 @@
                         </div>
                         </form>
                         <div class="clearfix"></div>
-                        <div class="table-responsive m-t-1" style="padding-bottom:100px;">
+                        <div class="table-responsive m-t-1">
                             <table class="table" style="">
                                 <thead>
                                     <tr>
@@ -823,8 +822,8 @@
                                         <th>DNI/CUIT</th>
                                         <th>Incubadora</th>
                                         <th>Ult. modif.</th>
-                                        <th>Estado</th>
-                                        <th></th>
+                                        <th>Cambiar estado</th>
+                                        <th>Resucitar</th>
                                     </tr>
                                 </thead>                            
                                 <tbody>
@@ -837,18 +836,18 @@
                                         	<p class="text-muted">info@incubainc.com</p>
                                         </td>
                                         <td>12/12/2017</td>  
-                                        <td>En evaluación</td>
-                                        <td align="right">
-                                        	<div class="btn-group">
-                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Descargas <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Evaluaciones y puntuación</a></li>
-                                                </ul>
-                                            </div>                                        
+                                        <td>
+                                        	<select class="form-control" name="">
+                                                <option value="1">Estado 1</option>
+                                                <option value="2">Estado 2</option>
+                                                <option value="3">Estado 3</option>
+                                                <option value="4">Estado 4</option>
+                                            </select>                                        
+                                        </td>
+                                        <td align="center">
+                                            <a href="#">
+                                            	<i class="fa  fa-play play_case"></i>
+                                            </a>                                        
                                         </td>
                                     </tr>
                                 </tbody>
@@ -860,7 +859,6 @@
                 </div>
             </div>
         </div>              
-        -->
                   
     </section>
     <!-- /.content -->
@@ -948,6 +946,7 @@
 
 <script>
     $('.dropdown-toggle').dropdown();
+	
     $('#divNewNotifications li > a').click(function(){
     if (this.text !== ' More Options ') {
         $('#text').text($(this).html());
@@ -964,6 +963,16 @@
     $(this).closest('li').css('background-color', 'f39c12');
     });	
 
+
+    $('#divChangeStateProy li > a').click(function(){
+    if (this.text !== ' More Options ') {
+        $('#textStateProy').text($(this).html());
+    }
+    $('#divChangeStateProy li').css('background-color', 'f39c12');
+    $(this).closest('li').css('background-color', 'f39c12');
+    });	
+
+    //#
 </script>
 
 <script>
