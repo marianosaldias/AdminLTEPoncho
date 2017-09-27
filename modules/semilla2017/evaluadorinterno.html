@@ -17,7 +17,8 @@
 <link rel="stylesheet" href="../../dist-palta/css/icono-arg.css">
 
   <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<!--<link rel="stylesheet" href="graphs/prettify.css">-->
+<link rel="stylesheet" href="../../plugins/morris/morris.css">
 
   <!-- Theme style -->
 
@@ -353,9 +354,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header container"><!-- se cambió container por content-header -->
       <ol class="breadcrumb">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Fondo Semilla</a></li>
-        <li class="active">Evaluador Interno</li>
+        <li><a href="#">INICIO</a></li>
+        <li>FONDO SEMILLA</li>
       </ol>
       <h1>
         Evaluador Interno
@@ -398,7 +398,7 @@
         </div>
         <!-- /.row -->         
       
-
+        <!--
         <div class="row panels-row m-t-1">
             <div class="col-xs-12">
             	<h4>Estados de Proyectos</h4>
@@ -461,6 +461,168 @@
                 </a>
             </div>
         </div>
+        -->
+
+
+        <div class="row panels-row m-t-1">
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-primary">
+                        <h3 class="panel-title">Solicitudes de Inscripción</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="solicitudinscripcion" class="graph"></div>
+                    </div>
+                </div>                    
+            </div>  
+
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-primary">
+                        <h3 class="panel-title">Planes de Negocios</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="plandenegocios" class="graph"></div>
+                    </div>
+                </div>                    
+            </div>    
+
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-primary">
+                        <h3 class="panel-title">Pie 3</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="pie3" class="graph"></div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+
+
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="text-white text-left">
+                        	Filtros de busqueda avanzada
+                        </h3>
+						<div class="pull-right">
+                            <button type="button" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
+                                <i class="fa fa-filter" aria-hidden="true"></i> Filtros<!-- Filtros -->
+                            </button>
+						</div>                        
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="col-xs-12" style="padding:0">
+                            <div id="filter-panel" class="collapse filter-panel">
+                                <div class="input-group custom-search-form">
+                                    <div class="input-group-btn">
+                                        <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
+                                            <span id="textTipoDoc" style="font-size:14px;">Solicitud de Inscripción </span><span class="caret"></span>
+                                        </label>
+                                        <ul class="dropdown-menu" id="divTipoDoc">
+                                            <li><a class="my_data_flag" id="three">Solicitud de Inscripción </a></li>
+                                            <li><a class="my_data_flag" id="three">Plan de Negocios </a></li>
+                                        </ul>
+                                    </div>                        
+                                    <div id="" class="">
+                                    <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
+                                        <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
+                                            <option>Seleccione estado</option>
+                                            <option>En admisión</option>
+                                            <option>Admitidas</option>
+                                            <option>No admitidas</option>
+                                            <!-- PN -->
+                                            <option>Preseleccionados</option>
+                                            <option>Pendiente de carga</option>
+                                            <option>Evaluar por Coordinador</option>
+                                            <option>Rechazados</option>
+                                            <option>Rechazados por Puntaje</option>
+                                            <option>En evaluacion interna</option>
+                                            <option>En evaluacion externa</option>
+                                            <option>Evaluados por Evaluador Interno</option>
+                                            <option>Evaluados por Evaluador Externo</option>
+                                        </select>                                     
+                                    </div>
+                                </div>    
+                                
+                                <div class="clearfix"></div>
+
+                                <div align="center">
+                                	<button id="buscar-filtro" class="btn btn-primary col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 m-t-2"><i class="fa-li fa fa-spinner fa-spin pull-left m-l-3 m-t-1"></i> Buscar</button>
+                                </div>
+                    
+                            </div>                     
+                        </div>
+                        <div class="clearfix"></div>
+                        
+                        <h3 class="text-left">
+                        	<span class="badge text-success bg-warning text-white pull-left m-r-1">2</span>
+                        	Solicitud de Inscripción - Admitidas
+                        </h3>
+                        <div class="table-responsive m-t-1">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>ID</th>
+                                        <th>Apellido y Nombre</th>
+                                        <th>DNI/CUIT</th>
+                                        <th>Nº Proyecto</th>
+                                        <th>Ult. modif.</th>
+                                    </tr>
+                                </thead>                            
+                                <tbody>
+                                    <tr>
+                                        <td>378</td>
+                                        <td>GASH34</td>
+                                        <td>Jose Oro</td>
+                                        <td>20-26563456-2</td>
+                                        <td>5675</td>
+                                        <td>19/11/2017</td>  
+                                    </tr>
+                                    <tr>
+                                        <td>352</td>
+                                        <td>GHFH34</td>
+                                        <td>Jose Pep</td>
+                                        <td>12-34563456-3</td>
+                                        <td>4563</td>
+                                        <td>12/12/2017</td>  
+                                    </tr>                                    
+                                </tbody>
+                            </table>
+                            <!-- /.table -->
+                        </div>                        
+                        
+                        <div align="center">
+                            <ul class="pagination">
+                              <li>
+                                <a href="#" aria-label="Previous">
+                                  <span aria-hidden="true">«</span>
+                                </a>
+                              </li>
+                              <li class="active"><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li><a href="#">6</a></li>
+                              <li>
+                                <a href="#" aria-label="Next">
+                                  <span aria-hidden="true">»</span>
+                                </a>
+                              </li>
+                            </ul>               
+                        </div>         
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>              
+
 
 
         <div class="row m-t-2">            
@@ -471,30 +633,34 @@
                     </div>
                     <div class="panel-body">
                         <div class="table-responsive m-t-1">
-                            <table class="table" style="">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th>#</th>
                                         <th>ID</th>
-                                        <th>Emprendedor</th>
+                                        <th>Apellido y Nombre</th>
                                         <th>DNI/CUIT</th>
-                                        <th>Incubadora</th>
-                                        <th>Nro. Proyecto</th>
-                                        <th>Estado</th>
+                                        <th>Nº Proyecto</th>
                                         <th>Ult. modif.</th>
                                     </tr>
                                 </thead>                            
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
+                                        <td>378</td>
+                                        <td>GASH34</td>
+                                        <td>Jose Oro</td>
+                                        <td>20-26563456-2</td>
+                                        <td>5675</td>
+                                        <td>19/11/2017</td>  
+                                    </tr>
+                                    <tr>
+                                        <td>352</td>
                                         <td>GHFH34</td>
                                         <td>Jose Pep</td>
                                         <td>12-34563456-3</td>
-                                        <td>Incuba Inc.</td>
-                                        <td>2345</td>
-                                        <td>Activo</td>
-                                        <td>12/12/2017</td>
-                                    </tr>
+                                        <td>4563</td>
+                                        <td>12/12/2017</td>  
+                                    </tr>                                    
                                 </tbody>
                             </table>
                             <!-- /.table -->
@@ -535,42 +701,34 @@
                         </form>
                         <div class="clearfix"></div>
                         <div class="table-responsive m-t-1" style="padding-bottom:80px;">
-                            <table class="table" style="">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Proyecto</th>
-                                        <th>Emprendedor</th>
+                                        <th>ID</th>
+                                        <th>Apellido y Nombre</th>
                                         <th>DNI/CUIT</th>
-                                        <th>Incubadora</th>
+                                        <th>Nº Proyecto</th>
                                         <th>Ult. modif.</th>
-                                        <th>Estado</th>
-                                        <th></th>
                                     </tr>
                                 </thead>                            
                                 <tbody>
+                                    <tr>
+                                        <td>378</td>
+                                        <td>GASH34</td>
+                                        <td>Jose Oro</td>
+                                        <td>20-26563456-2</td>
+                                        <td>5675</td>
+                                        <td>19/11/2017</td>  
+                                    </tr>
                                     <tr>
                                         <td>352</td>
                                         <td>GHFH34</td>
                                         <td>Jose Pep</td>
                                         <td>12-34563456-3</td>
-                                        <td>Incuba Inc.<br />
-                                        	<p class="text-muted">info@incubainc.com</p>
-                                        </td>
+                                        <td>4563</td>
                                         <td>12/12/2017</td>  
-                                        <td>En evaluación</td>
-                                        <td align="right">
-                                        	<div class="btn-group">
-                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Descargas <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
-                                                </ul>
-                                            </div>                                        
-                                        </td>
-                                    </tr>
+                                    </tr>                                    
                                 </tbody>
                             </table>
                             <!-- /.table -->
@@ -687,6 +845,56 @@ $(function() {
 
 </script>
 
+
+<script src="../../plugins/morris/raphael-min.js"></script>
+<script src="../../plugins/morris/morris.min.js"></script> <!-- graphs/morris-051.js -->
+<script src="../../plugins/morris/prettify.min.js"></script>
+
+<script>
+	Morris.Donut({
+	  element: 'pie3',
+	  resize: true,
+	  data: [
+		{label: "Area A", value: 52},
+		{label: "Area B", value: 40},
+		{label: "Area C", value: 25},
+		{label: "Area D", value: 70}
+	  ]
+	});
+</script>
+
+<script>	
+	Morris.Donut({
+	  element: 'solicitudinscripcion',
+	  resize: true,
+	  data: [
+		{label: "Admitidas", value: 9},
+		{label: "No admitidas", value: 2},
+		{label: "En evaluacion", value: 5}
+	  ]
+	});	
+</script>
+<script>	
+	Morris.Donut({
+	  element: 'plandenegocios',
+	  resize: true,
+	  data: [
+		{label: "Rechazados", value: 3},
+		{label: "Aprobados", value: 6},
+		{label: "En observacion", value: 2}
+	  ]
+	});	
+</script>
+
+<script>
+    $('#divTipoDoc li > a').click(function(){
+    if (this.text !== ' More Options ') {
+        $('#textTipoDoc').text($(this).html());
+    }
+    $('#divTipoDoc li').css('background-color', 'f39c12');
+    $(this).closest('li').css('background-color', 'f39c12');
+    });		
+</script>
 
 </body>
 </html>

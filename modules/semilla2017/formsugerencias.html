@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Incubadoras</title>
+  <title>TEMPLATE</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -16,8 +16,8 @@
 <link rel="stylesheet" href="../../dist-palta/css/font-awesome.css">
 <link rel="stylesheet" href="../../dist-palta/css/icono-arg.css">
 
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<!-- BOOTSTRAP-Choosen Autocomplete -->
+<link rel="stylesheet" href="../../plugins/bootstrap-chosen-master/bootstrap-chosen.css">
 
   <!-- Theme style -->
 
@@ -26,8 +26,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.css">
-  <!-- iCheck -->
-  
+
+
   <!-- PALTA dist-palta -->
   <link rel="stylesheet" href="../../dist-palta/css/poncho.min.css">
   <!-- bootstrap wysihtml5 - text editor -->
@@ -350,205 +350,53 @@
   
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-	<section class="content-header container">
-		<!-- se cambió container por content-header -->
-		<ol class="breadcrumb">
-			<li>
-				<a href="#">Inicio</a>
-			</li>
-			<li class="active">Incubadoras</li>
-		</ol>
-		<h1>Incubadoras</h1>
-        
-		<div class="row">
-			<div class="col-md-12 m-t-2">
-                <div class="alert alert-info">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="fa fa-arrow-circle-o-right fa-fw fa-4x"></i>
-                        </div>
-                        <div class="media-body">
-                            <p class="margin-0">Para avanzar, completá todos los campos obligatorios y hacé clic en <b>"Guardar"</b>. Si querés volver a tu escritorio, hacé clic en <b>"Guardar"</b> y luego en <b>"Salir"</b>.</p>
+    <!-- Content Header (Page header) -->
+    <section class="content-header container"><!-- se cambió container por content-header -->
+        <ol class="breadcrumb">
+            <li><a href="#">INICIO</a></li>
+            <li class="active">SUGERENCIAS</li>
+        </ol>
+        <h1 class="activities-sidbar">¿Tenés alguna sugerencia?</h1>
+
+        <div class="row panels-row m-t-2">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel-pane pane-texto">
+
+                    <div class="panel-separator"></div>
+                    <div class="panel-pane pane-block">
+                        <div class="pane-content">
+                            <form method="post" name="">
+                                <div>
+                                    <div class="form-wrapper form-group" id="contenedor">
+                                        <h3 class="h3 section-title">Completá el formulario y contanos en qué podemos mejorar.</h3>
+                                        <div class="form-group">
+                                            <label class="control-label" for="edit-nombres">Nombre y apellido <span class="form-required">*</span></label> 
+                                            <input class="form-control form-text required" data-original-title="Completa tu nombre y apellido" data-toggle="tooltip" id="edit-nombres" maxlength="100" name="nombres" placeholder="" size="10" title="" type="text" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="edit-mail">Correo Electrónico <span class="form-required">*</span></label> 
+                                            <input class="form-control form-text required" data-original-title="Juan@argentina.gob.ar" data-toggle="tooltip" id="edit-mail" maxlength="100" name="mail" placeholder="" size="10" title="" type="text" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="edit-comentario">Comentario <span class="form-required">*</span></label>
+                                            <div class="form-group">
+                                                <textarea class="form-control form-textarea required" cols="60" data-original-title="Escribí tu comentario" data-toggle="tooltip" id="edit-comentario" name="comentario" rows="5" title=""></textarea>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn-success btn" id="" name="">Enviar</button>
+                                    </div>
+
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-			</div>
-		</div>
-
-
-		<div class="row panels-row m-b-2">
-            <div class="col-md-12">
-            	<h2>Programas</h2>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <a class="panel panel-default bg-success" href="#">
-                    <div class="panel-body">
-                        <div class="media aligner">
-                            <div class="media-left">
-                                <i class="fa fa-building fa-4x"></i>
-                            </div>                                
-                            <div class="media-body">
-                                <h2 class="text-aqua text-left">Pac<br />Emprendedores</h2>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div> 
-                       
-            <div class="col-xs-12 col-md-4">
-                <a class="panel panel-default bg-success" href="#">
-                    <div class="panel-body">
-                        <div class="media aligner">
-                            <div class="media-left">
-                                <i class="fa fa-leaf fa-4x"></i>
-                            </div>                                
-                            <div class="media-body">
-                                <h2 class="text-aqua text-left">Fondo Semilla</h2>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>      
-            <div class="col-xs-12 col-md-4">
-                <a class="panel panel-default bg-success" href="#">
-                    <div class="panel-body">
-                        <div class="media aligner">
-                            <div class="media-left">
-                                <i class="fa fa-4x fa-con-ia-icons fa-bank"></i>
-                            </div>                                
-                            <div class="media-body">
-                                <h2 class="text-aqua text-left">Fortalecimiento<br />Institucional</h2>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>             
-           <!-- /.col -->
         </div>
 
-
-        <div class="row m-t-2">            
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">
-                        	Filtros de busqueda avanzada
-                        </h3>
-						<div class="pull-right">
-                            <button type="button" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
-                                <i class="fa fa-filter" aria-hidden="true"></i> Filtros<!-- Filtros -->
-                            </button>
-						</div>                        
-                    </div>
-
-                    <div class="panel-body">
-                        <div class="col-xs-12" style="padding:0">
-                            <div id="filter-panel" class="collapse filter-panel">
-
-                                <form>
-                                    <div class="col-lg-3 col-xs-12 m-b-1">
-                                        <label class="control-label">ID</label>
-                                        <input class="form-control" id="" type="text">
-                                    </div>
-                                    <div class="col-lg-3 col-xs-12 m-b-1">
-                                        <label class="control-label">Programa</label>
-                                        <select class="form-control">
-                                            <option value="">- Seleccionar programa -
-                                            </option>
-                                            <option value="">
-                                                Fondo Semilla
-                                            </option>
-                                            <option value="">
-                                                Pac Emprendedores
-                                            </option>
-                                            <option value="">
-                                                Fortalecimiento Institucional
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3 col-xs-12 m-b-1">
-                                        <label class="control-label">Emprendedor</label>
-                                        <input class="form-control" id="" type="text">
-                                    </div>
-                                    <div class="col-lg-3 col-xs-12 m-b-1">
-                                        <label class="control-label">CUIT/CUIL</label>
-                                        <input class="form-control" id="" type="text">
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div align="center">
-                                        <button id="buscar-filtro" class="btn btn-primary col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 m-t-1 m-b-1"><i class="fa-li fa fa-spinner fa-spin pull-left m-l-3 m-t-1"></i> Buscar</button>
-                                    </div>
-                                </form>
-                    
-                            </div>                     
-                        </div>
-                        <div class="clearfix"></div>
-                        
-                        <div class="table-responsive m-t-1">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Programa</th>
-                                        <th>ID</th>
-                                        <th>Proyecto</th>
-                                        <th>Emprendedor</th>
-                                        <th>DNI/CUIT</th>
-                                        <th>Estado</th>
-                                    </tr>
-                                </thead>                            
-                                <tbody>
-                                    <tr>
-                                        <td>Pac Emprendedores</td>
-                                        <td>GASH34</td>
-                                        <td>La espiga de Oro</td>
-                                        <td>Jose Oro</td>
-                                        <td>20-26563456-2</td>
-                                        <td>En progreso</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fondo Semilla</td>
-                                        <td>GHFH34</td>
-                                        <td>Jose Pep</td>
-                                        <td>Alfajores Pepito</td>
-                                        <td>12-34563456-3</td>
-                                        <td>En evaluacion</td>                                       
-                                    </tr>                                    
-                                </tbody>
-                            </table>
-                            <!-- /.table -->
-                        </div>                        
-                        
-                        <div align="center">
-                            <ul class="pagination">
-                              <li>
-                                <a href="#" aria-label="Previous">
-                                  <span aria-hidden="true">«</span>
-                                </a>
-                              </li>
-                              <li class="active"><a href="#">1</a></li>
-                              <li><a href="#">2</a></li>
-                              <li><a href="#">3</a></li>
-                              <li><a href="#">4</a></li>
-                              <li><a href="#">5</a></li>
-                              <li><a href="#">6</a></li>
-                              <li>
-                                <a href="#" aria-label="Next">
-                                  <span aria-hidden="true">»</span>
-                                </a>
-                              </li>
-                            </ul>               
-                        </div>         
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>              
-
-
-
-
-	</section><!-- /.content -->
+                  
+    </section>
+    <!-- /.content -->
   </div>
 
 
@@ -614,36 +462,14 @@
 <script src="../../dist/js/app.min.js"></script>
 <!-- iCheck -->
 <script src="../../plugins/iCheck/icheck.min.js"></script>
-
+<!-- Autocomplete -->
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
 <script>
-$(function() {
-  $(".expand").on( "click", function() {
-    $(this).next().slideToggle(200);
-    $expand = $(this).find(">:first-child");
-//	alert($expand);
-//	console.log($expand);
-    
-    if($expand.html() == "<i class='fa fa-angle-down' aria-hidden='true'></i>") {
-      $expand.html("<i class='fa fa-angle-down' aria-hidden='true'></i>");
-    } else {
-      $expand.html("<i class='fa fa-angle-up' aria-hidden='true'></i>");
-    }
+  $(function() {
+    $('.chosen-select').chosen();
+    $('.chosen-select-deselect').chosen({ allow_single_deselect: true });
   });
-});
 </script>
-
-<script>
-    $('.dropdown-toggle').dropdown();
-    $('#divNewNotifications li > a').click(function(){
-    if (this.text !== ' More Options ') {
-        $('#text').text($(this).html());
-    }
-    $('#divNewNotifications li').css('background-color', 'f39c12');
-    $(this).closest('li').css('background-color', 'f39c12');
-    });	
-
-</script>
-
 
 </body>
 </html>
