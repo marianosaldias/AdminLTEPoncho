@@ -20,8 +20,9 @@
 <!--<link rel="stylesheet" href="graphs/prettify.css">-->
 <link rel="stylesheet" href="../../plugins/morris/morris.css">
 
-  <!-- Theme style -->
-
+  <!-- BOOTSTRAP-Choosen Autocomplete -->
+  <link rel="stylesheet" href="../../plugins/bootstrap-chosen-master/bootstrap-chosen.css">
+  
   <!-- ADMIN-LTE dist -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -388,12 +389,40 @@
                                 <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">48</span>
                             </div>                                
                             <div class="media-body">
-                                <h3 class="text-white">Evaluar Plan de Negocio</h3>
+                                <h3 class="text-white">Analizar Plan de Negocio</h3>
                             </div>
                         </div>
                     </div>                            
                 </a>
             </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <a class="panel panel-default bg-success" href="#">
+                    <div class="panel-body">
+                        <div class="media aligner">
+                            <div class="media-left">
+                                <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">48</span>
+                            </div>                                
+                            <div class="media-body">
+                                <h3 class="text-white">Pendientes de Evaluar</h3>
+                            </div>
+                        </div>
+                    </div>                            
+                </a>
+            </div>                    
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <a class="panel panel-default bg-success" href="#">
+                    <div class="panel-body">
+                        <div class="media aligner">
+                            <div class="media-left">
+                                <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">48</span>
+                            </div>                                
+                            <div class="media-body">
+                                <h3 class="text-white">Pendientes de Analizar</h3>
+                            </div>
+                        </div>
+                    </div>                            
+                </a>
+            </div>            
            <!-- /.col -->
         </div>
         <!-- /.row -->         
@@ -465,7 +494,7 @@
 
 
         <div class="row panels-row m-t-1">
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-primary">
                         <h3 class="panel-title">Solicitudes de Inscripción</h3>
@@ -476,17 +505,18 @@
                 </div>                    
             </div>  
 
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-primary">
                         <h3 class="panel-title">Planes de Negocios</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body text-center">
                         <div id="plandenegocios" class="graph"></div>
                     </div>
                 </div>                    
             </div>    
 
+            <!--
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-primary">
@@ -494,9 +524,11 @@
                     </div>
                     <div class="panel-body">
                         <div id="pie3" class="graph"></div>
+                        <button class="btn btn-primary btn-sm col-xs-10 col-xs-offset-1">Exportar</button>
                     </div>
                 </div>                    
             </div>
+            -->
         </div>
 
 
@@ -507,61 +539,103 @@
                         <h3 class="text-white text-left">
                         	Filtros de busqueda avanzada
                         </h3>
-						<div class="pull-right">
+						<!--
+                        <div class="pull-right">
                             <button type="button" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
-                                <i class="fa fa-filter" aria-hidden="true"></i> Filtros<!-- Filtros -->
-                            </button>
+                                <i class="fa fa-filter" aria-hidden="true"></i> Filtros
 						</div>                        
+                        -->
                     </div>
 
                     <div class="panel-body">
-                        <div class="col-xs-12" style="padding:0">
-                            <div id="filter-panel" class="collapse filter-panel">
-                                <div class="input-group custom-search-form">
-                                    <div class="input-group-btn">
-                                        <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
-                                            <span id="textTipoDoc" style="font-size:14px;">Solicitud de Inscripción </span><span class="caret"></span>
-                                        </label>
-                                        <ul class="dropdown-menu" id="divTipoDoc">
-                                            <li><a class="my_data_flag" id="three">Solicitud de Inscripción </a></li>
-                                            <li><a class="my_data_flag" id="three">Plan de Negocios </a></li>
-                                        </ul>
-                                    </div>                        
-                                    <div id="" class="">
-                                    <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
-                                        <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
-                                            <option>Seleccione estado</option>
-                                            <option>En admisión</option>
-                                            <option>Admitidas</option>
-                                            <option>No admitidas</option>
-                                            <!-- PN -->
-                                            <option>Preseleccionados</option>
-                                            <option>Pendiente de carga</option>
-                                            <option>Evaluar por Coordinador</option>
-                                            <option>Rechazados</option>
-                                            <option>Rechazados por Puntaje</option>
-                                            <option>En evaluacion interna</option>
-                                            <option>En evaluacion externa</option>
-                                            <option>Evaluados por Evaluador Interno</option>
-                                            <option>Evaluados por Evaluador Externo</option>
-                                        </select>                                     
-                                    </div>
-                                </div>    
+
+                            <div id="filter-panel" class="filter-panel collapse in" style="margin:0; padding:0">
+                                <div class="col-md-12">
+                                    <div class="input-group custom-search-form">
+                                        <div class="input-group-btn">
+                                            <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
+                                                <span id="textTipoDoc" style="font-size:14px;">Solicitud de Inscripción </span><span class="caret"></span>
+                                            </label>
+                                            <ul class="dropdown-menu" id="divTipoDoc">
+                                                <li><a class="my_data_flag" id="three">Solicitud de Inscripción </a></li>
+                                                <li><a class="my_data_flag" id="three">Plan de Negocios </a></li>
+                                            </ul>
+                                        </div>                        
+                                        <div id="" class="">
+                                        <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
+                                            <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
+                                                <option>Seleccione estado</option>
+                                                <option>En admisión</option>
+                                                <option>Admitidas</option>
+                                                <option>No admitidas</option>
+                                                <!-- PN -->
+                                                <option>Preseleccionados</option>
+                                                <option>Pendiente de carga</option>
+                                                <option>Evaluar por Coordinador</option>
+                                                <option>Rechazados</option>
+                                                <option>Rechazados por Puntaje</option>
+                                                <option>En evaluacion interna</option>
+                                                <option>En evaluacion externa</option>
+                                                <option>Evaluados por Evaluador Interno</option>
+                                                <option>Evaluados por Evaluador Externo</option>
+                                            </select>                                     
+                                        </div>
+                                    </div>    
+                                </div>
                                 
+                                <div class="col-md-6 col-sm-5 m-b-1">
+                                    <label class="control-label">Incubadora</label>
+                                    <select data-placeholder="- Seleccione -" class="form-control chosen-select" tabindex="-1">
+                                        <option value=""></option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
+                                   </select>                                     
+                                </div>
+    
+                   
+                                <div class="col-md-6 col-sm-7" id="sandbox-container">
+                                    <label class="control-label">Rango de fechas</label>
+                                    <div class="input-group input-daterange width100">
+                                        <input type="text" id="fechaVigInicio" class="form-control">
+                                        <span class="input-group-addon bg-primary" style="padding: 16px;"> HASTA </span>
+                                        <input type="text" id="fechaVigFin" class="form-control">
+                                    </div>                            
+                                </div>
+                                                                    
                                 <div class="clearfix"></div>
 
                                 <div align="center">
                                 	<button id="buscar-filtro" class="btn btn-primary col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 m-t-2"><i class="fa-li fa fa-spinner fa-spin pull-left m-l-3 m-t-1"></i> Buscar</button>
                                 </div>
                     
-                            </div>                     
                         </div>
-                        <div class="clearfix"></div>
+                  </div>                        
                         
-                        <h3 class="text-left">
-                        	<span class="badge text-success bg-warning text-white pull-left m-r-1">2</span>
-                        	Solicitud de Inscripción - Admitidas
+                </div>
+            </div>
+        </div>              
+
+
+
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="text-white text-left">
+                        	Table
                         </h3>
+						<div class="pull-right">
+                            <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-35px;">
+                                <i class="fa fa-download" aria-hidden="true"></i> Descargar XLS<!-- Filtros -->
+                            </button>
+						</div>                        
+                    </div>
+                    
+                    
+                    <div class="panel-body">
                         <div class="table-responsive m-t-1">
                             <table class="table">
                                 <thead>
@@ -595,7 +669,7 @@
                             </table>
                             <!-- /.table -->
                         </div>                        
-                        
+
                         <div align="center">
                             <ul class="pagination">
                               <li>
@@ -615,56 +689,7 @@
                                 </a>
                               </li>
                             </ul>               
-                        </div>         
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>              
-
-
-
-        <div class="row m-t-2">            
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">Table</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="table-responsive m-t-1">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>ID</th>
-                                        <th>Apellido y Nombre</th>
-                                        <th>DNI/CUIT</th>
-                                        <th>Nº Proyecto</th>
-                                        <th>Ult. modif.</th>
-                                    </tr>
-                                </thead>                            
-                                <tbody>
-                                    <tr>
-                                        <td>378</td>
-                                        <td>GASH34</td>
-                                        <td>Jose Oro</td>
-                                        <td>20-26563456-2</td>
-                                        <td>5675</td>
-                                        <td>19/11/2017</td>  
-                                    </tr>
-                                    <tr>
-                                        <td>352</td>
-                                        <td>GHFH34</td>
-                                        <td>Jose Pep</td>
-                                        <td>12-34563456-3</td>
-                                        <td>4563</td>
-                                        <td>12/12/2017</td>  
-                                    </tr>                                    
-                                </tbody>
-                            </table>
-                            <!-- /.table -->
-                        </div>                        
+                        </div>  
                         
                     </div>
 
@@ -869,8 +894,7 @@ $(function() {
 	  resize: true,
 	  data: [
 		{label: "Admitidas", value: 9},
-		{label: "No admitidas", value: 2},
-		{label: "En evaluacion", value: 5}
+		{label: "No admitidas", value: 4},
 	  ]
 	});	
 </script>
@@ -894,6 +918,15 @@ $(function() {
     $('#divTipoDoc li').css('background-color', 'f39c12');
     $(this).closest('li').css('background-color', 'f39c12');
     });		
+</script>
+
+<!-- Autocomplete -->
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+<script>
+  $(function() {
+	$('.chosen-select').chosen();
+	$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+  });
 </script>
 
 </body>
