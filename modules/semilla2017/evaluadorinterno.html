@@ -16,7 +16,9 @@
 <link rel="stylesheet" href="../../dist-palta/css/font-awesome.css">
 <link rel="stylesheet" href="../../dist-palta/css/icono-arg.css">
 
-  <!-- Ionicons -->
+  <!-- date-range-picker -->
+  <link href="../../plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
 <!--<link rel="stylesheet" href="graphs/prettify.css">-->
 <link rel="stylesheet" href="../../plugins/morris/morris.css">
 
@@ -494,7 +496,7 @@
 
 
         <div class="row panels-row m-t-1">
-            <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-primary">
                         <h3 class="panel-title">Solicitudes de Inscripción</h3>
@@ -505,7 +507,7 @@
                 </div>                    
             </div>  
 
-            <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-primary">
                         <h3 class="panel-title">Planes de Negocios</h3>
@@ -894,12 +896,18 @@
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
 <!-- Slimscroll -->
 <script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="../../plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/app.min.js"></script>
-<!-- iCheck -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
+
+<!-- Datepicker -->
+<script src="../../plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="../../plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+<script type="application/javascript">
+	$('#sandbox-container .input-daterange').datepicker({
+		language: "es",
+		autoclose: true,
+		clearBtn: true
+		//orientation: "top"
+	});
+</script>
 
 <script>
 $(function() {
