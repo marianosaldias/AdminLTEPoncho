@@ -494,7 +494,7 @@
 
 
         <div class="row panels-row m-t-1">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-primary">
                         <h3 class="panel-title">Solicitudes de Inscripción</h3>
@@ -505,7 +505,7 @@
                 </div>                    
             </div>  
 
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-primary">
                         <h3 class="panel-title">Planes de Negocios</h3>
@@ -515,6 +515,17 @@
                     </div>
                 </div>                    
             </div>    
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-primary">
+                        <h3 class="panel-title">En progreso</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="inprogress" class="graph"></div>
+                    </div>
+                </div>                    
+            </div>  
 
             <!--
             <div class="col-lg-4 col-md-4 col-xs-12">
@@ -549,7 +560,7 @@
 
                     <div class="panel-body">
 
-                            <div id="filter-panel" class="filter-panel collapse in" style="margin:0; padding:0">
+                            <div id="filter-panel" class="filter-panel collapse in m-t-1" style="padding:0">
                                 <div class="col-md-12">
                                     <div class="input-group custom-search-form">
                                         <div class="input-group-btn">
@@ -638,7 +649,7 @@
                         <div class="alert alert-info m-t-1" data-id="">
                             <div class="media">
                                 <div class="media-body">
-                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para tu búsqueda.</p>
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados.</p>
                                 </div>
                             </div>
                         </div>                       
@@ -762,7 +773,7 @@
                         <div class="alert alert-info m-t-1" data-id="">
                             <div class="media">
                                 <div class="media-body">
-                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para tu búsqueda.</p>
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para esta búsqueda.</p>
                                 </div>
                             </div>
                         </div>                        
@@ -974,7 +985,8 @@ $(function() {
 	  resize: true,
 	  data: [
 		{label: "Admitidas", value: 9},
-		{label: "No admitidas", value: 4},
+		{label: "No admitidas", value: 5},
+		{label: "En observacion", value: 3}
 	  ]
 	});	
 </script>
@@ -986,6 +998,16 @@ $(function() {
 		{label: "Rechazados", value: 3},
 		{label: "Aprobados", value: 6},
 		{label: "En observacion", value: 2}
+	  ]
+	});	
+</script>
+<script>	
+	Morris.Donut({
+	  element: 'inprogress',
+	  resize: true,
+	  data: [
+		{label: "Admitidas", value: 9},
+		{label: "No admitidas", value: 4},
 	  ]
 	});	
 </script>
