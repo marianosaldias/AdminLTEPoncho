@@ -393,8 +393,86 @@
         </div>      
         -->
             
+
+        <div class="row m-t-1">
+            <div class="col-lg-12 mtop20">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="panel-title">Alexander Pierce</h3>
+						<div class="pull-right">
+                            <button type="button" id="btnEditCobClau" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
+                                <i class="fa fa-pencil" aria-hidden="true"></i> Editar
+                            </button>
+						</div>                          
+                    </div>
+                    <div class="panel-body">
+                        <div id="detailCobClau">
+                            <div class="col-xs-12"><h2>Alexander Pierce</h2></div>
+                            <div class="col-xs-6">
+                            	<h6></h6>
+
+                            </div>
+                            <div class="col-xs-6">
+                                <ul>
+                                	<li><p>La Espiga de Oro - CUIT: 20-12435923-2</p></li>
+                                    <li><p>La Espiga de Oro - CUIT: 20-12435923-2</p></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                            
+                            <div class="col-lg-12 m-t-1">
+                                <div class="alert alert-info" role="alert">Configurá tu tipo de Usuario (Fisico/Jurídica) para aplicar al Programa.</div>
+                            </div>
+                        </div>
+                        
+                        <div id="editCobClau" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <form class="form-azul">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Persona *</label>
+                                        <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                            <label href="#" class="btn btn-default">
+                                                <input type="radio" name="tipopersona" id="fisica" value="f" class="hidden"> Física
+                                            </label>
+                                            <label href="#" class="btn btn-default active">
+                                                <input type="radio" name="tipopersona" id="juridica" value="j" class="hidden" checked=""> Jurídica</label>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <div id="tipopersona" style="display:none;">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Nombre de la Sociedad *</label> 
+                                            <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label">CUIT *</label> 
+                                            <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="col-lg-12"><small>* Campo requerido</small></p>
+                                
+                                <div class="col-lg-12 m-t-1 m-b-1">
+                                    <div align="center">
+                                        <button class="btn btn-success col-sm-3 col-md-3" type="button">Guardar</button>
+                                        <button class="btn btn-default col-sm-3 col-md-3 m-l-1" id="cancelEditCobClau" type="reset">Cancelar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>          
+        </div>
+
             
-        <div class="row m-t-2">            
+        <div class="row">            
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua text-white text-left">
@@ -618,6 +696,20 @@ $(function() {
     $(this).closest('li').css('background-color', 'f39c12');
     });	
 
+</script>
+
+
+<script>
+$(document).ready(function () {
+	$("#btnEditCobClau").click(function () {
+		$("#editCobClau").toggle();
+		$("#detailCobClau").toggle()
+	});
+	$("#cancelEditCobClau").click(function () {
+		$("#editCobClau").toggle();
+		$("#detailCobClau").toggle()
+	})	
+})
 </script>
 
 
