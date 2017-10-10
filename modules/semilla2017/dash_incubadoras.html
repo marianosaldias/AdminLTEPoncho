@@ -376,31 +376,29 @@
 		</div>
         
         <div class="row">
+        	<!--<div class="col-lg-12"><p class="text-muted">Confirmá tus datos como incubadora para avanzar en la carga de proyectos.</p></div>-->
             <div class="col-lg-12 mtop20">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-white">
                         <h2 class="panel-title m-l-1">Incuba Inc.</h2>
-						<div class="pull-right">
-                            <button type="button" id="btnEditCobClau" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
-                                <i class="fa fa-pencil" aria-hidden="true"></i> Editar
-                            </button>
-						</div>                          
+                        <p class="m-l-1">Confirmá tus datos como incubadora para avanzar en la carga de proyectos.</p>
                     </div>
                     <div class="panel-body">
-                        <div id="detailCobClau">
-                            <div class="col-xs-12">
-                                <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Corrientes 1254 - CABA - Capital Federal</h4>
+                        <div id="detailIncuba">
+                            <div class="col-xs-8">
+                                <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Corrientes 1254 | CABA - Capital Federal</h4>
                                 <h5><i class="fa fa-phone" aria-hidden="true"></i> 011 4567 23453 | <i class="fa fa-envelope text-aqua" aria-hidden="true"></i> <a href="mailto:" target="_blank">incubainc@incubainc.com.ar</a></h5>
                             </div>
-                            
-                            <div class="clearfix"></div>
-                            
-                            <div class="col-lg-12 m-t-1">
-                                <div class="alert alert-info" role="alert">Confirmá tus datos como incubadora para avanzar en la carga de proyectos.</div>
+                            <div class="col-xs-4">
+                                <div class="pull-right">
+                                    <button type="button" id="btnEditIncuba" class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#filter-panel">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i> Editar
+                                    </button>
+                                </div>                               
                             </div>
                         </div>
                         
-                        <div id="editCobClau" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div id="editIncuba" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                             <form class="form-azul">
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -449,7 +447,7 @@
                                 
                                 <div class="col-lg-12 m-t-1 m-b-1">
                                     <div align="center">
-                                        <button class="btn btn-success" type="button">Confirmar</button>
+                                        <button class="btn btn-success" type="button" id="confirmaDataIncuba">Confirmar</button>
                                         <!--<button class="btn btn-default m-l-1" id="cancelEditCobClau" type="reset">Cancelar</button>-->
                                     </div>
                                 </div>
@@ -520,60 +518,66 @@
                         <h3 class="text-white text-left">
                         	Búsqueda avanzada
                         </h3>
-						<div class="pull-right">
-                            <button type="button" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
-                                <i class="fa fa-filter" aria-hidden="true"></i> Filtros
-                            </button>
-						</div>                        
                     </div>
 
                     <div class="panel-body">
                         <div class="col-xs-12" style="padding:0;">
-                            <div id="filter-panel" class="filter-panel collapse in">
-                                <form>
-                                    <div class="col-md-3 col-sm-6 col-xs-12 m-b-1">
-                                        <label class="control-label">Programa</label>
-                                        <select class="form-control">
-                                            <option value="">- Programa -
-                                            </option>
-                                            <option value="">Fondo Semilla</option>
-                                            <option value="">Pac Emprendedores</option>
-                                        </select>
+
+                            <form>
+                                <div class="col-md-3 col-sm-6 col-xs-12 m-b-1">
+                                    <label class="control-label">Programa</label>
+                                    <select class="form-control">
+                                        <option value="">- Seleccioná Programa -
+                                        </option>
+                                        <option value="">Fondo Semilla</option>
+                                        <option value="">Pac Emprendedores</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 m-b-1">
+                                    <label class="control-label">Emprendedor</label>
+                                    <input class="form-control" id="" type="text" placeholder="Ej.: Juan Bonino">
+                                </div>
+                                <div class="col-md-3 col-sm-7 col-xs-12 m-b-1">
+                                    <label class="control-label">DNI/CUIT</label>
+                                    <input class="form-control" id="" type="text" placeholder="Ej.: 20-23546787-2">
+                                </div>
+
+                                <div align="center">
+                                    <div class="col-md-2 col-sm-5 col-xs-12">
+                                        <button id="buscar-filtro" class="btn btn-primary width100 m-t-2">Buscar</button>
                                     </div>
-                                    <div class="col-md-4 col-sm-6 col-xs-12 m-b-1">
-                                        <label class="control-label">Emprendedor</label>
-                                        <input class="form-control" id="" type="text">
-                                    </div>
-                                    <div class="col-md-3 col-sm-7 col-xs-12 m-b-1">
-                                        <label class="control-label">DNI/CUIT</label>
-                                        <input class="form-control" id="" type="text">
-                                    </div>
-                                    
-                                    <div class="clearfix"></div>
-                                    
-                                    <div align="center">
-                                        <div class="col-md-2 col-sm-5">
-                                            <button id="buscar-filtro" class="btn btn-primary width100 m-t-2">Buscar</button>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="clearfix"></div>
-                                    
-                                    <div class="col-lg-12 m-t-1">
-                                        <div class="alert alert-info">
-                                            <div class="media">
-                                                <div class="media-body">
-                                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para esta búsqueda.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                      
-                                </form>
-                            </div>      
+                                </div>
+                                
+                            </form>
+   
                         </div>
 
-                        <div class="clearfix"></div>
-                        
+                    </div>
+
+                </div>
+            </div>
+        </div>            
+        
+        
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="text-white text-left">
+                        	Table
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div class="alert alert-info">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para esta búsqueda.</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="table-responsive m-t-1">
                             <table class="table">
                                 <thead>
@@ -823,13 +827,13 @@ $(function() {
 
 <script>
 $(document).ready(function () {
-	$("#btnEditCobClau").click(function () {
-		$("#editCobClau").toggle();
-		$("#detailCobClau").toggle()
+	$("#btnEditIncuba").click(function () {
+		$("#editIncuba").toggle();
+		$("#detailIncuba").toggle()
 	});
-	$("#cancelEditCobClau").click(function () {
-		$("#editCobClau").toggle();
-		$("#detailCobClau").toggle()
+	$("#confirmaDataIncuba").click(function () {
+		$("#editIncuba").toggle();
+		$("#detailIncuba").toggle()
 	})	
 })
 </script>
