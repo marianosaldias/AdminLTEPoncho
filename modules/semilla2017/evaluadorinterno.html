@@ -548,17 +548,13 @@
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
                         <h3 class="text-white text-left">
-                        	Filtros de busqueda avanzada
+                        	Búsqueda avanzada
                         </h3>
-                        <div class="pull-right">
-                            <button type="button" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
-                                <i class="fa fa-filter" aria-hidden="true"></i> Filtros
-						</div>                        
                     </div>
 
                     <div class="panel-body">
 
-                            <div id="filter-panel" class="filter-panel collapse in m-t-1" style="padding:0">
+                            <div id="filter-panel" class="m-t-1" style="padding:0">
                                 <div class="col-md-12">
                                     <div class="input-group custom-search-form">
                                         <div class="input-group-btn">
@@ -920,23 +916,6 @@
 		clearBtn: true
 		//orientation: "top"
 	});
-</script>
-
-<script>
-$(function() {
-  $(".expand").on( "click", function() {
-    $(this).next().slideToggle(200);
-    $expand = $(this).find(">:first-child");
-//	alert($expand);
-//	console.log($expand);
-    
-    if($expand.html() == "<i class='fa fa-angle-down' aria-hidden='true'></i>") {
-      $expand.html("<i class='fa fa-angle-down' aria-hidden='true'></i>");
-    } else {
-      $expand.html("<i class='fa fa-angle-up' aria-hidden='true'></i>");
-    }
-  });
-});
 </script>
 
 <script>
