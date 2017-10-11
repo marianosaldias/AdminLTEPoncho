@@ -392,10 +392,103 @@
             </div>
         </div>      
         -->
-            
 
-        <div class="row m-t-1">
-            <div class="col-lg-12 mtop20">
+        <div class="row m-t-1">    
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua text-white text-left">
+                        <h4>Progreso general
+                            <div class="pull-right">
+                                <p>Proyecto Nº 345784786</p>
+                            </div>                
+                        </h4>
+                    </div>                    
+                    <div class="panel-body">
+                        <div class="col-md-8 col-sm-8 col-xs-12 text-left">
+                            <p>Inicio: <span>11/12/2017</span> | Estado: <span class="text-warning">Iniciado</span>
+                            </p>
+                            
+                            <div class="progress m-t-2">
+                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                            <h5><b>Incubadora: </b>Incuba Inc.</h5>
+                            <h5 class="m-b-1"><i class="fa fa-map-marker" aria-hidden="true"></i> Corrientes 1232. CP 1423. CABA. | <i class="fa fa-phone" aria-hidden="true"></i> 11 6765 4567 | <i class="fa fa-envelope text-aqua" aria-hidden="true"></i> <a href="mailto:contacto@incubainc.com.ar" class="text-aqua">contacto@incubainc.com.ar</a></h5>                        
+                          
+                        </div>
+                        <div class="col-md-4 com-sm-4 col-xs-12 m-t-2">
+                        	<a href="#" class="btn btn-primary" style="width:100% !important;">cargar mis datos personales</a>
+                            <div class="btn-group" style="width:100% !important;">
+                                <button class="btn btn-primary dropdown-toggle" style="width:100% !important;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Descargas <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" style="width:100% !important;">
+                                    <li><a href="#">Solicitud de Inscripción</a></li>
+                                    <li><a href="#">Plan de Negocio</a></li>
+                                </ul>
+                            </div>                            
+                        </div>                        
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default panel-icon">
+                    <div class="panel-body" align="center">
+                    	<h3 class="text-center text-primary col-xs-9 col-xs-push-1 m-b-3 m-t-1">Encontrá las incubadoras que están cerca de tu ciudad, ponete en contacto con las que te interesen y elegí una.</h3>
+                        <div class="clearfix"></div>
+                        <a href="http://www.produccion.gob.ar/red-de-incubadoras?a=i" class="btn btn-success" target="_blank">Buscá tu incubadora</a>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+        
+        <!--
+        <div class="row panels-row">
+            <div class="col-xs-12">
+                <div class="panel panel-default panel-icon">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="text-white text-left">Contactá a una incubadora</h3>
+                    </div>
+
+                    <div class="panel-body">
+                    	<h4 class="text-center text-primary col-xs-9 col-xs-push-1 m-b-2">Encontrá las incubadoras que están cerca de tu ciudad, ponete en contacto con las que te interesen, programá reuniones para saber cuál y elegí una.</h4>
+                        <div class="clearfix"></div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Organización</th>
+                                        <th>Ubicación</th>
+                                        <th>Nro. Inscripción</th>
+                                        <th>Contacto</th>
+                                    </tr>
+                                </thead>                            
+                                <tbody>
+                                    <tr>
+                                        <td width="30%" valign="top">Incuba Inc.</td>
+                                        <td width="20%">CABA</td>
+                                        <td width="15%">3453</td>
+                                        <td width="35%">11 6765 4567<br /><a href="" class="text-muted">contacto@incubainc.com.ar</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+                   
+        </div>
+        -->
+
+
+        <div class="row">
+            <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
                         <h4>Alexander Pierce</h4>
@@ -404,8 +497,11 @@
                         <form class="form-azul">
                             <div class="col-lg-12">
                                 <div class="alert alert-info" role="alert">Completá este formulario antes de aplicar un Proyecto.</div>
-                                <div class="alert alert-warning" role="alert" style="display:none;">CUIT existente.</div>
-                                <div class="alert alert-success" role="alert" style="display:none;">Los datos se han registrado con éxito.</div>
+                                <div class="alert alert-error" role="alert">
+                                	Alert "warning". Ej.: en caso de que la CUIT esté siendo utilizada por otro usuario.
+                                </div>
+                                <div class="alert alert-warning" role="alert">Consectetur adipiscing elit lorem ipsum dolor sit.</div>
+                                <div class="alert alert-success" role="alert">Alerta de éxito en la carga de datos.</div>
                             </div>   
                             <div class="col-lg-12">
                                 <div class="form-group">
@@ -450,8 +546,8 @@
 
                             <div class="col-lg-12 m-t-1 m-b-1">
                                 <div align="center">
-                                    <button class="btn btn-success" type="button">Guardar</button>
-                                    <button class="btn btn-default m-l-1" id="cancelEditCobClau" type="reset">Cancelar</button>
+                                    <button class="btn btn-success text-center col-lg-2 col-sm-4 col-xs-4 col-lg-offset-4 col-sm-offset-2 col-xs-offset-1" type="button">Guardar</button>
+                                    <button type="button" data-toggle="modal" data-target="#errorDatosPFPJ" class="btn btn-link text-center col-lg-2 col-sm-4 col-xs-6" style="background-color:white !important;"><small>Reportar error</small></button>
                                 </div>
                             </div>
                         </form>
@@ -460,104 +556,6 @@
                 </div>
             </div>          
         </div>
-
-            
-        <div class="row">            
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading bg-aqua text-white text-left">
-                        <h4>Progreso general
-                            <div class="pull-right">
-                                <p>Proyecto Nº 345784786</p>
-                            </div>                
-                        </h4>
-                    </div>                    
-                    <div class="panel-body">
-                        <div class="col-md-8 col-sm-8 col-xs-12 text-left">
-                            <p>Inicio: <span>11/12/2017</span> | Estado: <span class="text-warning">Iniciado</span>
-                            </p>
-                            
-                            <div class="progress m-t-2">
-                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
-                                    <span class="sr-only"></span>
-                                </div>
-                            </div>
-                            <h5><b>Incubadora: </b>Incuba Inc.</h5>
-                            <h5 class="m-b-1"><i class="fa fa-map-marker" aria-hidden="true"></i> Corrientes 1232. CP 1423. CABA. | <i class="fa fa-phone" aria-hidden="true"></i> 11 6765 4567 | <i class="fa fa-envelope text-aqua" aria-hidden="true"></i> <a href="mailto:contacto@incubainc.com.ar" class="text-aqua">contacto@incubainc.com.ar</a></h5>                        
-                          
-                        </div>
-                        <div class="col-md-4 com-sm-4 col-xs-12 m-t-2">
-                        	<a href="#" class="btn btn-primary" style="width:100% !important;">cargar mis datos personales</a>
-                            <div class="btn-group" style="width:100% !important;">
-                                <button class="btn btn-primary dropdown-toggle" style="width:100% !important;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Descargas <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" style="width:100% !important;">
-                                    <li><a href="#">Solicitud de Inscripción</a></li>
-                                    <li><a href="#">Plan de Negocio</a></li>
-                                </ul>
-                            </div>                            
-                        </div>                        
-
-                    </div>
-                </div>
-            </div>
-        </div>        
-        
-        <!--
-        <div class="row panels-row">
-            <div class="col-xs-12">
-                <div class="panel panel-default panel-icon">
-                    <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">Contactá a una incubadora</h3>
-                    </div>
-
-                    <div class="panel-body">
-                    	<h4 class="text-center text-primary col-xs-9 col-xs-push-1 m-b-2">Encontrá las incubadoras que están cerca de tu ciudad, ponete en contacto con las que te interesen, programá reuniones para saber cuál y elegí una.</h4>
-                        <div class="clearfix"></div>
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Organización</th>
-                                        <th>Ubicación</th>
-                                        <th>Nro. Inscripción</th>
-                                        <th>Contacto</th>
-                                    </tr>
-                                </thead>                            
-                                <tbody>
-                                    <tr>
-                                        <td width="30%" valign="top">Incuba Inc.</td>
-                                        <td width="20%">CABA</td>
-                                        <td width="15%">3453</td>
-                                        <td width="35%">11 6765 4567<br /><a href="" class="text-muted">contacto@incubainc.com.ar</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>                        
-                   
-        </div>
-        -->
-
-
-
-        <div class="row panels-row">
-            <div class="col-xs-12">
-                <div class="panel panel-default panel-icon">
-                    <div class="panel-body" align="center">
-                    	<h3 class="text-center text-primary col-xs-9 col-xs-push-1 m-b-3 m-t-1">Encontrá las incubadoras que están cerca de tu ciudad, ponete en contacto con las que te interesen y elegí una.</h3>
-                        <div class="clearfix"></div>
-                        <a href="http://www.produccion.gob.ar/red-de-incubadoras?a=i" class="btn btn-success" target="_blank">Buscá tu incubadora</a>
-                    </div>
-                </div>
-            </div>                        
-                   
-        </div>
-
-
 
         <div class="row panels-row">
             <div class="col-xs-12">
@@ -589,6 +587,8 @@
                    
         </div>
 
+
+            
 
                  
     </section>
@@ -646,6 +646,45 @@
 </footer>
 
 
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="errorDatosPFPJ" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="">
+                	Reporte de error en carga de datos
+                	<button aria-label="Close" class="close pull-right" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                </h5>
+            </div>
+            <div class="modal-body">
+                <form class="form-azul">
+                    <input class="form-control" id="idEmprendedor" type="hidden" value="">
+                    <input class="form-control" id="mailEmprendedor" type="hidden" value="">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label">Comentario *</label> 
+                            <textarea class="form-control" rows="3" type="text" value=""></textarea>
+                        </div>
+                    </div>                                                                                            
+
+                    <p class="col-lg-12"><small>* Campo requerido</small></p>
+                    
+                    <div class="col-lg-12">
+                        <div class="alert alert-success" role="alert">El reporte de error ha sido enviado.</div>
+                    </div>   
+                    <div class="col-lg-12 m-t-1 m-b-1">
+                        <div align="center">
+                            <button class="btn btn-primary" type="button">Enviar</button>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
 <!-- jQuery 2.2.3 -->
 <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
@@ -666,6 +705,7 @@ $(function() {
     $expand = $(this).find(">:first-child");
 //	alert($expand);
 //	console.log($expand);
+
     
     if($expand.html() == "<i class='fa fa-angle-down' aria-hidden='true'></i>") {
       $expand.html("<i class='fa fa-angle-down' aria-hidden='true'></i>");
