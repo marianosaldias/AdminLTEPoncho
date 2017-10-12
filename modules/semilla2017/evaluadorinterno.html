@@ -493,6 +493,7 @@
         -->
 
 
+        <!--
         <div class="row panels-row m-t-1">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="panel panel-default">
@@ -526,21 +527,8 @@
                     </div>
                 </div>                    
             </div>  
-
-            <!--
-            <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading bg-primary">
-                        <h3 class="panel-title">Pie 3</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div id="pie3" class="graph"></div>
-                        <button class="btn btn-primary btn-sm col-xs-10 col-xs-offset-1">Exportar</button>
-                    </div>
-                </div>                    
-            </div>
-            -->
         </div>
+        -->
 
 
         <div class="row m-t-2">            
@@ -633,9 +621,13 @@
                         	Table
                         </h3>
 						<div class="pull-right">
+                            <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-35px;" onClick="$('#tableResult').tableExport({type:'excel',escape:'false',ignoreColumn:'[7]'});">Descargar XLS</button>
+                            
+                            <!--
                             <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-35px;">
-                                <i class="fa fa-download" aria-hidden="true"></i> Descargar XLS<!-- Filtros -->
+                                <i class="fa fa-download" aria-hidden="true"></i> Descargar XLS
                             </button>
+                            -->
 						</div>                        
                     </div>
 
@@ -648,7 +640,7 @@
                             </div>
                         </div>                       
                          
-                        <div class="table-responsive m-t-1" style="padding-bottom:80px;">
+                        <div class="table-responsive m-t-1" style="padding-bottom:80px;" id="tableResult">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -1007,6 +999,9 @@
 	$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
   });
 </script>
+
+<script type="text/javascript" src="../../plugins/tableExport/tableExport.js"></script>
+<script type="text/javascript" src="../../plugins/tableExport/jquery.base64.js"></script>
 
 </body>
 </html>
