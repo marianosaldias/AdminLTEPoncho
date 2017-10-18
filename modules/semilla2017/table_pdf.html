@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Incubadoras</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+
+<div class="panel panel-default">
+    <div class="panel-heading bg-primary text-white text-left" style ="min-height:20px;">
+        <h4>A&ntildeo 1</h4>
+    </div>
+
+    <div class="panel-body">
+        <div class="table-responsive" style="width:100%;">
+            <table id ="tablaingreso" class="table table-striped" style="width:100%;">
+                <thead>
+                <tr style="font-size:14px;">
+                    <th></th>
+                    <th class="text-center" width="">Tipo de ingreso</th>
+                    <th class="text-center" width="">Mes 1</th>
+                    <th class="text-center" width="">Mes 2</th>
+                    <th class="text-center" width="">Mes 3</th>
+                    <th class="text-center" width="">Mes 4</th>
+                    <th class="text-center" width="">Mes 5</th>
+                    <th class="text-center" width="">Mes 6</th>
+                    <th class="text-center" width="">Mes 7</th>
+                    <th class="text-center" width="">Mes 8</th>
+                    <th class="text-center" width="">Mes 9</th>
+                    <th class="text-center" width="">Mes 10</th>
+                    <th class="text-center" width="">Mes 11</th>
+                    <th class="text-center" width="">Mes 12</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr id ="fila1">
+                    <td id = "nfila" class="primero" style="width:2%;"> </td>
+                    <td >
+                        <input id="tipodeingreso" type="text" class="form-control" name="myInputDNA" style="width:90%;">
+                    </td>
+                    <td>
+                        <input id="mesuno" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mesdos" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mestres" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mescuatro" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mescinco" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="messeis" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="messiete" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mesocho" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mesnueve" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mesdiez" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mesonce" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                    <td>
+                        <input id="mesdoce" type="text" class="form-control" name="myInputDNA" style="width:95%;">
+                    </td>
+                </tr>
+                
+                </tbody>
+            </table>
+            <!-- /.table -->
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="panel-body">
+    <div class="table-responsive" style="width: 100%;">
+        <table id = "tablainv" class="table table-striped" style="width: 100%;">
+            <thead>
+            <tr style="font-size:14px;">
+                <th class="text-center" width="12%">Tipo de inversi&oacuten</th>
+                <th class="text-center" width="10%">Tipo de tarea</th>
+                <th class="text-center">Nombre de la tarea<br /><small>(bien a adquirir, marca, modelo)</small></th>
+                <th class="text-center">Etapa del proceso productivo a la que pertenece</th>
+                <th class="text-center">Precio Unitario</th>
+                <th class="text-center">Cantidad</th>
+                <th class="text-center">Precio total</th>
+                <th class="text-center">Nombre del proveedor<br /><small>(para adquisiciones, insumos y obras civiles)</small></th>
+                <th class="text-center">CUIT del proveedor</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php for ($h=0; $h<$filaCarga;$h++): ?>
+            <tr id="fila10866" class="rowSelect">
+                <td align="left">
+                    <select id = "primero" class="form-control selectoruno" style"width:94%;">
+                        <option value="1"  >Activos fijos</option>
+                        <option value="2" >Activos intangibles</option>
+                        <option value="3" >Capital de trabajo</option>
+                        <option value="4" >Gastos</option>
+                    </select>
+                </td>
+                <td align="left">
+                    <select id = "segundo" class="form-control selectordos" style"width:94%;">
+                        <option value="1"  >Maquinaria y equipo</option>
+                        <option value="2">Mobiliario</option>
+                        <option value="3" >Obras civiles edilicias</option>
+                        <option value="4" >Patentes</option>
+                        <option value="5" >Marcas</option>
+                        <option value="6" >Insumos</option>
+                        <option value="7" >Materia prima</option>
+                        <option value="8" >Mano de obra tercerizada</option>
+                        <option value="9" >Servicios profesionales</option>
+                        <option value="10" >Certificaciones y legalizaciones</option>
+                    </select>
+                </td>
+                <td><input id = "nombre" type="text" name="myInputDNA" style="width:94%;" size = "10" align="left" ></td>
+                <td><input id = "etapapro" type="text" name="myInputDNA" style="width:94%;" size = "10" align="left" ></td>
+                <td><input id = "preciounitario" name="myInputDNA" style="width:94%;" class="preciounitario" type="text" size = "10" align="left" ></td>
+                <td><input id = "cantidad" name="myInputDNA" style="width:94%;" class="cantidad" type="text" size = "10" align="left" ></td>
+                <td><input id = "precio" name="myInputDNA" style="width:94%;" class="precio" type="text" size = "10" align="left" ></td>
+                <td><input id = "nombreproveedor" name="myInputDNA" style="width:94%;" type="text" size = "10" align="left" ></td>
+                <td><input id = "cuit" name="myInputDNA" style="width:94%;" type="text" size = "10" align="left" ></td>
+                <td><input id= "elultimo" type="hidden" type = "text" name="myInputDNA" style="width:94%;" align="center" ></td>
+            </tr>
+                
+            </tbody>
+        </table>
+        <!-- /.table -->
+    </div>
+
+    <div style="float:right; margin-right:10px;"><br />Monto Total: <span style="float:right;"><input id="montototal" type="text" value='<?php echo $monto; ?>' style="width:100%;"></span></div>
+</div>
+
+
+</body>
+</html>
