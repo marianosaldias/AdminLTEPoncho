@@ -370,7 +370,6 @@
                       </div>
                       <div class="media-body">
                           <h4>¡Bienvenido/a!</h4>
-                          <p class="margin-0">Ponete en contacto con una incubadora para trabajar juntos en tu emprendimiento.</p>
                       </div>
                   </div>
               </div>
@@ -413,9 +412,9 @@
             <div class="col-xs-12">
                 <div class="panel panel-default panel-icon">
                     <div class="panel-body" align="center">
-                    	<h3 class="text-center text-primary col-xs-9 col-xs-push-1 m-b-3 m-t-1">Encontrá las incubadoras que están cerca de tu ciudad, ponete en contacto con las que te interesen y elegí una.</h3>
+                    	<h3 class="text-center text-primary m-b-1 m-t-2">Ponete en contacto con una incubadora para trabajar juntos en tu emprendimiento.</h3>
                         <div class="clearfix"></div>
-                        <a href="http://www.produccion.gob.ar/red-de-incubadoras?a=i" class="btn btn-success" target="_blank">Buscar incubadora</a>
+                        <a href="http://www.produccion.gob.ar/red-de-incubadoras?a=i" class="btn btn-success m-b-1" target="_blank">Buscar incubadora</a>
                     </div>
                 </div>
             </div>                        
@@ -461,86 +460,62 @@
 
 
         <div class="row">
-            <div class="col-lg-12" style="display:none;">
-                <div class="alert alert-info">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="fa fa-check fa-4x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4>¡Alert de éxito!</h4>
-                            <p class="margin-0">Consectetur adipiscing elit lorem ipsum dolor sit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                    	<div align="left">
-                            <h3>Completá los datos de tu empresa</h3>
-                            <p>¿Querés cargar información para asociar una empresa o persona jurídica?</p>
+                    	<div align="center">
+                            <h2 class="m-t-1">Completá la información</h2>
+                            <p>Podés sumar los datos de tu empresa o persona jurídica para que esté disponible para la incubadora.</p>
+                            <button type="button" id="btnEditTypeUsr" class="btn btn-primary m-t-1">Cargar</button>
                         </div>
                         
-                        <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
-                            <div class="col-lg-12">
-                                <div class="alert alert-error" role="alert" style="display:none;">
-                                    Alert "warning". Ej.: en caso de que la CUIT esté siendo utilizada por otro usuario.
-                                </div>
-                                <div class="alert alert-warning" role="alert" style="display:none;">Consectetur adipiscing elit lorem ipsum dolor sit.</div>
-                                <div class="alert alert-success" role="alert" style="display:none;">Alerta de éxito en la carga de datos.</div>
-                            </div>   
-                            <div class="col-lg-12 m-t-1">
-                                <div class="form-group">
-                                    <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                        <label href="#" class="btn btn-default">
-                                            <input type="radio" name="tipopersona" id="juridica" value="j" class="hidden" checked="">Si
-                                        </label>
-                                        <label href="#" class="btn btn-default">
-                                            <input type="radio" name="tipopersona" id="fisica" value="f" class="hidden">No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>                                
-                            <div id="tipopersona" style="display:none;">
+                        <div id="editTypeUsr" class="panel-collapse collapse" role="tabpanel">
+                            <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
                                 <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <label class="control-label">Nombre de la sociedad *</label> 
-                                        <input class="form-control" data-inputmask="" data-mask="" type="text" placeholder="">
+                                    <div class="alert alert-error" role="alert" style="display:none;">
+                                        Alert "warning". Ej.: en caso de que la CUIT esté siendo utilizada por otro usuario.
                                     </div>
+                                    <div class="alert alert-warning" role="alert" style="display:none;">Consectetur adipiscing elit lorem ipsum dolor sit.</div>
+                                    <div class="alert alert-success" role="alert" style="display:none;">Alerta de éxito en la carga de datos.</div>
                                 </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <label class="control-label">CUIT *</label> 
-                                        <input class="form-control" data-inputmask="" data-mask="" type="text" placeholder="00-00000000-0">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label">Teléfono</label> 
-                                        <input class="form-control" data-inputmask="" data-mask="" type="text" placeholder="1112345678">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label">Correo electrónico</label> 
-                                        <input class="form-control" data-inputmask="" data-mask="" type="text" placeholder="hola@laespigadeoro.com.ar">
-                                    </div>
-                                </div>                                                                        
 
+                                <div id="tipopersona" style="">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Nombre de la Sociedad *</label> 
+                                            <input class="form-control" data-inputmask="" data-mask="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label class="control-label">CUIT *</label> 
+                                            <input class="form-control" data-inputmask="" data-mask="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Teléfono</label> 
+                                            <input class="form-control" data-inputmask="" data-mask="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Correo electrónico</label> 
+                                            <input class="form-control" data-inputmask="" data-mask="" type="text">
+                                        </div>
+                                    </div>                                                                        
+                                </div>
+    
                                 <p class="col-lg-12 m-b-1"><small>* Campo requerido</small></p>
-                            </div>    
-                            <div class="col-lg-12 m-b-1">
-                                <div align="center">
-                                    <button class="btn btn-success text-center col-lg-4 col-sm-4 col-xs-5 col-lg-offset-2 col-sm-offset-2" type="button">Guardar</button>
-                                    <button type="button" data-toggle="modal" data-target="#errorDatosPFPJ" class="btn btn-primary text-center col-lg-4 col-sm-4 col-xs-6 m-l-1"><small>Reportar error</small></button>
+    
+                                <div class="col-lg-12">
+                                    <div align="center">
+                                        <button class="btn btn-success text-center col-lg-4 col-sm-4 col-xs-5 col-lg-offset-2 col-sm-offset-2" type="button">Guardar</button>
+                                        <button type="button" data-toggle="modal" data-target="#errorDatosPFPJ" class="btn btn-default text-center col-lg-4 col-sm-4 col-xs-6 m-l-1"><small>Reportar error</small></button>
+                                    </div>
                                 </div>
-                            </div>
-
-                        </form>
-
+                            </form>
+                        </div>
                         
                     </div>
                 </div>
