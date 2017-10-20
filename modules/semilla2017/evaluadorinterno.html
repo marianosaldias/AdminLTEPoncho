@@ -171,7 +171,7 @@
     
                             <li class="dropdown user user-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="hidden-xs">Alexander Pierce</span>
+                                    <span class="hidden-xs">Mariano Saldías</span>
                                     <i class="fa fa-user navIco"></i>
                                 </a>
                                 <ul class="dropdown-menu" style="width:100%;">
@@ -181,7 +181,7 @@
                                         	<img src="dist-palta/img/profile-img.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:100%">
                                         </div>
                                         <div class="col-xs-10 col-sm-9">
-                                        	<h6 class="p-t-2">Alexander Pierce</h6>
+                                        	<h6 class="p-t-2">Mariano Saldías</h6>
                                         </div>
                                         <div class="clearfix"></div>
                                     </li>
@@ -221,7 +221,7 @@
           <i class="fa fa-user navIco" style="color:#FFFFFF; margin-left:10px;"></i>
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Mariano Saldías</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -374,7 +374,7 @@
                     <div class="panel-body">
                         <div class="media aligner">
                             <div class="media-left">
-                                <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">48</span>
+                                <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">1</span>
                             </div>                                
                             <div class="media-body">
                                 <h3 class="text-white">Evaluar Solicitudes de Admisión</h3>
@@ -426,6 +426,61 @@
                 </a>
             </div>            
         </div>    
+        
+        
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="text-white text-left">Proyectos que solicitaron admisión (1)</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-info m-t-1" data-id="">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <div class="table-responsive m-t-1">
+                            <table class="table">
+                            	<!-- 
+                                	IMPORTANTE!!!
+                                    Por orden de llegada: los más antiguos aparecen primeros en la lista
+                                -->
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nro. Proyecto</th>
+                                        <th>Apellido y Nombre</th>
+                                        <th>DNI/CUIT</th>
+                                        <th>Nombre de Proyecto</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>                        
+                                <tbody>
+
+                                    <tr>
+                                        <td>GHFH34</td>
+                                        <td>4563</td>
+                                        <td>Jose Pep</td>
+                                        <td>12-34563456-3</td>
+                                        <td>La Espiga de Oro</td>
+                                        <td align="center">
+                                            <a href="" class="btn btn-primary btn-sm">Evaluar</a>
+                                        </td>                                        
+                                    </tr>                                                                                                                                        
+                                </tbody>
+                            </table>
+                            <!-- /.table -->
+                        </div>                        
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>           
       
         <!--
         <div class="row panels-row m-t-1">
@@ -576,7 +631,7 @@
                                     </div>    
                                 </div>
                                 
-                                <div class="col-md-6 col-sm-12 m-b-1">
+                                <div class="col-md-12 m-b-1">
                                     <label class="control-label">Incubadora</label>
                                     <select data-placeholder="- Seleccione -" class="form-control chosen-select" tabindex="-1">
                                         <option value=""></option>
@@ -588,6 +643,11 @@
                                    </select>                                     
                                 </div>
     
+
+                                <div class="col-md-6 col-sm-12 m-b-1">
+                                    <label class="control-label">Emprendedor</label>
+                                    <input type="text" class="form-control">
+                                </div>    
                    
                                 <div class="col-md-4 col-sm-8" id="sandbox-container">
                                     <label class="control-label">Rango de fechas</label>
@@ -618,7 +678,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
                         <h3 class="text-white text-left">
-                        	Table
+                        	Resultados
                         </h3>
 						<div class="pull-right">
                             <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-35px;" onClick="$('#tableResult').tableExport({type:'excel',escape:'false',ignoreColumn:'[7]',fileName:'id'});">Descargar XLS</button>
@@ -629,12 +689,12 @@
                         <div class="alert alert-info m-t-1" data-id="">
                             <div class="media">
                                 <div class="media-body">
-                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados.</p>
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para esta búsqueda.</p>
                                 </div>
                             </div>
                         </div>                       
                          
-                        <div class="table-responsive m-t-1" style="padding-bottom:100px;">
+                        <div class="table-responsive m-t-1" style="padding-bottom:175px;">
                             <table class="table" id="tableResult">
                             	<!-- 
                                 	IMPORTANTE!!!
@@ -667,9 +727,11 @@
                                                 Descargas <span class="caret"></span>
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
+                                                	<li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
                                                     <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
                                                     <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio corregido</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Evaluación del Ev. Interno</a></li>
                                                 </ul>
                                             </div>                                        
                                         </td>
@@ -688,9 +750,11 @@
                                                 Descargas <span class="caret"></span>
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
+                                                	<li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
                                                     <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
                                                     <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio corregido</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Evaluación del Ev. Interno</a></li>
                                                 </ul>
                                             </div>                                        
                                         </td>                                        
@@ -712,7 +776,8 @@
                                                 	<li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
                                                     <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
                                                     <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
-                                                </ul>
+                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio corregido</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Evaluación del Ev. Interno</a></li>                                                </ul>
                                             </div>                                        
                                         </td>
                                     </tr>
@@ -748,95 +813,7 @@
             </div>
         </div>              
 
-        
 
-        <div class="row m-t-2">            
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">Buscá proyecto</h3>
-                    </div>
-                    <div class="panel-body">
-                        <form class="m-t-1" role="search">
-                        <div class="input-group custom-search-form">
-                            
-                            <div class="input-group-btn">
-                                <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 220px;" aria-expanded="false">
-                                    <span id="text">Emprendedor </span><span class="caret"></span>
-                                </label>
-                                <ul class="dropdown-menu" id="divNewNotifications">
-                                    <li><a class="my_data_flag" id="three">Emprendedor </a></li>
-                                    <li><a class="my_data_flag" id="three">Incubadora </a></li>
-                                </ul>
-                            </div>                        
-                            <input type="text" class="form-control" style="border-radius: 0 !important;">
-                            <span class="input-group-btn">
-                                <button class="btn btn-primary" type="button">Buscar</button>
-                            </span>
-                        </div>
-                        </form>
-                        <div class="clearfix"></div>
-                        
-                        <div class="alert alert-info m-t-1" data-id="">
-                            <div class="media">
-                                <div class="media-body">
-                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para esta búsqueda.</p>
-                                </div>
-                            </div>
-                        </div>                        
-                        
-                        <div class="table-responsive m-t-1" style="padding-bottom:100px;">
-                            <table class="table">
-                            	<!-- 
-                                	IMPORTANTE!!!
-                                    Por orden de llegada: los más antiguos aparecen primeros en la lista
-                                -->
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Nº Proyecto</th>
-                                        <th>Apellido y Nombre</th>
-                                        <th>DNI/CUIT</th>
-                                        <th>Incubadora</th>
-                                        <th>Ult. modif.</th>
-                                        <th>Estado</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>                            
-                                <tbody>
-
-                                    <tr>
-                                        <td>GHFH34</td>
-                                        <td>4563</td>
-                                        <td>Jose Pep</td>
-                                        <td>12-34563456-3</td>
-                                        <td>Incuba Inc.</td>
-                                        <td>19/11/2017</td>
-                                        <td>En evaluación</td>
-                                        <td align="right">
-                                            <div class="btn-group">
-                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Descargas <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                	<li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
-                                                </ul>
-                                            </div>                                        
-                                        </td>                                        
-                                    </tr>                                                                                                                                        
-                                </tbody>
-                            </table>
-                            <!-- /.table -->
-                        </div>                        
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>              
-                  
     </section>
     <!-- /.content -->
   </div>
