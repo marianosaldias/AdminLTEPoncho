@@ -598,66 +598,84 @@
                     <div class="panel-body">
 
                             <div id="filter-panel" class="m-t-1" style="padding:0">
-                                <div class="col-md-12">
-                                    <div class="input-group custom-search-form">
-                                        <div class="input-group-btn">
-                                            <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
-                                                <span id="textTipoDoc" style="font-size:14px;">Solicitud de Inscripción </span><span class="caret"></span>
-                                            </label>
-                                            <ul class="dropdown-menu" id="divTipoDoc">
-                                                <li><a class="my_data_flag" id="three">Solicitud de Inscripción </a></li>
-                                                <li><a class="my_data_flag" id="three">Plan de Negocios </a></li>
-                                            </ul>
-                                        </div>                        
-                                        <div id="" class="">
-                                        <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
-                                            <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
-                                                <option>Seleccione estado</option>
-                                                <option>En admisión</option>
-                                                <option>Admitidas</option>
-                                                <option>No admitidas</option>
-                                                <!-- PN -->
-                                                <option>Preseleccionados</option>
-                                                <option>Pendiente de carga</option>
-                                                <option>Evaluar por Coordinador</option>
-                                                <option>Rechazados</option>
-                                                <option>Rechazados por Puntaje</option>
-                                                <option>En evaluacion interna</option>
-                                                <option>En evaluacion externa</option>
-                                                <option>Evaluados por Evaluador Interno</option>
-                                                <option>Evaluados por Evaluador Externo</option>
-                                            </select>                                     
+                            
+                                <div class="col-lg-12 col-xs-12">
+                                    <div class="input-group width100">
+                                        <label class="control-label">Buscar por:</label><br />
+                                        <div id="tipoinforme" class="btn-group width100">
+                                            <span class="btn active btn-primary" data-toggle="estado" data-value="Y" style="width:50%;">Incubadora</span>
+                                            <span class="btn notActive btn-default" data-toggle="estado" data-value="N" style="width:50%;">Emprendedor</span>
                                         </div>
-                                    </div>    
+                                        <input type="hidden" name="estadoinforme" id="estadoinforme" value="Y">
+                                    </div>                              
+                                </div>                        
+                                <div class="clearfix"></div>
+                            
+                                <div id="buscaIncubadora" class="m-t-1">
+                                    <div class="col-md-6 col-sm-6 m-b-1">
+                                        <label class="control-label">Incubadora</label>
+                                        <select data-placeholder="- Seleccione -" class="form-control chosen-select" tabindex="-1">
+                                            <option value=""></option>
+                                            <option value="Afghanistan">Afghanistan</option>
+                                            <option value="Albania">Albania</option>
+                                            <option value="Algeria">Algeria</option>
+                                            <option value="American Samoa">American Samoa</option>
+                                            <option value="Andorra">Andorra</option>
+                                       </select>                                     
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 m-b-2" id="sandbox-container">
+                                        <label class="control-label">Rango de fechas</label>
+                                        <div class="input-group input-daterange width100">
+                                            <input type="text" id="fechaVigInicio" class="form-control">
+                                            <span class="input-group-addon bg-primary" style="padding: 16px;"> HASTA </span>
+                                            <input type="text" id="fechaVigFin" class="form-control">
+                                        </div>                            
+                                    </div>
+                                    <div class="col-md-10 col-sm-8 m-t-2">
+                                        <div class="input-group custom-search-form">
+                                            <div class="input-group-btn">
+                                                <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
+                                                    <span id="textTipoDoc" style="font-size:14px;">Solicitud de Inscripción </span><span class="caret"></span>
+                                                </label>
+                                                <ul class="dropdown-menu" id="divTipoDoc">
+                                                    <li><a class="my_data_flag" id="three">Solicitud de Inscripción </a></li>
+                                                    <li><a class="my_data_flag" id="three">Plan de Negocios </a></li>
+                                                </ul>
+                                            </div>                        
+                                            <div id="" class="">
+                                            <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
+                                                <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
+                                                    <option>Seleccione estado</option>
+                                                    <option>En admisión</option>
+                                                    <option>Admitidas</option>
+                                                    <option>No admitidas</option>
+                                                    <!-- PN -->
+                                                    <option>Preseleccionados</option>
+                                                    <option>Pendiente de carga</option>
+                                                    <option>Evaluar por Coordinador</option>
+                                                    <option>Rechazados</option>
+                                                    <option>Rechazados por Puntaje</option>
+                                                    <option>En evaluacion interna</option>
+                                                    <option>En evaluacion externa</option>
+                                                    <option>Evaluados por Evaluador Interno</option>
+                                                    <option>Evaluados por Evaluador Externo</option>
+                                                </select>                                     
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+
+                                <div id="buscaEmprendedor" class="m-t-1" style="display:none;">
+                                    <div class="col-md-6 col-sm-4 m-b-1">
+                                        <label class="control-label">Nombre y apellido</label>
+                                        <input type="text" class="form-control">
+                                    </div>  
+                                    <div class="col-md-4 col-sm-4 m-b-1">
+                                        <label class="control-label">DNI</label>
+                                        <input type="text" class="form-control">
+                                    </div>                                  
                                 </div>
                                 
-                                <div class="col-md-12 m-b-1">
-                                    <label class="control-label">Incubadora</label>
-                                    <select data-placeholder="- Seleccione -" class="form-control chosen-select" tabindex="-1">
-                                        <option value=""></option>
-                                        <option value="Afghanistan">Afghanistan</option>
-                                        <option value="Albania">Albania</option>
-                                        <option value="Algeria">Algeria</option>
-                                        <option value="American Samoa">American Samoa</option>
-                                        <option value="Andorra">Andorra</option>
-                                   </select>                                     
-                                </div>
-    
-
-                                <div class="col-md-6 col-sm-12 m-b-1">
-                                    <label class="control-label">Emprendedor</label>
-                                    <input type="text" class="form-control">
-                                </div>    
-                   
-                                <div class="col-md-4 col-sm-8" id="sandbox-container">
-                                    <label class="control-label">Rango de fechas</label>
-                                    <div class="input-group input-daterange width100">
-                                        <input type="text" id="fechaVigInicio" class="form-control">
-                                        <span class="input-group-addon bg-primary" style="padding: 16px;"> HASTA </span>
-                                        <input type="text" id="fechaVigFin" class="form-control">
-                                    </div>                            
-                                </div>
-                                                                    
                                 <div align="center">
                                     <div class="col-md-2 col-sm-4">
                                         <button class="btn btn-primary width100 m-t-2" id="buscar-filtro">Buscar</button>
@@ -986,6 +1004,19 @@
 
 <script type="text/javascript" src="../../plugins/tableExport/tableExport.js"></script>
 <script type="text/javascript" src="../../plugins/tableExport/jquery.base64.js"></script>
+
+
+<script>
+    // Tomar el valor del checkbox
+	$('#tipoinforme span').on('click', function(){
+        var sel = $(this).data('value');
+        var tog = $(this).data('toggle');
+        $('#'+tog).val(sel);
+        // You can change these lines to change classes (Ex. btn-default to btn-danger)
+        $('span[data-toggle="'+tog+'"]').not('[data-value="'+sel+'"]').removeClass('active btn-primary').addClass('notActive btn-default');
+        $('span[data-toggle="'+tog+'"][data-value="'+sel+'"]').removeClass('notActive btn-default').addClass('active btn-primary');
+    });	
+</script>	
 
 </body>
 </html>
