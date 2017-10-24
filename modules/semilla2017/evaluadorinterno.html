@@ -397,7 +397,7 @@
                     </div>                            
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-4">
                 <a class="panel panel-default bg-success" href="#">
                     <div class="panel-body">
                         <div class="media aligner">
@@ -411,7 +411,7 @@
                     </div>                            
                 </a>
             </div>                    
-            <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-4">
                 <a class="panel panel-default bg-success" href="#">
                     <div class="panel-body">
                         <div class="media aligner">
@@ -424,8 +424,62 @@
                         </div>
                     </div>                            
                 </a>
-            </div>            
+            </div>  
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <a class="panel panel-default bg-success" href="#">
+                    <div class="panel-body">
+                        <div class="media aligner">
+                            <div class="media-left">
+                                <i id="fa fa-folder-open" class="fa fa-folder-open icono-4x text-gray" data-clipboard-text="fa-folder-open"></i><span class="badge badgePosition text-success bg-warning text-white">48</span>
+                            </div>                                
+                            <div class="media-body">
+                                <h3 class="text-white">Evaluar Plan de Negocio corregido</h3>
+                            </div>
+                        </div>
+                    </div>                            
+                </a>
+            </div>                        
         </div>    
+        
+        
+        <div class="row panels-row m-t-1">
+            <div class="col-xs-12">
+            	<h4>Estados de Proyectos</h4>
+            </div>  
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Evaluador Interno</h6>
+                        <h2 class="text-aqua text-left">Solicitudes de Inscripción</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">Admitidas</h4>
+                    </div>                    
+                </a>
+            </div> 
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Evaluador Interno</h6>
+                        <h2 class="text-aqua text-left">Solicitudes de Inscripción</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">142</span><h4 class="text-black">No admitidas</h4>
+                    </div>                    
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="panel panel-default panel-icon" href="#">
+                    <div class="panel-heading bg-gclaro">
+                    	<h6 class="text-aqua text-left">Evaluador Interno</h6>
+                        <h2 class="text-aqua text-left">Planes de negocios</h2>
+                    </div>
+                    <div class="panel-body bg-white">
+                        <span class="badge text-success bg-aqua text-white pull-left m-r-1">12</span><h4 class="text-black">Pendientes de observación</h4>
+                    </div>                    
+                </a>
+            </div>
+        </div>
         
         
         <div class="row m-t-2">            
@@ -452,21 +506,25 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Nro. Proyecto</th>
+                                        <th>ID</th>
                                         <th>Apellido y Nombre</th>
                                         <th>DNI/CUIT</th>
-                                        <th>Nombre de Proyecto</th>
+                                        <th>Incubadora</th>
+                                        <th>Nº Proyecto</th>
+                                        <th>Ult. modif.</th>
                                         <th></th>
                                     </tr>
                                 </thead>                        
                                 <tbody>
 
                                     <tr>
+                                        <td>1</td>
                                         <td>GHFH34</td>
-                                        <td>4563</td>
                                         <td>Jose Pep</td>
                                         <td>12-34563456-3</td>
-                                        <td>La Espiga de Oro</td>
+                                        <td>Incuba Inc.</td>
+                                        <td>4563</td>
+                                        <td>12/12/2017</td>
                                         <td align="center">
                                             <a href="" class="btn btn-primary btn-sm">Evaluar</a>
                                         </td>                                        
@@ -720,25 +778,25 @@
                                 -->
                                 <thead>
                                     <tr>
+                                        <th>#</th>
                                         <th>ID</th>
-                                        <th>Nº Proyecto</th>
                                         <th>Apellido y Nombre</th>
                                         <th>DNI/CUIT</th>
                                         <th>Incubadora</th>
+                                        <th>Nº Proyecto</th>
                                         <th>Ult. modif.</th>
-                                        <th>Estado</th>
                                         <th></th>
                                     </tr>
                                 </thead>                            
                                 <tbody>
                                     <tr>
+                                        <td>1</td>
                                         <td>GASH34</td>
-                                        <td>5675</td>
                                         <td>Jose Oro</td>
                                         <td>20-26563456-2</td>
                                         <td>Incuba Inc.</td>
+                                        <td>5675</td>
                                         <td>19/11/2017</td>
-                                        <td>En evaluación</td>
                                         <td align="right">
                                             <div class="btn-group">
                                                 <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -755,13 +813,13 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>2</td>
                                         <td>GHFH34</td>
-                                        <td>4563</td>
                                         <td>Jose Pep</td>
                                         <td>12-34563456-3</td>
                                         <td>Incuba Inc.</td>
+                                        <td>5679</td>
                                         <td>19/11/2017</td>
-                                        <td>En evaluación</td>
                                         <td align="right">
                                             <div class="btn-group">
                                                 <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -778,13 +836,13 @@
                                         </td>                                        
                                     </tr>                                    
                                     <tr>
+                                        <td>3</td>
                                         <td>GASH34</td>
-                                        <td>5675</td>
                                         <td>Jose Oro</td>
                                         <td>20-26563456-2</td>
                                         <td>Incuba Inc.</td>
+                                        <td>6775</td>
                                         <td>19/11/2017</td>
-                                        <td>En evaluación</td>
                                         <td align="right">
                                             <div class="btn-group">
                                                 <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
