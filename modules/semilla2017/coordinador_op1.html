@@ -418,105 +418,179 @@
             </div>                 
         </div>
         <!-- /.row -->         
+        
+        
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h3 class="text-white text-left">Puntuar PN (1)</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-info m-t-1" data-id="">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <div class="table-responsive m-t-1">
+                            <table class="table">
+                            	<!-- 
+                                	IMPORTANTE!!!
+                                    Por orden de llegada: los más antiguos aparecen primeros en la lista
+                                -->
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>ID</th>
+                                        <th>Apellido y Nombre</th>
+                                        <th>DNI/CUIT</th>
+                                        <th>Incubadora</th>
+                                        <th>Nº Proyecto</th>
+                                        <th>Ult. modif.</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>                        
+                                <tbody>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>GHFH34</td>
+                                        <td>Jose Pep</td>
+                                        <td>12-34563456-3</td>
+                                        <td>Incuba Inc.</td>
+                                        <td>4563</td>
+                                        <td>12/12/2017</td>
+                                        <td align="center">
+                                            <a href="" class="btn btn-primary btn-sm">puntuar</a>
+                                        </td>                                        
+                                    </tr>                                                                                                                                        
+                                </tbody>
+                            </table>
+                            <!-- /.table -->
+                        </div>                        
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>         
       
+
+        <div class="row m-t-2">            
+            <div class="col-md-12">
+                <h4>Búsqueda Avanzada</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="col-xs-12 m-t-1 m-b-1">
+                            <div class="input-group custom-search-form">
+                                <div class="input-group-btn">
+                                    <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
+                                        <span id="textTipoDoc" style="font-size:14px;">Solicitud de Inscripción </span><span class="caret"></span>
+                                    </label>
+                                    <ul class="dropdown-menu" id="divTipoDoc">
+                                        <li><a class="my_data_flag" id="three">Solicitud de Inscripción </a></li>
+                                        <li><a class="my_data_flag" id="three">Plan de Negocios </a></li>
+                                    </ul>
+                                </div>                        
+                                <div id="" class="">
+                                <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
+                                    <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
+                                        <option>Seleccione estado</option>
+                                        <option>En admisión</option>
+                                        <option>Admitidas</option>
+                                        <option>No admitidas</option>
+                                        <!-- PN -->
+                                        <option>Preseleccionados</option>
+                                        <option>Pendiente de carga</option>
+                                        <option>Evaluar por Coordinador</option>
+                                        <option>Rechazados</option>
+                                        <option>Rechazados por Puntaje</option>
+                                        <option>En evaluacion interna</option>
+                                        <option>En evaluacion externa</option>
+                                        <option>Evaluados por Evaluador Interno</option>
+                                        <option>Evaluados por Evaluador Externo</option>
+                                    </select>                                     
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        <div class="col-md-9 m-b-1">
+                            <div class="input-group custom-search-form">
+                                <div class="input-group-btn">
+                                    <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
+                                        <span id="text" style="font-size:14px;">Emprendedor </span><span class="caret"></span>
+                                    </label>
+                                    <ul class="dropdown-menu" id="divNewNotifications">
+                                        <li><a class="my_data_flag" id="three">Emprendedor </a></li>
+                                        <li><a class="my_data_flag" id="three">Incubadora </a></li>
+                                        <li><a class="my_data_flag" id="three">Evaluador Interno </a></li>
+                                        <li><a class="my_data_flag" id="three">Evaluador Externo </a></li>
+                                    </ul>
+                                </div>                        
+                                <div id="" class="state-loading">
+                                <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
+                                    <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
+                                        <option>En admisión</option>
+                                        <option>Admitidas</option>
+                                        <option>No admitidas</option>
+                                        <!-- PN -->
+                                        <option>Preseleccionados</option>
+                                        <option>Pendiente de carga</option>
+                                        <option>Evaluar por Coordinador</option>
+                                        <option>Rechazados</option>
+                                        <option>Rechazados por Puntaje</option>
+                                        <option>En evaluacion interna</option>
+                                        <option>En evaluacion externa</option>
+                                        <option>Evaluados por Evaluador Interno</option>
+                                        <option>Evaluados por Evaluador Externo</option>
+                                    </select>                                     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">    
+                            
+                            <div align="center">
+                                <button id="buscar-filtro" class="btn btn-primary width100">Buscar</button>
+                            </div>
+                    
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>              
+
 
         <div class="row m-t-2">            
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
                         <h3 class="text-white text-left">
-                        	Filtros de busqueda avanzada
+                        	Solicitud de Inscripción - Admitidas
                         </h3>
 						<div class="pull-right">
-                            <button type="button" class="btn btn-sm bg-aqua" data-toggle="collapse" data-target="#filter-panel" style="margin-top:-35px;">
-                                <i class="fa fa-filter" aria-hidden="true"></i> Filtros<!-- Filtros -->
-                            </button>
-						</div>                        
+                            <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-35px;" onClick="$('#tableResult').tableExport({type:'excel',escape:'false',fileName:'id'});">Descargar XLS</button>
+						</div>                            
                     </div>
 
                     <div class="panel-body">
-                        <div class="col-xs-12" style="padding:0">
-                            <div id="filter-panel" class="collapse filter-panel">
-                                <div class="input-group custom-search-form">
-                                    <div class="input-group-btn">
-                                        <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
-                                            <span id="textTipoDoc" style="font-size:14px;">Solicitud de Inscripción </span><span class="caret"></span>
-                                        </label>
-                                        <ul class="dropdown-menu" id="divTipoDoc">
-                                            <li><a class="my_data_flag" id="three">Solicitud de Inscripción </a></li>
-                                            <li><a class="my_data_flag" id="three">Plan de Negocios </a></li>
-                                        </ul>
-                                    </div>                        
-                                    <div id="" class="">
-                                    <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
-                                        <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
-                                            <option>Seleccione estado</option>
-                                            <option>En admisión</option>
-                                            <option>Admitidas</option>
-                                            <option>No admitidas</option>
-                                            <!-- PN -->
-                                            <option>Preseleccionados</option>
-                                            <option>Pendiente de carga</option>
-                                            <option>Evaluar por Coordinador</option>
-                                            <option>Rechazados</option>
-                                            <option>Rechazados por Puntaje</option>
-                                            <option>En evaluacion interna</option>
-                                            <option>En evaluacion externa</option>
-                                            <option>Evaluados por Evaluador Interno</option>
-                                            <option>Evaluados por Evaluador Externo</option>
-                                        </select>                                     
-                                    </div>
-                                </div>    
-                                
-                                <div class="clearfix"></div>
-
-                                <div class="input-group custom-search-form m-t-1">
-                                    <div class="input-group-btn">
-                                        <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
-                                            <span id="text" style="font-size:14px;">Emprendedor </span><span class="caret"></span>
-                                        </label>
-                                        <ul class="dropdown-menu" id="divNewNotifications">
-                                            <li><a class="my_data_flag" id="three">Emprendedor </a></li>
-                                            <li><a class="my_data_flag" id="three">Incubadora </a></li>
-                                            <li><a class="my_data_flag" id="three">Evaluador Interno </a></li>
-                                            <li><a class="my_data_flag" id="three">Evaluador Externo </a></li>
-                                        </ul>
-                                    </div>                        
-                                    <div id="" class="state-loading">
-                                    <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
-                                        <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
-                                            <option>En admisión</option>
-                                            <option>Admitidas</option>
-                                            <option>No admitidas</option>
-                                            <!-- PN -->
-                                            <option>Preseleccionados</option>
-                                            <option>Pendiente de carga</option>
-                                            <option>Evaluar por Coordinador</option>
-                                            <option>Rechazados</option>
-                                            <option>Rechazados por Puntaje</option>
-                                            <option>En evaluacion interna</option>
-                                            <option>En evaluacion externa</option>
-                                            <option>Evaluados por Evaluador Interno</option>
-                                            <option>Evaluados por Evaluador Externo</option>
-                                        </select>                                     
-                                    </div>
-                                </div>
-                                
-                                
-                                <div align="center">
-                                	<button id="buscar-filtro" class="btn btn-primary col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 m-t-2"><i class="fa-li fa fa-spinner fa-spin pull-left m-l-3 m-t-1"></i> Buscar</button>
-                                </div>
                     
-                            </div>                     
-                        </div>
-                        <div class="clearfix"></div>
-                        
-                        <h3 class="text-left">
-                        	<span class="badge text-success bg-warning text-white pull-left m-r-1">2</span>
-                        	Solicitud de Inscripción - Admitidas
-                        </h3>
-                        <div class="table-responsive m-t-1">
-                            <table class="table">
+                        <div class="alert alert-info m-t-1" data-id="">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para esta búsqueda.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    
+                        <div class="table-responsive">
+                            <table id="tableResult" class="table">
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -597,19 +671,20 @@
                     </div>
                     <div class="panel-body">
                         <form>
-                            <div class="col-lg-4 col-xs-12 m-b-1">
+                            <div class="col-lg-12 m-b-1">
                                 <div class="input-group width100">
-                                    <label class="control-label">Informe</label><br />
+                                    <label class="control-label">Buscar por:</label><br />
                                     <div id="tipoinforme" class="btn-group width100">
-                                        <span class="btn active btn-primary" data-toggle="estado" data-value="Y" style="width:55%;">Emprendedores</span>
-                                        <span class="btn notActive btn-default" data-toggle="estado" data-value="N" style="width:45%;">Proyectos</span>
+                                        <span class="btn active btn-primary" data-toggle="estado" data-value="Y" style="width:50%;">Emprendedores</span>
+                                        <span class="btn notActive btn-default" data-toggle="estado" data-value="N" style="width:50%;">Proyectos</span>
                                     </div>
                                     <input type="hidden" name="estadoinforme" id="estadoinforme" value="Y">
                                 </div>                              
-                            </div>
+                            </div>                        
+                            <div class="clearfix"></div>
 
-                            <div class="col-lg-3 col-xs-12 m-b-1">
-                            	<label class="control-label">Provincia</label>
+                            <div class="col-md-4 col-sm-6 m-b-1">
+                                <label class="control-label">Incubadora</label>
                                 <select data-placeholder="- Seleccione -" class="form-control chosen-select" tabindex="-1">
                                     <option value=""></option>
                                     <option value="Afghanistan">Afghanistan</option>
@@ -617,21 +692,9 @@
                                     <option value="Algeria">Algeria</option>
                                     <option value="American Samoa">American Samoa</option>
                                     <option value="Andorra">Andorra</option>
-                                    <option value="Angola">Angola</option>
-                                    <option value="Anguilla">Anguilla</option>
-                                    <option value="Antarctica">Antarctica</option>
-                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Armenia">Armenia</option>
-                                    <option value="Aruba">Aruba</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="Austria">Austria</option>
-                                    <option value="Azerbaijan">Azerbaijan</option>
-                                </select>                                     
+                               </select>                                     
                             </div>
-
-               
-                            <div class="col-lg-5 col-xs-12" id="sandbox-container">
+                            <div class="col-md-5 col-sm-6 m-b-1" id="sandbox-container">
                                 <label class="control-label">Rango de fechas</label>
                                 <div class="input-group input-daterange width100">
                                     <input type="text" id="fechaVigInicio" class="form-control">
@@ -639,15 +702,10 @@
                                     <input type="text" id="fechaVigFin" class="form-control">
                                 </div>                            
                             </div>
-                           
-                            <div align="center">
-                                <button id="buscar-filtro" class="btn btn-primary col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 m-t-2"><i class="fa-li fa fa-spinner fa-spin pull-left m-l-3 m-t-1"></i> Exportar</button>
 
-                                <!--
-                                <button id="" class="btn btn-success col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 m-t-2">Guardar <i class="fa-li fa fa-check"></i></button>
-                                -->
+                            <div class="col-md-3 col-sm-12 m-t-2">
+                                <button class="btn btn-primary width100" id="buscar-filtro">Exportar</button>
                             </div>
-                                       
                         </form>
                         
                     </div>
@@ -683,6 +741,15 @@
                         </div>
                         </form>
                         <div class="clearfix"></div>
+                        
+                        <div class="alert alert-info m-t-1" data-id="">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para esta búsqueda.</p>
+                                </div>
+                            </div>
+                        </div>                           
+                        
                         <div class="table-responsive m-t-1">
                             <table class="table" style="">
                                 <thead>
@@ -761,6 +828,15 @@
                         </div>
                         </form>
                         <div class="clearfix"></div>
+
+                        <div class="alert alert-info m-t-1" data-id="">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="margin-0" id="textoalerta">No se han encontrado resultados para esta búsqueda.</p>
+                                </div>
+                            </div>
+                        </div>                            
+                        
                         <div class="table-responsive m-t-1">
                             <table class="table" style="">
                                 <thead>
@@ -820,11 +896,11 @@
 </div>
 <!-- ./wrapper -->
 
-<footer class="main-footer" style="padding-bottom: 32px; padding-top: 60px; border-top: 1px solid #cacaca; background:#FFFFFF; margin-left: 0px !important;">
+<footer class="main-footer" style="padding-bottom: 32px; padding-top: 60px; border-top: 1px solid #cacaca ; background:#FFFFFF ; margin-left: 0px !important;">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img class="image-responsive" src="../../dist-palta/img/logoMinisterio.png" alt="Ministerio de Producción">
+                <img class="image-responsive" src="http://www.produccion.gob.ar/wp-content/themes/puro-poncho/img/logoMinisterio.png" alt="Ministerio de Producción">
                 <br>
                 <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a>
                 </p>
@@ -833,13 +909,11 @@
                 <div id="nav_menu-3" class="widget_nav_menu">
                     <div class="menu-footer-b-container">
                         <ul id="menu-footer-b" class="menu">
-                            <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http:/#">Item I</a>
+                            <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http://www.produccion.gob.ar/institucional">Institucional</a>
                             </li>
-                            <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http:/#">Item II</a>
+                            <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http://www.produccion.gob.ar/guia-de-tramites">Trámites</a>
                             </li>
-                            <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http:/#">Item III</a>
-                            </li>
-                            <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http:/#">Item IV</a>
+                            <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http://www.produccion.gob.ar/mundo-pyme">Mundo PyME</a>
                             </li>
                         </ul>
                     </div>
@@ -849,9 +923,13 @@
                 <div id="nav_menu-2" class="widget_nav_menu">
                     <div class="menu-footer-a-container">
                         <ul id="menu-footer-a" class="menu">
-                            <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http:/#">Item 1</a>
+                            <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http://dna2.produccion.gob.ar/dna2bpm/dashboard">Tu escritorio</a>
                             </li>
-                            <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http:/#">Item 2</a>
+                            <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156 text-primary">
+                            	<a style="text-decoration:none;"><i class="fa fa-phone"></i> <span><b>0800-333-7963</b></span></a>
+                            </li>  
+                            <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157 text-primary">
+                            	<a href="mailto:info@produccion.gob.ar">info@produccion.gob.ar</a>
                             </li>
                         </ul>
                     </div>
@@ -953,6 +1031,9 @@ $(function(){
 	$('[data-toggle="tooltip"]').tooltip();
 });
 </script>
+
+<script type="text/javascript" src="../../plugins/tableExport/tableExport.js"></script>
+<script type="text/javascript" src="../../plugins/tableExport/jquery.base64.js"></script>
 
 <script>
     // Tomar el valor del checkbox

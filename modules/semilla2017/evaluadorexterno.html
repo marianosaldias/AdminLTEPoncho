@@ -437,7 +437,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Evaluador Externo</h6>
+                    	<!--<h6 class="text-aqua text-left">Evaluador Externo</h6>-->
                         <h2 class="text-aqua text-left">Plan de negocios</h2>
                     </div>
                     <div class="panel-body bg-white">
@@ -449,7 +449,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Evaluador Externo</h6>
+                    	<!--<h6 class="text-aqua text-left">Evaluador Externo</h6>-->
                         <h2 class="text-aqua text-left">Plan de negocios</h2>
                     </div>
                     <div class="panel-body bg-white">
@@ -460,7 +460,7 @@
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Evaluador Externo</h6>
+                    	<!--<h6 class="text-aqua text-left">Evaluador Externo</h6>-->
                         <h2 class="text-aqua text-left">Plan de negocios</h2>
                     </div>
                     <div class="panel-body bg-white">
@@ -471,7 +471,7 @@
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-gclaro">
-                    	<h6 class="text-aqua text-left">Evaluador Externo</h6>
+                    	<!--<h6 class="text-aqua text-left">Evaluador Externo</h6>-->
                         <h2 class="text-aqua text-left">Plan de negocios</h2>
                     </div>
                     <div class="panel-body bg-white">
@@ -482,7 +482,7 @@
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <a class="panel panel-default panel-icon" href="#">
                     <div class="panel-heading bg-aqua">
-                    	<h6 class="text-white text-left">Evaluador Externo</h6>
+                    	<!--<h6 class="text-aqua text-left">Evaluador Externo</h6>-->
                         <h2 class="text-white text-left">Plan de negocios</h2>
                     </div>
                     <div class="panel-body bg-white">
@@ -497,7 +497,7 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">Proyectos que solicitaron admisión (1)</h3>
+                        <h3 class="text-white text-left">Evaluar Proyecto Ev 1 (1)</h3>
                     </div>
                     <div class="panel-body">
                         <div class="alert alert-info m-t-1" data-id="">
@@ -517,21 +517,25 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Nro. Proyecto</th>
+                                        <th>ID</th>
                                         <th>Apellido y Nombre</th>
                                         <th>DNI/CUIT</th>
-                                        <th>Nombre de Proyecto</th>
+                                        <th>Incubadora</th>
+                                        <th>Nº Proyecto</th>
+                                        <th>Ult. modif.</th>
                                         <th></th>
                                     </tr>
                                 </thead>                        
                                 <tbody>
 
                                     <tr>
+                                        <td>1</td>
                                         <td>GHFH34</td>
-                                        <td>4563</td>
                                         <td>Jose Pep</td>
                                         <td>12-34563456-3</td>
-                                        <td>La Espiga de Oro</td>
+                                        <td>Incuba Inc.</td>
+                                        <td>4563</td>
+                                        <td>12/12/2017</td>
                                         <td align="center">
                                             <a href="" class="btn btn-primary btn-sm">Evaluar</a>
                                         </td>                                        
@@ -653,17 +657,28 @@
 
         <div class="row m-t-2">            
             <div class="col-md-12">
+                <h4>Búsqueda Avanzada</h4>
+            </div>
+            <div class="col-md-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading bg-aqua">
-                        <h3 class="text-white text-left">
-                        	Búsqueda avanzada
-                        </h3>
-                    </div>
-
                     <div class="panel-body">
 
-                            <div id="filter-panel" class="m-t-1" style="padding:0">
-                                <div class="col-md-12 m-b-1">
+                        <div id="filter-panel" class="m-t-1" style="padding:0">
+                        
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="input-group width100">
+                                    <label class="control-label">Buscar por:</label><br />
+                                    <div id="tipoinforme" class="btn-group width100">
+                                        <span class="btn active btn-primary" data-toggle="estado" data-value="Y" style="width:50%;">Incubadora</span>
+                                        <span class="btn notActive btn-default" data-toggle="estado" data-value="N" style="width:50%;">Emprendedor</span>
+                                    </div>
+                                    <input type="hidden" name="estadoinforme" id="estadoinforme" value="Y">
+                                </div>                              
+                            </div>                        
+                            <div class="clearfix"></div>
+                        
+                            <div id="buscaIncubadora" class="m-t-1">
+                                <div class="col-md-6 col-sm-6 m-b-1">
                                     <label class="control-label">Incubadora</label>
                                     <select data-placeholder="- Seleccione -" class="form-control chosen-select" tabindex="-1">
                                         <option value=""></option>
@@ -673,9 +688,16 @@
                                         <option value="American Samoa">American Samoa</option>
                                         <option value="Andorra">Andorra</option>
                                    </select>                                     
-                                </div>                            
-                            
-                                <div class="col-md-12">
+                                </div>
+                                <div class="col-md-6 col-sm-6 m-b-2" id="sandbox-container">
+                                    <label class="control-label">Rango de fechas</label>
+                                    <div class="input-group input-daterange width100">
+                                        <input type="text" id="fechaVigInicio" class="form-control">
+                                        <span class="input-group-addon bg-primary" style="padding: 16px;"> HASTA </span>
+                                        <input type="text" id="fechaVigFin" class="form-control">
+                                    </div>                            
+                                </div>
+                                <div class="col-md-10 col-sm-8 m-t-2">
                                     <div class="input-group custom-search-form">
                                         <div class="input-group-btn">
                                             <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
@@ -707,35 +729,31 @@
                                         </div>
                                     </div>    
                                 </div>
+                            </div>
 
-                                <div class="col-md-6 col-sm-12 m-b-1">
-                                    <label class="control-label">Emprendedor</label>
+                            <div id="buscaEmprendedor" class="m-t-1" style="display:none;">
+                                <div class="col-md-6 col-sm-4 m-b-1">
+                                    <label class="control-label">Nombre y apellido</label>
                                     <input type="text" class="form-control">
-                                </div>    
-                   
-                                <div class="col-md-4 col-sm-8" id="sandbox-container">
-                                    <label class="control-label">Rango de fechas</label>
-                                    <div class="input-group input-daterange width100">
-                                        <input type="text" id="fechaVigInicio" class="form-control">
-                                        <span class="input-group-addon bg-primary" style="padding: 16px;"> HASTA </span>
-                                        <input type="text" id="fechaVigFin" class="form-control">
-                                    </div>                            
+                                </div>  
+                                <div class="col-md-4 col-sm-4 m-b-1">
+                                    <label class="control-label">DNI/CUIT</label>
+                                    <input type="text" class="form-control">
+                                </div>                                  
+                            </div>
+                            
+                            <div>
+                                <div class="col-md-2 col-sm-4">
+                                    <button class="btn btn-primary width100 m-t-2" id="buscar-filtro">Buscar</button>
                                 </div>
-                                                                    
-                                <div align="center">
-                                    <div class="col-md-2 col-sm-4">
-                                        <button class="btn btn-primary width100 m-t-2" id="buscar-filtro">Buscar</button>
-                                    </div>
-                                </div>
+                            </div>
                     
                         </div>
                   </div>                        
                         
                 </div>
             </div>
-        </div>              
-
-
+        </div>      
 
         <div class="row m-t-2">            
             <div class="col-md-12">
@@ -766,11 +784,12 @@
                                 -->
                                 <thead>
                                     <tr>
+                                        <th>#</th>
                                         <th>ID</th>
-                                        <th>Nº Proyecto</th>
                                         <th>Apellido y Nombre</th>
                                         <th>DNI/CUIT</th>
                                         <th>Incubadora</th>
+                                        <th>Nº Proyecto</th>
                                         <th>Ult. modif.</th>
                                         <th>Estado</th>
                                         <th></th>
@@ -778,11 +797,12 @@
                                 </thead>                            
                                 <tbody>
                                     <tr>
+                                        <td>1</td>
                                         <td>GASH34</td>
-                                        <td>5675</td>
                                         <td>Jose Oro</td>
                                         <td>20-26563456-2</td>
                                         <td>Incuba Inc.</td>
+                                        <td>6775</td>
                                         <td>19/11/2017</td>
                                         <td>En evaluación</td>
                                         <td align="right">
@@ -799,29 +819,6 @@
                                             </div>                                        
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>GHFH34</td>
-                                        <td>4563</td>
-                                        <td>Jose Pep</td>
-                                        <td>12-34563456-3</td>
-                                        <td>Incuba Inc.</td>
-                                        <td>19/11/2017</td>
-                                        <td>En evaluación</td>
-                                        <td align="right">
-                                            <div class="btn-group">
-                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Descargas <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                	<li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Evaluación</a></li>
-                                                </ul>
-                                            </div>                                        
-                                        </td>                                        
-                                    </tr>                                    
-                                    <tr>
                                 </tbody>
                             </table>
                             <!-- /.table -->
@@ -872,7 +869,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img class="image-responsive" src="http://dna2.produccion.gob.ar/dna2bpm//dashboard/assets/LTEpalta/dist-palta/img/logoMinisterio.png" alt="Ministerio de Producción">
+                <img class="image-responsive" src="http://www.produccion.gob.ar/wp-content/themes/puro-poncho/img/logoMinisterio.png" alt="Ministerio de Producción">
                 <br>
                 <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a>
                 </p>
@@ -895,13 +892,15 @@
                 <div id="nav_menu-2" class="widget_nav_menu">
                     <div class="menu-footer-a-container">
                         <ul id="menu-footer-a" class="menu">
-                            <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http://dna2.produccion.gob.ar/dna2bpm/dashboard">Tu escritorio</a>
+                            <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http://dna2.produccion.gob.ar/dna2bpm/dashboard">Tu escritorio</a>
                             </li>
-                            <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151">
-                                <i class="fa fa-phone"></i> <span>0800-333-7963</span>
-                                <br><a href="mailto:info@produccion.gob.ar">info@produccion.gob.ar</a>
+                            <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156 text-primary">
+                            	<a style="text-decoration:none;"><i class="fa fa-phone"></i> <span><b>0800-333-7963</b></span></a>
+                            </li>  
+                            <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157 text-primary">
+                            	<a href="mailto:info@produccion.gob.ar">info@produccion.gob.ar</a>
                             </li>
-                       </ul>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -1027,6 +1026,19 @@
 
 <script type="text/javascript" src="../../plugins/tableExport/tableExport.js"></script>
 <script type="text/javascript" src="../../plugins/tableExport/jquery.base64.js"></script>
+
+<script>
+    // Tomar el valor del checkbox
+	$('#tipoinforme span').on('click', function(){
+        var sel = $(this).data('value');
+        var tog = $(this).data('toggle');
+        $('#'+tog).val(sel);
+        // You can change these lines to change classes (Ex. btn-default to btn-danger)
+        $('span[data-toggle="'+tog+'"]').not('[data-value="'+sel+'"]').removeClass('active btn-primary').addClass('notActive btn-default');
+        $('span[data-toggle="'+tog+'"][data-value="'+sel+'"]').removeClass('notActive btn-default').addClass('active btn-primary');
+    });	
+</script>	
+
 
 </body>
 </html>
