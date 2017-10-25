@@ -519,6 +519,8 @@
                             </div>    
                         </div>
                         
+                        <div class="clearfix"></div>
+                        
                         <div class="col-md-9 m-b-1">
                             <div class="input-group custom-search-form">
                                 <div class="input-group-btn">
@@ -572,10 +574,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading bg-aqua">
                         <h3 class="text-white text-left">
-                        	Solicitud de Inscripción - Admitidas
+                        	Resultados
                         </h3>
 						<div class="pull-right">
-                            <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-35px;" onClick="$('#tableResult').tableExport({type:'excel',escape:'false',fileName:'id'});">Descargar XLS</button>
+                            <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-35px;" onClick="$('#tableResult').tableExport({type:'excel',escape:'false',fileName:'id',ignoreColumn:'[7,8]'});">Descargar XLS</button>
 						</div>                            
                     </div>
 
@@ -589,7 +591,7 @@
                             </div>
                         </div>                        
                     
-                        <div class="table-responsive">
+                        <div class="table-responsive" style="padding-bottom:100px;">
                             <table id="tableResult" class="table">
                                 <thead>
                                     <tr>
@@ -597,11 +599,11 @@
                                         <th>ID</th>
                                         <th>Emprendedor</th>
                                         <th>DNI/CUIT</th>
-                                        <th>Proyecto</th>
+                                        <th>Nro. Proyecto</th>
                                         <th>Incubadora</th>
                                         <th>Ult. modif.</th>
-                                        <th>Ev. Interno</th>
-                                        <th>Ev. Externo</th>
+                                        <th>Descargas</th>
+                                        <th></th>
                                     </tr>
                                 </thead>                            
                                 <tbody>
@@ -610,22 +612,66 @@
                                         <td>GASH34</td>
                                         <td>Jose Oro</td>
                                         <td>20-26563456-2</td>
-                                        <td>La espiga de Oro</td>
+                                        <td>8734651</td>
                                         <td>Incuba Inc.</td>
-                                        <td>19/11/2017</td>  
-                                        <td>Eduardo Antoniale</td>
-                                        <td>Juana Casimiro</td>
+                                        <td>19/11/2017</td>
+                                        <td align="center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Proyecto <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                	<li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
+                                                </ul>
+                                            </div>                                        
+                                        </td>   
+                                        <td align="center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Evaluaciones <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                	<li><a href="#" style="padding: 8px 12px;">Evaluador Interno</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Evaluador Externo 1</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Evaluador Externo 2</a></li>
+                                                </ul>
+                                            </div>                                        
+                                        </td>                                        
                                     </tr>
                                     <tr>
                                         <td>352</td>
                                         <td>GHFH34</td>
                                         <td>Jose Pep</td>
                                         <td>12-34563456-3</td>
-                                        <td>Alfajores Pepito</td>
+                                        <td>345346</td>
                                         <td>Incuba Inc.</td>
-                                        <td>12/12/2017</td>  
-                                        <td>Eduardo Boroc</td>
-                                        <td>Juana Casimiro</td>
+                                        <td>19/11/2017</td>
+                                        <td align="center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Proyecto <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                	<li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
+                                                </ul>
+                                            </div>                                        
+                                        </td>   
+                                        <td align="center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Evaluaciones <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                	<li><a href="#" style="padding: 8px 12px;">Evaluador Interno</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Evaluador Externo 1</a></li>
+                                                    <li><a href="#" style="padding: 8px 12px;">Evaluador Externo 2</a></li>
+                                                </ul>
+                                            </div>                                        
+                                        </td>      
                                     </tr>                                    
                                 </tbody>
                             </table>
@@ -643,11 +689,6 @@
                               <li><a href="#">2</a></li>
                               <li><a href="#">3</a></li>
                               <li><a href="#">4</a></li>
-                              <li><a href="#">5</a></li>
-                              <li><a href="#">6</a></li>
-                              <li><a href="#">7</a></li>
-                              <li><a href="#">8</a></li>
-                              <li><a href="#">9</a></li>
                               <li>
                                 <a href="#" aria-label="Next">
                                   <span aria-hidden="true">»</span>
