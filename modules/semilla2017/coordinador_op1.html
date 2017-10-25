@@ -359,14 +359,13 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header container"><!-- se cambió container por content-header -->
-      <ol class="breadcrumb">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Fondo Semilla</a></li>
-        <li class="active">Coordinador</li>
-      </ol>
-      <h1>
-        Coordinador
-      </h1>
+        <ol class="breadcrumb">
+            <li><a href="#">INICIO</a></li>
+            <li>FONDO SEMILLA</li>
+        </ol>
+        <h1>
+        	Coordinador
+        </h1>
       
         
         <div class="row panels-row">
@@ -486,88 +485,79 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="col-xs-12 m-t-1 m-b-1">
-                            <div class="input-group custom-search-form">
-                                <div class="input-group-btn">
-                                    <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
-                                        <span id="textTipoDoc" style="font-size:14px;">Solicitud de Inscripción </span><span class="caret"></span>
-                                    </label>
-                                    <ul class="dropdown-menu" id="divTipoDoc">
-                                        <li><a class="my_data_flag" id="three">Solicitud de Inscripción </a></li>
-                                        <li><a class="my_data_flag" id="three">Plan de Negocios </a></li>
-                                    </ul>
-                                </div>                        
-                                <div id="" class="">
-                                <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
-                                    <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
-                                        <option>Seleccione estado</option>
-                                        <option>En admisión</option>
-                                        <option>Admitidas</option>
-                                        <option>No admitidas</option>
-                                        <!-- PN -->
-                                        <option>Preseleccionados</option>
-                                        <option>Pendiente de carga</option>
-                                        <option>Evaluar por Coordinador</option>
-                                        <option>Rechazados</option>
-                                        <option>Rechazados por Puntaje</option>
-                                        <option>En evaluacion interna</option>
-                                        <option>En evaluacion externa</option>
-                                        <option>Evaluados por Evaluador Interno</option>
-                                        <option>Evaluados por Evaluador Externo</option>
-                                    </select>                                     
+
+                        <div id="filter-panel" class="m-t-1" style="padding:0">
+                        
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="input-group width100">
+                                    <label class="control-label">Buscar por:</label><br />
+                                    <div id="tipoinforme" class="btn-group width100">
+                                        <span class="btn active btn-primary" data-toggle="estado" data-value="Y" style="width:50%;">Incubadora</span>
+                                        <span class="btn notActive btn-default" data-toggle="estado" data-value="N" style="width:50%;">Coordinador</span>
+                                    </div>
+                                    <input type="hidden" name="estadoinforme" id="estadoinforme" value="Y">
+                                </div>                              
+                            </div>                        
+                            <div class="clearfix"></div>
+                        
+                            <div id="buscaIncubadora" class="m-t-1">
+                                <div class="col-md-6 col-sm-6 m-b-1">
+                                    <label class="control-label">Incubadora</label>
+                                    <select data-placeholder="- Seleccione -" class="form-control chosen-select" tabindex="-1">
+                                        <option value=""></option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
+                                   </select>                                     
                                 </div>
-                            </div>    
-                        </div>
-                        
-                        <div class="clearfix"></div>
-                        
-                        <div class="col-md-9 m-b-1">
-                            <div class="input-group custom-search-form">
-                                <div class="input-group-btn">
-                                    <label class="btn btn-primary dropdown-toggle back-prof" data-toggle="dropdown" style="border-radius: 4px 0px 0px 4px; padding: 16px; width: 225px;" aria-expanded="false">
-                                        <span id="text" style="font-size:14px;">Emprendedor </span><span class="caret"></span>
-                                    </label>
-                                    <ul class="dropdown-menu" id="divNewNotifications">
-                                        <li><a class="my_data_flag" id="three">Emprendedor </a></li>
-                                        <li><a class="my_data_flag" id="three">Incubadora </a></li>
-                                        <li><a class="my_data_flag" id="three">Evaluador Interno </a></li>
-                                        <li><a class="my_data_flag" id="three">Evaluador Externo </a></li>
-                                    </ul>
-                                </div>                        
-                                <div id="" class="state-loading">
-                                <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
-                                    <select data-placeholder="Seleccione estado" class="form-control chosen-select" tabindex="-1">
-                                        <option>En admisión</option>
-                                        <option>Admitidas</option>
-                                        <option>No admitidas</option>
-                                        <!-- PN -->
-                                        <option>Preseleccionados</option>
-                                        <option>Pendiente de carga</option>
-                                        <option>Evaluar por Coordinador</option>
-                                        <option>Rechazados</option>
-                                        <option>Rechazados por Puntaje</option>
-                                        <option>En evaluacion interna</option>
-                                        <option>En evaluacion externa</option>
-                                        <option>Evaluados por Evaluador Interno</option>
-                                        <option>Evaluados por Evaluador Externo</option>
+                                <div class="col-md-6 col-sm-6 m-b-2" id="sandbox-container">
+                                    <label class="control-label">Rango de fechas</label>
+                                    <div class="input-group input-daterange width100">
+                                        <input type="text" id="fechaVigInicio" class="form-control">
+                                        <span class="input-group-addon bg-primary" style="padding: 16px;"> HASTA </span>
+                                        <input type="text" id="fechaVigFin" class="form-control">
+                                    </div>                            
+                                </div>
+                                <div class="col-md-10 col-sm-8 m-b-1">
+                                	<label class="control-label">Provincia</label>
+                                    <!--<input type="text" class="form-control" style="border-radius: 0 !important;">-->
+                                    <select data-placeholder="- Seleccione provincia -" class="form-control chosen-select" tabindex="-1">
+                                        <option value=""></option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
                                     </select>                                     
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">    
+
+                            <div id="buscaEmprendedor" class="m-t-1" style="display:none;">
+                                <div class="col-md-6 col-sm-4 m-b-1">
+                                    <label class="control-label">Nombre y apellido</label>
+                                    <input type="text" class="form-control">
+                                </div>  
+                                <div class="col-md-4 col-sm-4 m-b-1">
+                                    <label class="control-label">DNI/CUIT</label>
+                                    <input type="text" class="form-control">
+                                </div>                                  
+                            </div>
                             
-                            <div align="center">
-                                <button id="buscar-filtro" class="btn btn-primary width100">Buscar</button>
+                            <div>
+                                <div class="col-md-2 col-sm-4">
+                                    <button class="btn btn-primary width100 m-t-2" id="buscar-filtro">Buscar</button>
+                                </div>
                             </div>
                     
-
                         </div>
-                    </div>
-
+                  </div>                        
+                        
                 </div>
             </div>
         </div>              
-
 
         <div class="row m-t-2">            
             <div class="col-md-12">
@@ -594,27 +584,38 @@
                         <div class="table-responsive" style="padding-bottom:100px;">
                             <table id="tableResult" class="table">
                                 <thead>
+
+                                    <!--
+                                    Búsqueda por Incubadora 
+                                    N° Proyecto, Nombre del Proyecto, Emprendedor, DNI/CUIT, e mail, Fecha de modificación, Estado, EXPORTAR PDF 
+                                    
+                                    Búsqueda por Coordinador
+                                    N° Proyecto, Nombre de Proyecto, Incubadora, DNI/CUIT, Estado, Fecha de modificación
+                                    -->
+
                                     <tr>
                                         <th>#</th>
-                                        <th>ID</th>
+                                        <th>Nro. Proy.</th>
+                                        <!--<th>Proyecto</th>-->
                                         <th>Emprendedor</th>
                                         <th>DNI/CUIT</th>
-                                        <th>Nro. Proyecto</th>
-                                        <th>Incubadora</th>
+                                        <th>E-mail</th>
                                         <th>Ult. modif.</th>
+                                        <th>Estado</th>
                                         <th>Descargas</th>
                                         <th></th>
                                     </tr>
                                 </thead>                            
                                 <tbody>
                                     <tr>
-                                        <td>378</td>
-                                        <td>GASH34</td>
+                                        <td>1</td>
+                                        <td>8734651</td>
+                                        <!--<td>La espiga de Oro</td>-->
                                         <td>Jose Oro</td>
                                         <td>20-26563456-2</td>
-                                        <td>8734651</td>
-                                        <td>Incuba Inc.</td>
+                                        <td>pepe@gmail.com</td>
                                         <td>19/11/2017</td>
+                                        <td>En Evaluación</td>
                                         <td align="center">
                                             <div class="btn-group">
                                                 <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -640,39 +641,6 @@
                                             </div>                                        
                                         </td>                                        
                                     </tr>
-                                    <tr>
-                                        <td>352</td>
-                                        <td>GHFH34</td>
-                                        <td>Jose Pep</td>
-                                        <td>12-34563456-3</td>
-                                        <td>345346</td>
-                                        <td>Incuba Inc.</td>
-                                        <td>19/11/2017</td>
-                                        <td align="center">
-                                            <div class="btn-group">
-                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Proyecto <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                	<li><a href="#" style="padding: 8px 12px;">Datos Personales</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Solicitud de Inscripción</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Plan de Negocio</a></li>
-                                                </ul>
-                                            </div>                                        
-                                        </td>   
-                                        <td align="center">
-                                            <div class="btn-group">
-                                                <button class="btn btn-primary dropdown-toggle btn-sm" style="width:100%;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Evaluaciones <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                	<li><a href="#" style="padding: 8px 12px;">Evaluador Interno</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Evaluador Externo 1</a></li>
-                                                    <li><a href="#" style="padding: 8px 12px;">Evaluador Externo 2</a></li>
-                                                </ul>
-                                            </div>                                        
-                                        </td>      
-                                    </tr>                                    
                                 </tbody>
                             </table>
                             <!-- /.table -->
