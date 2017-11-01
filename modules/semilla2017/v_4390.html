@@ -368,15 +368,11 @@
         View 4390
       </h1>
 
-        <div class="row m-t-2">            
+        <div class="row m-t-2">        
             <div class="col-md-12">
-
+            	<h5>Cargá las etapas del Proceso Productivo</h5>      
                 <div class="panel panel-default">
-                    <div class="panel-heading bg-primary text-white text-left" style="min-height:10px;">
-                        <h4>Cargá las etapas del Proceso Productivo</h4>
-                    </div>
                     <div class="panel-body">
-
                         <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
                             <div class="col-lg-12">
                                 <div class="alert alert-error" role="alert" style="display:none;">
@@ -392,7 +388,7 @@
                             <div id="tipopersona" style="">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="control-label">Etapa del proceso</label> 
+                                        <label class="control-label">Nombre de la etapa</label> 
                                         <input class="form-control" data-inputmask="" data-mask="" type="text">
                                     </div>
                                 </div>
@@ -423,10 +419,9 @@
                                 
                                 
                             </div>
-                            <p class="col-lg-12 m-b-1"><small>* Campo obligatorio.</small></p>
                             <div class="col-lg-12 m-b-1">
                                 <div align="center">
-                                    <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar a la tabla</button>
+                                    <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar</button>
                                 </div>
                             </div>
                         </form>
@@ -471,12 +466,9 @@
 
 
             <div class="col-md-12">
+                <h5>Plan de Inversiones</h5>            
                 <div class="panel panel-default">
-                    <div class="panel-heading bg-primary text-white text-left" style="min-height:10px;">
-                        <h4>Plan de Inversiones</h4>
-                    </div>
                     <div class="panel-body">
-
                         <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
                             <div class="col-lg-12">
                                 <div class="alert alert-error" role="alert" style="display:none;">
@@ -520,7 +512,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="control-label">Nombre de la tarea <small>(bien a adquirir, marca, modelo)</small></label> 
+                                        <label class="control-label">Nombre del bien a adquirir <small>(detallar marca, modelo)</small></label> 
                                         <input id="nombre" type="text" name="myInputDNA" size="10" class="form-control">
                                     </div>
                                 </div>                                
@@ -561,10 +553,9 @@
                                     </div>
                                 </div>                                
                             </div>
-                            <p class="col-lg-12 m-b-1"><small>* Campo obligatorio.</small></p>
                             <div class="col-lg-12 m-b-1">
                                 <div align="center">
-                                    <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar a la tabla</button>
+                                    <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar</button>
                                 </div>
                             </div>
                         </form>
@@ -612,13 +603,10 @@
 
             
             <div class="col-md-12">
+                <h5>Miembros del Equipo<br />
+                <small>Describí la formación, experiencia laboral y antecedentes de cada miembro.</small></h5>
                 <div class="panel panel-default">
-                    <div class="panel-heading bg-primary text-white text-left" style="min-height:10px;">
-                        <h4>Miembros del Equipo<br />
-                        <small>Formación, experiencia laboral y antecedentes laborales.</small></h4>
-                    </div>
                     <div class="panel-body">
-
                         <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
                             <div class="col-lg-12">
                                 <div class="alert alert-error" role="alert" style="display:none;">
@@ -641,7 +629,15 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label class="control-label">Tipo de estudio</label> 
-                                        <input id="estudio11137" type="text" name="myInputDNA" class="form-control">
+                                        <select id="estudio11137" class="form-control selectoruno disabled" name="myInputDNA">
+                                            <option value="">- Seleccione -</option>
+                                            <option value="1">Postgrado</option>
+                                            <option value="2">Universitario completo</option>
+                                            <option value="3">Universitario en curso</option>
+                                            <option value="4">Terciario completo</option>
+                                            <option value="5">Terciario en curso</option>
+                                            <option value="6">Secundario</option>
+                                        </select>                                        
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -705,10 +701,9 @@
                                     </div>
                                 </div>                                
                             </div>
-                            <p class="col-lg-12 m-b-1"><small>* Campo obligatorio.</small></p>
                             <div class="col-lg-12 m-b-1">
                                 <div align="center">
-                                    <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar a la tabla</button>
+                                    <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar miembro</button>
                                 </div>
                             </div>
                         </form>
@@ -763,11 +758,11 @@
 </div>
 <!-- ./wrapper -->
 
-<footer class="main-footer" style="padding-bottom: 32px; padding-top: 60px; border-top: 1px solid #cacaca; background:#FFFFFF; margin-left: 0px !important;">
+<footer class="main-footer" style="padding-bottom: 32px; padding-top: 60px; border-top: 1px solid #cacaca ; background:#FFFFFF ; margin-left: 0px !important;">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img class="image-responsive" src="../../dist-palta/img/logoMinisterio.png" alt="Ministerio de Producción">
+                <img class="image-responsive" src="http://www.produccion.gob.ar/wp-content/themes/puro-poncho/img/logoMinisterio.png" alt="Ministerio de Producción">
                 <br>
                 <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a>
                 </p>
@@ -776,13 +771,11 @@
                 <div id="nav_menu-3" class="widget_nav_menu">
                     <div class="menu-footer-b-container">
                         <ul id="menu-footer-b" class="menu">
-                            <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http:/#">Item I</a>
+                            <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http://www.produccion.gob.ar/institucional">Institucional</a>
                             </li>
-                            <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http:/#">Item II</a>
+                            <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http://www.produccion.gob.ar/guia-de-tramites">Trámites</a>
                             </li>
-                            <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http:/#">Item III</a>
-                            </li>
-                            <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http:/#">Item IV</a>
+                            <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http://www.produccion.gob.ar/mundo-pyme">Mundo PyME</a>
                             </li>
                         </ul>
                     </div>
@@ -792,9 +785,13 @@
                 <div id="nav_menu-2" class="widget_nav_menu">
                     <div class="menu-footer-a-container">
                         <ul id="menu-footer-a" class="menu">
-                            <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http:/#">Item 1</a>
+                            <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http://dna2.produccion.gob.ar/dna2bpm/dashboard">Tu escritorio</a>
                             </li>
-                            <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http:/#">Item 2</a>
+                            <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156 text-primary">
+                            	<a style="text-decoration:none;"><i class="fa fa-phone"></i> <span><b>0800-333-7963</b></span></a>
+                            </li>  
+                            <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157 text-primary">
+                            	<a href="mailto:info@produccion.gob.ar">info@produccion.gob.ar</a>
                             </li>
                         </ul>
                     </div>
