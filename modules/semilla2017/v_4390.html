@@ -370,7 +370,8 @@
 
         <div class="row m-t-2">        
             <div class="col-md-12">
-            	<h5>Cargá las etapas del Proceso Productivo</h5>      
+            	<h2>Proceso Productivo<br />
+                <small>Cargá las etapas del Proceso Productivo</small></h2>      
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
@@ -447,15 +448,14 @@
                                 <tbody>
                                     <tr class="data" id="fila" valign="middle">
                                         <td>1</td>
-                                        <td class="col-xs-2"><input class="form-control etapa100 data lupus disabled" disabled="disabled" id="etapa" name="myInputDNA"></td>
-                                        <td class="col-md-4" width="300"><input class="form-control data lupus disabled" disabled="disabled" id="desc" name="myInputDNA"></td>
+                                        <td class="col-xs-2">Impresion<input class="form-control etapa100 data hidden" disabled="disabled" id="etapa" name="myInputDNA"></td>
+                                        <td class="col-md-4" width="300">Plotter de Corte<input class="form-control data hidden" disabled="disabled" id="desc" name="myInputDNA"></td>
                                         <!--<td><input class="form-control data lupus disabled" disabled="disabled" id="proceso" name="myInputDNA"></td>-->
                                         <!--<td><input class="form-control data lupus disabled" disabled="disabled" id="equipamientoactual" name="myInputDNA"></td>-->
-                                        <td class="col-xs-4"><input class="form-control data lupus disabled" disabled="disabled" id="equipamientosolicitado" name="myInputDNA"></td>
-                                        <td><input align="center" class="form-control data lupus disabled" disabled="disabled" id="elultimo" name="myInputDNA" type="hidden"></td>
-                                        <td><button class="btn btn-sm btn-primary">Editar</button></td>
-                                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>                                        
-                                    </tr>
+                                        <td class="col-xs-4">Plotter HP T-95<input class="form-control data lupus hidden" disabled="disabled" id="equipamientosolicitado" name="myInputDNA"></td>
+                                        <td><input align="center" class="form-control data lupus hidden" disabled="disabled" id="elultimo" name="myInputDNA" type="hidden"></td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</button></td>                                    </tr>
                                 </tbody>
                             </table><!-- /.table -->
                         </div>
@@ -466,7 +466,7 @@
 
 
             <div class="col-md-12">
-                <h5>Plan de Inversiones</h5>            
+                <h2>Plan de Inversiones</h2>            
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
@@ -510,18 +510,20 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
                                         <label class="control-label">Nombre del bien a adquirir <small>(detallar marca, modelo)</small></label> 
                                         <input id="nombre" type="text" name="myInputDNA" size="10" class="form-control">
                                     </div>
                                 </div>                                
+                                <!--
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Etapa del proceso productivo a la que pertenece</label> 
                                         <input id="etapapro" type="text" name="myInputDNA" size="10" align="left" class="form-control">
                                     </div>
                                 </div>
+                                -->
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label">Precio Unitario</label> 
@@ -575,24 +577,47 @@
                                         <th colspan="2"></th>
                                     </tr>                                
                                  </thead>                                    
-                                    
-                                </thead>
                                 <tbody>
                                     <tr class="data" id="fila" valign="middle">
                                         <td>1</td>
-                                        <td><input id="primero" type="text" name="myInputDNA" class="form-control" disabled="disabled"></td>
-                                        <td><input id="segundo" type="text" name="myInputDNA" class="form-control" disabled="disabled"></td>
-                                        <td><input id="precio" type="text" name="myInputDNA" class="form-control" disabled="disabled"></td>
-                                        <td><input id="nombreproveedor" type="text" name="myInputDNA" class="form-control" disabled="disabled"></td>
-                                        <td><button class="btn btn-sm btn-primary">Editar</button></td>
-                                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>                                        
+                                        <td>Activos fijos<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>Plotter de corte HP<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>$23000<input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>Torn Ink SA<input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
                                     </tr>
+                                    <tr class="data" id="fila" valign="middle">
+                                        <td>2</td>
+                                        <td>Activos intangibles<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>Registro de Marcas de "Very Design SA"<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>$23000<input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>Brand Gestoria SA<input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>                                    </tr>
+                                    <tr class="data" id="fila" valign="middle">
+                                        <td>3</td>
+                                        <td>Capital de trabajo<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>Gastos de Certificaciones y Sellos "Very Design"<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>$25000<input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>Brand Gestoria SA<input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
+                                    </tr>    
+                                    <tr class="data" id="fila" valign="middle">
+                                        <td>4</td>
+                                        <td>Gastos<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>Servicio de asistencia técnica HP<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>$12000<input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>HP Tech Asis<input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
+                                    </tr>                                                                                                                    
                                 </tbody>
                             </table><!-- /.table -->
                         </div>
                         <div class="col-xs-4 col-xs-offset-4" align="center">
-                            <label class="control-label">Monto Total</label> 
-                            <input id="miembro11137" type="text" name="myInputDNA" class="form-control" disabled="disabled">                        
+                            <h3>Monto Total: $83000<input id="miembro11137" type="text" name="myInputDNA" class="form-control" disabled="disabled" style="display:none;"></h3>
                         </div>
                     </div>
                 </div>
@@ -603,8 +628,8 @@
 
             
             <div class="col-md-12">
-                <h5>Miembros del Equipo<br />
-                <small>Describí la formación, experiencia laboral y antecedentes de cada miembro.</small></h5>
+                <h2>Miembros del Equipo<br />
+                <small>Describí la formación, experiencia laboral y antecedentes de cada miembro.</small></h2>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
@@ -646,6 +671,7 @@
                                         <input id="titulo11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>                                
+                                <!--
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Estado de avance</label> 
@@ -664,6 +690,7 @@
                                         <input id="rubro11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>    
+                                -->
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Cargo</label> 
@@ -688,20 +715,25 @@
                                         <input id="finaliza11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-12 col-xs-12 m-b-1">
+                                    <div class="input-group width100">
+                                        <label class="control-label">¿Ha creado (solo o como parte de un equipo) alguna empresa con anterioridad?</label><br>
+                                        <div id="hascreado" class="btn-group width100">
+                                            <span class="btn notActive btn-default" data-toggle="estado" data-value="Y" style="width:50%;">Si</span>
+                                            <span class="btn active btn-primary" data-toggle="estado" data-value="N" style="width:50%;">No</span>
+                                        </div>
+                                        <input type="hidden" name="myInputDNA" id="creo11137" value="Y">
+                                    </div>                              
+                                </div>                                
+                                
+                                <div class="col-md-12 m-b-1" style="display:none;">
                                     <div class="form-group">
-                                        <label class="control-label">¿Ha creado (solo o como parte de un equipo) alguna empresa con anterioridad?</label> 
-                                        <input id="creo11137" type="text" name="myInputDNA" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label">En caso afirmativo,<br />¿cuáles?</label> 
+                                        <label class="control-label">¿Cuáles?</label> 
                                         <input id="cuales11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>                                
                             </div>
-                            <div class="col-lg-12 m-b-1">
+                            <div class="col-lg-12">
                                 <div align="center">
                                     <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar miembro</button>
                                 </div>
@@ -728,19 +760,379 @@
                                 <tbody>
                                     <tr class="data" id="fila" valign="middle">
                                         <td>1</td>
-                                        <td><input id="miembro11137" type="text" name="myInputDNA" class="form-control" disabled="disabled"></td>
-                                        <td><input id="estudio11137" type="text" name="myInputDNA" class="form-control" disabled="disabled"></td>
-                                        <td><input id="titulo11137" type="text" name="myInputDNA" class="form-control" disabled="disabled"></td>
-                                        <td><input id="empresa11137" type="text" name="myInputDNA" class="form-control" disabled="disabled"></td>
-                                        <td><button class="btn btn-sm btn-primary">Editar</button></td>
-                                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>                                        
-                                    </tr>
+                                        <td>Carlos Tevez<input id="miembro11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled"></td>
+                                        <td>Terciario<input id="estudio11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled"></td>
+                                        <td>Diseñador Gráfico<input id="titulo11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled"></td>
+                                        <td>VERY Design<input id="empresa11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled"></td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>                                    </tr>
                                 </tbody>
                             </table><!-- /.table -->
                         </div>
                     </div>
                 </div>
             </div>            
+            
+
+            <div class="col-md-12">
+                <h2>Egresos<br /><small>Consectetur adipiscing elit lorem ipsum dolor sit.</small></h2>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form class="form-azul col-lg-12">
+                            <div class="col-lg-12">
+                                <div class="alert alert-error" role="alert" style="display:none;">
+                                    Alert "warning". Ej.: en caso de que la CUIT esté siendo utilizada por otro usuario.
+                                </div>
+                                <div class="alert alert-warning" role="alert" style="display:none;">
+                                    Consectetur adipiscing elit lorem ipsum dolor sit.
+                                </div>
+                                <div class="alert alert-success" role="alert" style="display:none;">
+                                    Alerta de éxito en la carga de datos.
+                                </div>
+                            </div>
+                            <div id="tipopersona" style="">
+                                <div class="col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Año</label> 
+                                        <select id="añoegreso" class="form-control" name="myInputDNA">
+                                            <option value="">- Seleccione año -</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>                                         
+                                    </div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="form-group">
+                                        <label class="control-label">Tipo de Ingreso</label> 
+                                        <input class="form-control" id="egresoanual1tipodeingreso" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 1</label> 
+                                        <input class="form-control" id="ingresoanualmas1" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 2</label> 
+                                        <input class="form-control" id="ingresoanualmas2" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 3</label> 
+                                        <input class="form-control" id="ingresoanualmas3" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 4</label> 
+                                        <input class="form-control" id="ingresoanualmas4" name="myInputDNA">
+                                    </div>
+                                </div> 
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 5</label> 
+                                        <input class="form-control" id="ingresoanualmas5" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 6</label> 
+                                        <input class="form-control" id="ingresoanualmas6" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 7</label> 
+                                        <input class="form-control" id="ingresoanualmas7" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 8</label> 
+                                        <input class="form-control" id="ingresoanualmas8" name="myInputDNA">
+                                    </div>
+                                </div>    
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 9</label> 
+                                        <input class="form-control" id="ingresoanualmas9" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 10</label> 
+                                        <input class="form-control" id="ingresoanualmas10" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 11</label> 
+                                        <input class="form-control" id="ingresoanualmas11" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Mes 12</label> 
+                                        <input class="form-control" id="ingresoanualmas12" name="myInputDNA">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-md-12 m-b-1" style="display:none;">
+                                    <div class="form-group">
+                                        <label class="control-label">En caso afirmativo,<br />¿cuáles?</label> 
+                                        <input id="cuales11137" type="text" name="myInputDNA" class="form-control">
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="col-lg-12">
+                                <div align="center">
+                                    <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar Egreso</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div class="clearfix"></div>
+                    	
+                        <!--
+                        <h4>Tabla de Miembros del Equipo</h4>                    
+                    
+                        <div class="table-responsive">
+                            <table class="table table-striped" id="tablaegreso" style="width:1400px;">
+                                <thead>
+                                    <tr style="font-size:14px;">
+                                        <th></th>
+                                        <th class="text-center" width="12%">Tipo de egreso</th>
+                                        
+                                        <th class="text-center" width="">Mes 1</th>
+                                        <th class="text-center" width="">Mes 2</th>
+                                        <th class="text-center" width="">Mes 3</th>
+                                        <th class="text-center" width="">Mes 4</th>
+                                        <th class="text-center" width="">Mes 5</th>
+                                        <th class="text-center" width="">Mes 6</th>
+
+                                        <th class="text-center " width="">Mes 7</th>
+                                        <th class="text-center " width="">Mes 8</th>
+                                        <th class="text-center " width="">Mes 9</th>
+                                        <th class="text-center " width="">Mes 10</th>
+                                        <th class="text-center " width="">Mes 11</th>
+                                        <th class="text-center " width="">Mes 12</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="fila4">
+                                        <td class="primero4" id="nfila4">1</td>
+                                        <td><input class="form-control" id="egresoanual1tipodeingreso" name="myInputDNA"></td>
+                                        <td><input aria-invalid="false" class="form-control" id="egresoanual1mesuno" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mesdos" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mestres" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mescuatro" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mescinco" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1messeis" name="myInputDNA"></td>
+                                        
+                                        <td><input class="form-control" id="egresoanual1messiete" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mesocho" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mesnueve" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mesdiez" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mesonce" name="myInputDNA"></td>
+                                        <td><input class="form-control" id="egresoanual1mesdoce" name="myInputDNA"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        -->
+                    </div>
+
+                    <!-- Año 1 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-left text-black bg-white" style="min-height:20px;">
+                            <h4>Año 1</h4>
+                            <!--
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-30px;">1 Semestre</button>
+                                <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-30px; margin-left:10px;">2 Semestre</button>
+                            </div>   
+                            -->                     
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table" id="tablaegreso">
+                                    <thead>
+                                        <tr style="font-size:14px;">
+                                            <th></th>
+                                            <th width="20%">Tipo de egreso</th>
+                                            <th width="">Mes 1</th>
+                                            <th width="">Mes 2</th>
+                                            <th width="">Mes 3</th>
+                                            <th width="">Mes 4</th>
+                                            <th width="">Mes 5</th>
+                                            <th width="">Mes 6</th>
+                                            <th></th>
+                                            <th class="hidden" width="">Mes 7</th>
+                                            <th class="hidden" width="">Mes 8</th>
+                                            <th class="hidden" width="">Mes 9</th>
+                                            <th class="hidden" width="">Mes 10</th>
+                                            <th class="hidden" width="">Mes 11</th>
+                                            <th class="hidden" width="">Mes 12</th>
+                                            <th colspan="3"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id="fila4">
+                                            <td class="primero4" id="nfila4">1</td>
+                                            <td>Alquiler de depósito</td>
+                                            <td>$12000</td>
+                                            <td>$15000</td>
+                                            <td>$8000</td>
+                                            <td>$10000</td>
+                                            <td>$12000</td>
+                                            <td>$15000</td>
+                                            <td>...</td>
+                                            <td class="hidden">$80000</td>
+                                            <td class="hidden">$12000</td>
+                                            <td class="hidden">$80000</td>
+                                            <td class="hidden">$10000</td>
+                                            <td class="hidden">$5000</td>
+                                            <td class="hidden">$13000</td>
+                                            <td><button class="btn btn-sm bg-aqua" type="button">ver más</button></td>
+                                            <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                            <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Año 2 -->
+                        <div class="panel-heading text-left text-black bg-white" style="min-height:20px;">
+                            <h4>Año 2</h4>
+                            <!--
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-30px;">1 Semestre</button>
+                                <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-30px; margin-left:10px;">2 Semestre</button>
+                            </div>   
+                            -->                         
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table" id="tablaegreso">
+                                    <thead>
+                                        <tr style="font-size:14px;">
+                                            <th></th>
+                                            <th width="20%">Tipo de egreso</th>
+                                            <th width="">Mes 1</th>
+                                            <th width="">Mes 2</th>
+                                            <th width="">Mes 3</th>
+                                            <th width="">Mes 4</th>
+                                            <th width="">Mes 5</th>
+                                            <th width="">Mes 6</th>
+                                            <th></th>
+                                            <th class="hidden" width="">Mes 7</th>
+                                            <th class="hidden" width="">Mes 8</th>
+                                            <th class="hidden" width="">Mes 9</th>
+                                            <th class="hidden" width="">Mes 10</th>
+                                            <th class="hidden" width="">Mes 11</th>
+                                            <th class="hidden" width="">Mes 12</th>
+                                            <th colspan="3"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id="fila4">
+                                            <td class="primero4" id="nfila4">1</td>
+                                            <td>Alquiler de depósito</td>
+                                            <td>$12000</td>
+                                            <td>$15000</td>
+                                            <td>$8000</td>
+                                            <td>$10000</td>
+                                            <td>$12000</td>
+                                            <td>$15000</td>
+                                            <td>...</td>
+                                            <td class="hidden">$80000</td>
+                                            <td class="hidden">$12000</td>
+                                            <td class="hidden">$80000</td>
+                                            <td class="hidden">$10000</td>
+                                            <td class="hidden">$5000</td>
+                                            <td class="hidden">$13000</td>
+                                            <td><button class="btn btn-sm bg-aqua" type="button">ver más</button></td>
+                                            <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                            <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Año 3 -->
+                        <div class="panel-heading text-left text-black bg-white" style="min-height:20px;">
+                            <h4>Año 3</h4>
+                            <!--
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-30px;">1 Semestre</button>
+                                <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-30px; margin-left:10px;">2 Semestre</button>
+                            </div>                        
+                            -->
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table" id="tablaegreso">
+                                    <thead>
+                                        <tr style="font-size:14px;">
+                                            <th></th>
+                                            <th width="20%">Tipo de egreso</th>
+                                            <th width="">Mes 1</th>
+                                            <th width="">Mes 2</th>
+                                            <th width="">Mes 3</th>
+                                            <th width="">Mes 4</th>
+                                            <th width="">Mes 5</th>
+                                            <th width="">Mes 6</th>
+                                            <th></th>
+                                            <th class="hidden" width="">Mes 7</th>
+                                            <th class="hidden" width="">Mes 8</th>
+                                            <th class="hidden" width="">Mes 9</th>
+                                            <th class="hidden" width="">Mes 10</th>
+                                            <th class="hidden" width="">Mes 11</th>
+                                            <th class="hidden" width="">Mes 12</th>
+                                            <th colspan="3"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id="fila4">
+                                            <td class="primero4" id="nfila4">1</td>
+                                            <td>Alquiler de depósito</td>
+                                            <td>$12000</td>
+                                            <td>$15000</td>
+                                            <td>$8000</td>
+                                            <td>$10000</td>
+                                            <td>$12000</td>
+                                            <td>$15000</td>
+                                            <td>...</td>
+                                            <td class="hidden">$80000</td>
+                                            <td class="hidden">$12000</td>
+                                            <td class="hidden">$80000</td>
+                                            <td class="hidden">$10000</td>
+                                            <td class="hidden">$5000</td>
+                                            <td class="hidden">$13000</td>
+                                            <td><button class="btn btn-sm bg-aqua" type="button">ver más</button></td>
+                                            <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                            <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+
+                </div>
+                
+            </div>                        
+            
             
             
         </div>        
@@ -816,23 +1208,6 @@
 <script src="../../plugins/iCheck/icheck.min.js"></script>
 
 <script>
-$(function() {
-  $(".expand").on( "click", function() {
-    $(this).next().slideToggle(200);
-    $expand = $(this).find(">:first-child");
-//	alert($expand);
-//	console.log($expand);
-    
-    if($expand.html() == "<i class='fa fa-angle-down' aria-hidden='true'></i>") {
-      $expand.html("<i class='fa fa-angle-down' aria-hidden='true'></i>");
-    } else {
-      $expand.html("<i class='fa fa-angle-up' aria-hidden='true'></i>");
-    }
-  });
-});
-</script>
-
-<script>
     $('.dropdown-toggle').dropdown();
     $('#divNewNotifications li > a').click(function(){
     if (this.text !== ' More Options ') {
@@ -843,6 +1218,18 @@ $(function() {
     });	
 
 </script>
+
+<script>
+    // Tomar el valor del checkbox
+	$('#hascreado span').on('click', function(){
+        var sel = $(this).data('value');
+        var tog = $(this).data('toggle');
+        $('#'+tog).val(sel);
+        // You can change these lines to change classes (Ex. btn-default to btn-danger)
+        $('span[data-toggle="'+tog+'"]').not('[data-value="'+sel+'"]').removeClass('active btn-primary').addClass('notActive btn-default');
+        $('span[data-toggle="'+tog+'"][data-value="'+sel+'"]').removeClass('notActive btn-default').addClass('active btn-primary');
+    });	
+</script>	
 
 
 </body>
