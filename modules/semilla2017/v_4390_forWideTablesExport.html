@@ -441,7 +441,6 @@
                                         <!--<th class="text-center">Proceso interno o tercerizado</th>-->
                                         <!--<th class="text-center">Equipamiento/Capacidad que utiliza actualmente</th>-->
                                         <th>Equipamiento</th>
-                                        <th></th>
                                         <th colspan="2"></th>
                                     </tr>
                                 </thead>
@@ -449,18 +448,50 @@
                                     <tr class="data" id="fila" valign="middle">
                                         <td>1</td>
                                         <td class="col-xs-2">Impresion<input class="form-control etapa100 data hidden" disabled="disabled" id="etapa" name="myInputDNA"></td>
-                                        <td class="col-md-4" width="300">Plotter de Corte<input class="form-control data hidden" disabled="disabled" id="desc" name="myInputDNA"></td>
+                                        <td class="col-md-4" width="300">
+                                        	Descripción: Corte de impresión.<br />
+                                            Proceso interno: Consectetur adipiscing elit lorem ipsum dolor sit.
+                                            <input class="form-control data hidden" disabled="disabled" id="desc" name="myInputDNA">
+                                        </td>
                                         <!--<td><input class="form-control data lupus disabled" disabled="disabled" id="proceso" name="myInputDNA"></td>-->
                                         
                                         <td class="col-xs-4">
-                                        	Plotter HP T-95
+                                        	Actual: Plotter Epson Ep-LX300<br />
+                                            Solicitado: Plotter HP T-95
                                         	<input class="form-control data lupus hidden" disabled="disabled" id="equipamientosolicitado" name="myInputDNA">
+                                            <input align="center" class="form-control data lupus hidden" disabled="disabled" id="elultimo" name="myInputDNA">
                                         </td>
-                                        <td><input align="center" class="form-control data lupus hidden" disabled="disabled" id="elultimo" name="myInputDNA" type="hidden"></td>
                                         <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
                                         <td><button class="btn btn-danger btn-sm" type="button">Borrar</button></td>                                    </tr>
                                 </tbody>
                             </table><!-- /.table -->
+                            
+                            <!--
+                            <table class="table" id="tablaproc">
+                                <thead>
+                                    <tr style="font-size:14px;">
+                                        <th></th>
+                                        <th>Etapa del Proceso</th>
+                                        <th width="50%">Descripción</th>
+                                        <th width="30%">Equipamiento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="data" id="fila" valign="middle">
+                                        <td>1</td>
+                                        <td>Impresion</td>
+                                        <td>
+                                        	Descripción: Corte de impresión.<br />
+                                            Proceso interno: Consectetur adipiscing elit lorem ipsum dolor sit.
+                                        </td>
+                                        <td>
+                                        	Actual: Plotter Epson Ep-LX300<br />
+                                            Solicitado: Plotter HP T-95
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>       
+                            -->
                         </div>
                     </div>
                 </div>
@@ -679,6 +710,45 @@
                                     </tr>                                                                                                                    
                                 </tbody>
                             </table><!-- /.table -->
+                            
+                            
+                            
+                            <!--
+                            <table class="table" id="tablaproc">
+                                <thead>
+                                    <tr style="font-size:14px;">
+                                        <th>#</th>
+                                        <th width="22%">Tipo de Inversión</th>
+                                        <th>Bien a aquirir</th>
+                                        <th>Cant.</th>
+                                        <th width="8%">Pcio. Unit.</th>
+                                        <th width="8%">Pcio. Total</th>
+                                        <th width="18%">Proveedor</th>
+                                        <th colspan="2"></th>
+                                    </tr>                                
+                                 </thead>                                    
+                                <tbody>
+                                    <tr class="data" id="fila" valign="middle">
+                                        <td>3</td>
+                                        <td>
+                                        	Capital de trabajo<br />
+                                            Certificaciones
+                                        </td>
+                                        <td>Gastos de Certificaciones y Sellos "Very Design"</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">
+                                        	$11000
+                                        </td>
+                                        <td class="text-right">$11000</td>
+                                        <td>
+                                        	Brand Gestoria SA<br />
+                                            CUIT: 20-22544563-2
+                                        </td>
+                                    </tr>    
+                                </tbody>
+                            </table>                            
+                            -->
+                            
                         </div>
                         <div class="col-xs-4 col-xs-offset-4" align="center">
                             <h3>Monto Total: $69000<input id="miembro11137" type="text" name="myInputDNA" class="form-control" disabled="disabled" style="display:none;"></h3>
