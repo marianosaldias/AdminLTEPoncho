@@ -715,7 +715,7 @@
                                         <input id="miembro11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Tipo de estudio</label> 
                                         <select id="estudio11137" class="form-control selectoruno disabled" name="myInputDNA">
@@ -742,12 +742,6 @@
                                         <input id="avance11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="control-label">Empresa</label> 
-                                        <input id="empresa11137" type="text" name="myInputDNA" class="form-control">
-                                    </div>
-                                </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Rubro</label> 
@@ -755,6 +749,12 @@
                                     </div>
                                 </div>    
                                 -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Empresa</label> 
+                                        <input id="empresa11137" type="text" name="myInputDNA" class="form-control">
+                                    </div>
+                                </div>                                
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Cargo</label> 
@@ -770,13 +770,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Inicio</label> 
-                                        <input id="inicio11137" type="text" name="myInputDNA" class="form-control">
+                                        <input id="inicio11137" type="text" name="myInputDNA" class="form-control dateinput">
                                     </div>
                                 </div>                                
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Finalización</label> 
-                                        <input id="finaliza11137" type="text" name="myInputDNA" class="form-control">
+                                        <input id="finaliza11137" type="text" name="myInputDNA" class="form-control dateinput">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-xs-12 m-b-1">
@@ -829,14 +829,14 @@
                                         <td valign="top">
                                             Estudio: Terciario<br />
                                             Título: Diseñador Gráfico<br />
-                                            Ingreso: 1990<br />Finalización: 1996<br />
+                                            Ingreso: 1990<br />Finalización: 1996
                                             <input id="titulo11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
                                             <input id="estudio11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
                                             <input id="inicio11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
                                             <input id="finaliza11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
                                         </td>
                                         <td valign="top">
-                                        	VERY Design<br />
+                                        	Empresa: VERY Design<br />
                                             Cargo: Diseñador<br />
                                             Funciones: PreImpresion, diseño gráfico, encuadernado, ventas, etc.
                                             <input id="empresa11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
@@ -1289,6 +1289,20 @@
 <script src="../../dist/js/app.min.js"></script>
 <!-- iCheck -->
 <script src="../../plugins/iCheck/icheck.min.js"></script>
+
+<!-- Datepicker -->
+<script src="../../plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="../../plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+<script type="application/javascript">
+	$('input.dateinput').datepicker({
+		language: "es",
+		autoclose: true,
+		clearBtn: true,
+		orientation: "top"
+	});
+</script>
+
+
 
 <script>
     $('.dropdown-toggle').dropdown();
