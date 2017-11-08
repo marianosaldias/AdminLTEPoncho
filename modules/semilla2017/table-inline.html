@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Incubadoras</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+<style>
+.panel {
+    margin-bottom: 20px;
+}
+.pagination {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+</style>
+  
+</head>
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+
+	<div class="table-responsive" style="width:100%;">
+		<table class="table table-striped" id="tablaproc" style="width:100%;">
+			<thead>
+				<tr style="font-size:12px;">
+					<th></th>
+					<th class="text-center" valign="top">Etapa del Proceso</th>
+					<th class="text-center" valign="top">Descripción</th>
+					<th class="text-center" valign="top">Proceso interno o tercerizado (en caso de ser tercerizado, detallar proveedor)</th>
+					<th class="text-center" valign="top">Equipamiento/Capacidad que utiliza actualmente</th>
+					<th class="text-center" valign="top">Equipamiento/Capacidad que solicita al Fondo Semilla</th>
+                    <th class="text-center" valign="top">Solicita al Fondo Semilla</th>
+					<th class="text-center" valign="top">Equipamiento/Capacidad que utiliza actualmente</th>
+					<th class="text-center" valign="top">Equipamiento/Capacidad que solicita al Fondo Semilla</th>
+                    <th class="text-center" valign="top">Solicita al Fondo Semilla</th>                    
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="data" id="fila" style="font-size:14px;">
+					<td valign="top"><p>1</p></td>
+					<td valign="top">
+						<p id="etapa" style="word-wrap: break-word;">Sed porta, nibh ut tristique tristique, quam risus eleifend tortor, non vehicula sapien ipsum congue dui.</p>
+					</td>
+					<td valign="top">
+						<p id="desc" style="word-wrap: break-word;">Lorem ipsum dolor.</p>
+					</td>
+					<td valign="top">
+						<p id="proceso" style="word-wrap: break-word; vertical-align: top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lectus orci. Duis sagittis luctus erat, non condimentum elit vehicula ut. Nam bibendum, metus sit amet scelerisque feugiat, eros nulla mattis mauris, ac accumsan lorem sem at mi. Pellentesque lobortis nisi et est pulvinar hendrerit. Nullam ut finibus massa, quis suscipit nisl. Suspendisse quis cursus arcu, non sollicitudin ante. Sed porta, nibh ut tristique tristique, quam risus eleifend tortor, non vehicula sapien ipsum congue dui. Donec at augue risus. Cras tellus urna, accumsan rhoncus elementum non, eleifend non tellus.</p>
+					</td>
+					<td valign="top">
+						<p id="equipamientoactual" style="word-wrap: break-word; vertical-align: top">Donec at augue risus. Cras tellus urna, accumsan rhoncus elementum non, eleifend non tellus.</p>
+					</td>
+					<td valign="top">
+						<p id="equipamientosolicitado" style="word-wrap: break-word;">Pellentesque lobortis nisi et est pulvinar hendrerit. Nullam ut finibus massa, quis suscipit nisl. Suspendisse quis cursus arcu, non sollicitudin ante. Sed porta, nibh ut tristique tristique, quam risus eleifend tortor, non vehicula sapien ipsum congue dui.</p>
+					</td>
+					<td valign="top">
+						<p id="proceso" style="word-wrap: break-word; vertical-align: top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lectus orci. Duis sagittis luctus erat, non condimentum elit vehicula ut. Nam bibendum, metus sit amet scelerisque feugiat, eros nulla mattis mauris, ac accumsan lorem sem at mi. Pellentesque lobortis nisi et est pulvinar hendrerit. Nullam ut finibus massa, quis suscipit nisl. Suspendisse quis cursus arcu, non sollicitudin ante. Sed porta, nibh ut tristique tristique, quam risus eleifend tortor, non vehicula sapien ipsum congue dui. Donec at augue risus. Cras tellus urna, accumsan rhoncus elementum non, eleifend non tellus.</p>
+					</td>
+					<td valign="top">
+						<p id="proceso" style="word-wrap: break-word; vertical-align: top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lectus orci. Duis sagittis luctus erat, non condimentum elit vehicula ut. Nam bibendum, metus sit amet scelerisque feugiat, eros nulla mattis mauris, ac accumsan lorem sem at mi. Pellentesque lobortis nisi et est pulvinar hendrerit. Nullam ut finibus massa, quis suscipit nisl. Suspendisse quis cursus arcu, non sollicitudin ante. Sed porta, nibh ut tristique tristique, quam risus eleifend tortor, non vehicula sapien ipsum congue dui. Donec at augue risus. Cras tellus urna, accumsan rhoncus elementum non, eleifend non tellus.</p>
+					</td>
+					<td valign="top">
+						<p id="equipamientoactual" style="word-wrap: break-word; vertical-align: top">Donec at augue risus. Cras tellus urna, accumsan rhoncus elementum non, eleifend non tellus.</p>
+					</td>
+					<td valign="top">
+						<p id="equipamientosolicitado" style="word-wrap: break-word;">Pellentesque lobortis nisi et est pulvinar hendrerit. Nullam ut finibus massa, quis suscipit nisl. Suspendisse quis cursus arcu, non sollicitudin ante. Sed porta, nibh ut tristique tristique, quam risus eleifend tortor, non vehicula sapien ipsum congue dui.</p>
+					</td>                                        
+                    <!--                    <td><input type="hidden" id="elultimo" type="text" name="myInputDNA" style="width:94%;" align="center" ></td>-->
+				</tr>
+			</tbody>
+		</table><!-- /.table -->
+	</div>
+
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
+<!-- iCheck -->
+<script src="../../plugins/iCheck/icheck.min.js"></script>
+
+<script>
+$(function() {
+  $(".expand").on( "click", function() {
+    $(this).next().slideToggle(200);
+    $expand = $(this).find(">:first-child");
+//	alert($expand);
+//	console.log($expand);
+    
+    if($expand.html() == "<i class='fa fa-angle-down' aria-hidden='true'></i>") {
+      $expand.html("<i class='fa fa-angle-down' aria-hidden='true'></i>");
+    } else {
+      $expand.html("<i class='fa fa-angle-up' aria-hidden='true'></i>");
+    }
+  });
+});
+</script>
+
+<script>
+    $('.dropdown-toggle').dropdown();
+    $('#divNewNotifications li > a').click(function(){
+    if (this.text !== ' More Options ') {
+        $('#text').text($(this).html());
+    }
+    $('#divNewNotifications li').css('background-color', 'f39c12');
+    $(this).closest('li').css('background-color', 'f39c12');
+    });	
+
+</script>
+
+
+</body>
+</html>

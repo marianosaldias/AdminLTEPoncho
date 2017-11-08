@@ -2715,6 +2715,10 @@ a:focus {
   border-top: 1px solid #f4f4f4;
   vertical-align: middle;
 }
+.table > tbody > tr > td {
+  border-top: 1px solid #f4f4f4;
+  vertical-align: top;
+}
 .table > thead > tr > th {
   border-bottom: 2px solid #f4f4f4;
 }

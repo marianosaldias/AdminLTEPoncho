@@ -440,7 +440,7 @@
                                         <th class="col-md-4" width="300">Descripción</th>
                                         <!--<th class="text-center">Proceso interno o tercerizado</th>-->
                                         <!--<th class="text-center">Equipamiento/Capacidad que utiliza actualmente</th>-->
-                                        <th>Equipamiento/Capacidad solicitado a Fondo Semilla</th>
+                                        <th>Equipamiento</th>
                                         <th></th>
                                         <th colspan="2"></th>
                                     </tr>
@@ -451,8 +451,11 @@
                                         <td class="col-xs-2">Impresion<input class="form-control etapa100 data hidden" disabled="disabled" id="etapa" name="myInputDNA"></td>
                                         <td class="col-md-4" width="300">Plotter de Corte<input class="form-control data hidden" disabled="disabled" id="desc" name="myInputDNA"></td>
                                         <!--<td><input class="form-control data lupus disabled" disabled="disabled" id="proceso" name="myInputDNA"></td>-->
-                                        <!--<td><input class="form-control data lupus disabled" disabled="disabled" id="equipamientoactual" name="myInputDNA"></td>-->
-                                        <td class="col-xs-4">Plotter HP T-95<input class="form-control data lupus hidden" disabled="disabled" id="equipamientosolicitado" name="myInputDNA"></td>
+                                        
+                                        <td class="col-xs-4">
+                                        	Plotter HP T-95
+                                        	<input class="form-control data lupus hidden" disabled="disabled" id="equipamientosolicitado" name="myInputDNA">
+                                        </td>
                                         <td><input align="center" class="form-control data lupus hidden" disabled="disabled" id="elultimo" name="myInputDNA" type="hidden"></td>
                                         <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
                                         <td><button class="btn btn-danger btn-sm" type="button">Borrar</button></td>                                    </tr>
@@ -570,46 +573,107 @@
                                 <thead>
                                     <tr style="font-size:14px;">
                                         <th>#</th>
-                                        <th>Tipo de Inversión</th>
-                                        <th>Tipo de tarea</th>
-                                        <th>Precio Total</th>
-                                        <th>Proveedor</th>
+                                        <th width="22%">Tipo de Inversión</th>
+                                        <th>Bien a aquirir</th>
+                                        <th>Cant.</th>
+                                        <th width="8%">Pcio. Unit.</th>
+                                        <th width="8%">Pcio. Total</th>
+                                        <th width="18%">Proveedor</th>
                                         <th colspan="2"></th>
                                     </tr>                                
                                  </thead>                                    
                                 <tbody>
                                     <tr class="data" id="fila" valign="middle">
                                         <td>1</td>
-                                        <td>Activos fijos<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>Plotter de corte HP<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>$23000<input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>Torn Ink SA<input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>
+                                        	Activos fijos<br />
+                                            Maquinaria y equipos
+                                        	<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
+                                        <td>
+                                            Plotter de corte HP
+                                            <input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">
+                                        	$25000
+                                            <input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
+                                        <td class="text-right">$25000</td>
+                                        <td>
+                                        	Torn Ink SA<br />
+                                            CUIT: 20-12546723-2
+                                            <input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                            <input id="cuitproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
                                         <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
                                         <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
                                     </tr>
                                     <tr class="data" id="fila" valign="middle">
                                         <td>2</td>
-                                        <td>Activos intangibles<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>Registro de Marcas de "Very Design SA"<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>$23000<input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>Brand Gestoria SA<input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>
+                                        	Activos intangibles<br />
+                                            Marcas
+                                        	<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
+                                        <td>Registro de Marcas de "Very Design SA"<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled"></td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">
+                                        	$10000
+                                            <input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
+                                        <td class="text-right">$10000</td>
+                                        <td>
+                                        	Brand Gestoria SA<br />
+                                            CUIT: 20-22544563-2
+                                            <input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                            <input id="cuitproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">                                            
+                                        </td>
                                         <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
                                         <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>                                    </tr>
                                     <tr class="data" id="fila" valign="middle">
                                         <td>3</td>
-                                        <td>Capital de trabajo<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>Gastos de Certificaciones y Sellos "Very Design"<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>$25000<input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>Brand Gestoria SA<input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>
+                                        	Capital de trabajo<br />
+                                            Certificaciones
+                                            <input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
+                                        <td>Gastos de Certificaciones y Sellos "Very Design"<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled"></td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">
+                                        	$11000
+                                            <input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
+                                        <td class="text-right">$11000</td>
+                                        <td>
+                                        	Brand Gestoria SA<br />
+                                            CUIT: 20-22544563-2
+                                            <input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                            <input id="cuitproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">                                           
+                                        </td>
                                         <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
                                         <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
                                     </tr>    
                                     <tr class="data" id="fila" valign="middle">
                                         <td>4</td>
-                                        <td>Gastos<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td>
+                                        	Gastos<br />
+                                            Servicios Profesionales
+                                        	<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
                                         <td>Servicio de asistencia técnica HP<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>$12000<input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
-                                        <td>HP Tech Asis<input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;"></td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">
+                                        	$23000
+                                            <input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
+                                        <td class="text-right">$23000</td>
+                                        <td>
+                                        	HP Tech Asis<br />
+                                            CUIT: 20-10654568-2
+                                            <input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                            <input id="cuitproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">                                           
+                                        </td>
                                         <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
                                         <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
                                     </tr>                                                                                                                    
@@ -617,7 +681,7 @@
                             </table><!-- /.table -->
                         </div>
                         <div class="col-xs-4 col-xs-offset-4" align="center">
-                            <h3>Monto Total: $83000<input id="miembro11137" type="text" name="myInputDNA" class="form-control" disabled="disabled" style="display:none;"></h3>
+                            <h3>Monto Total: $69000<input id="miembro11137" type="text" name="myInputDNA" class="form-control" disabled="disabled" style="display:none;"></h3>
                         </div>
                     </div>
                 </div>
@@ -772,7 +836,7 @@
                                             <input id="finaliza11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
                                         </td>
                                         <td valign="top">
-                                        	Empresa: VERY Design<br />
+                                        	VERY Design<br />
                                             Cargo: Diseñador<br />
                                             Funciones: PreImpresion, diseño gráfico, encuadernado, ventas, etc.
                                             <input id="empresa11137" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
