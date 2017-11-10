@@ -401,18 +401,23 @@
                                         <td>Bahía Blanca</td>
                                         <td>Av. Roca 2312</td>
                                         <td>Equipo DNA²</td>
-                                        <td>
-                                            <a href="javascript:window.parent.tb_remove();window.parent.addsel('2720768218','10894','C10894');" class="btn btn-sm btn-primary">Aceptar
-                                            </a>
-<a href="javascript:window.parent.tb_remove();window.parent.addsel('2720768218','10894','C10894');" class="btn btn-sm btn-danger hidden">Eliminar
-                                            </a>                                            
+                                        <td align="center">
+                                            <ul class="list-inline">
+                                            	<li><a href="javascript:window.parent.tb_remove();window.parent.addsel('2720768218','10894','C10894');" class="btn btn-sm btn-primary">Agregar</a></li>
+                                            	<li><a href="javascript:window.parent.tb_remove();window.parent.addsel('2720768218','10894','C10894');" class="btn btn-sm btn-danger hidden">Eliminar</a></li>
+                                            </ul>                                            
                                         </td>
                                     </tr>
                                 </tbody>   
                             </table>
                             
                         </div>                        
-                        <!--<p class="m-b-1"><small>Haga click en <b>"Agregar"</b> para incorporar la empresa, si desea incorporar otra vuelva a realizar la búsqueda.</small></p>-->
+                        <p class="m-b-1">
+                        	<span id="addEmpresa" class=""><small>Haga click en <b>"AGREGAR"</b> para incorporar la empresa o vuelva a realizar la búsqueda si desea incorporar otra.</small></span>
+                        </p>
+                        <p class="m-b-1">
+                            <span id="addEmpresa" class=""><small>Haga click en <b>"ELIMINAR"</b> para descartar la aplicación de la empresa en Fondo Semilla.</small></span>
+                        </p>
                         
                         <div class="clearfix"></div>
 
@@ -425,7 +430,7 @@
                             </div>
                         </div>
 
-                        <div class="alert alert-danger alert-dismissable" data-id="" style="display:none;">
+                        <div class="alert alert-danger alert-dismissable" data-id="">
                             <button aria-hidden="true" class="close" data-dismiss="alert" type="button">×</button>
                             <div class="media">
                                 <div class="media-body">
