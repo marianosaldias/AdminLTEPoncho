@@ -364,15 +364,11 @@
             <li>FONDO SEMILLA</li>
         </ol>
         <h1>
-        	Coordinador
+        	Fondo Semilla
         </h1>
       
         
-        <div class="row panels-row">
-            <div class="col-xs-12">
-            	<h4>Acciones</h4>
-            </div> 
-
+        <div class="row panels-row m-t-1">
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <a class="panel panel-default bg-success" href="#">
                     <div class="panel-body">
@@ -530,7 +526,8 @@
 
         <div class="row m-t-2">            
             <div class="col-md-12">
-                <h4>Búsqueda Avanzada</h4>
+                <h4>Búsqueda avanzada de mis proyectos<br />
+                <small style="font-weight:300;">Busca tus proyectos por incubadora o por coordinador</small></h4>
             </div>
             <div class="col-md-12">
                 <div class="panel panel-default">
@@ -651,9 +648,6 @@
                         <h3 class="text-white text-left">
                         	Resultados
                         </h3>
-						<div class="pull-right">
-                            <button type="button" class="btn btn-sm bg-aqua" style="margin-top:-35px;" onClick="$('#tableResult').tableExport({type:'excel',escape:'false',fileName:'id',ignoreColumn:'[7,8]'});">Descargar XLS</button>
-						</div>                            
                     </div>
 
                     <div class="panel-body">
@@ -748,7 +742,13 @@
                                 </a>
                               </li>
                             </ul>               
-                        </div>         
+                        </div> 
+                        
+                        <div class="clearfix"></div>
+                        
+                        <div align="center">
+                        	<button type="button" class="btn bg-aqua m-t-1" onClick="$('#tableResult').tableExport({type:'excel',escape:'false',fileName:'id',ignoreColumn:'[7,8]'});">Descargar XLS</button>
+                        </div>
                         
                     </div>
 
@@ -941,7 +941,7 @@
                                         <th>Incubadora</th>
                                         <th>Ult. modif.</th>
                                         <th>Ultimo estado</th>
-                                        <th>Resucitar</th>
+                                        <th></th>
                                     </tr>
                                 </thead>                            
                                 <tbody>
@@ -957,8 +957,8 @@
                                         <td>12/12/2017</td>  
                                         <td>PN - Pendiente de Carga</td>
                                         <td align="center">
-                                            <a href="#">
-                                            	<i class="fa fa-play play_case"></i>
+                                            <a href="#" class="btn btn-sm btn-primary">
+                                            	Resucitar
                                             </a>                                        
                                         </td>
                                     </tr>
