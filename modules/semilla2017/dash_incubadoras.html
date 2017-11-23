@@ -372,6 +372,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="alert alert-success">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-arrow-circle-o-right fa-fw fa-4x"></i>
+                        </div>
+                        <div class="media-body">
+                            <p class="m-t-1">Ya confirmaste tus datos con éxito.</p>
+                        </div>
+                    </div>
+                </div>                
 			</div>
 		</div>
         
@@ -386,10 +396,10 @@
                     <div class="panel-body p-t-0">
                         <div id="detailIncuba">
                             <div class="col-xs-12 text-left">
-                                <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Corrientes 1254 | CABA - Capital Federal</h4>
+                                <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Corrientes 1254 | CP 1425. CABA - Capital Federal</h4>
                                 <h5><i class="fa fa-phone" aria-hidden="true"></i> 011 4567 23453 | <i class="fa fa-envelope text-aqua" aria-hidden="true"></i> <a href="mailto:" target="_blank">incubainc@incubainc.com.ar</a></h5>
 
-                                <button type="button" class="btn btn-sm btn-primary m-t-1">
+                                <button type="button" class="btn btn-sm btn-success m-t-1">
                                     Confirmar
                                 </button>   
                                 <button type="button" id="btnEditIncuba" class="btn btn-sm btn-primary m-t-1 m-l-1">
@@ -404,48 +414,48 @@
                             <form class="form-azul">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="control-label">Nombre *</label> 
+                                        <label class="control-label">Nombre</label> 
                                         <input class="form-control" data-inputmask="" data-mask="" type="text" value="Incuba Inc.">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="control-label">Dirección *</label> 
+                                        <label class="control-label">Dirección</label> 
                                         <input class="form-control" data-inputmask="" data-mask="" type="text" value="Corrientes 1254">
                                     </div>
                                 </div>
                                 <div class="col-md-5 col-sm-4">
                                     <div class="form-group">
-                                        <label class="control-label">Provincia *</label> 
+                                        <label class="control-label">Provincia</label> 
                                         <input class="form-control" data-inputmask="" data-mask="" type="text" value="Capital Federal">
                                     </div>
                                 </div>   
                                 <div class="col-md-5 col-sm-5">
                                     <div class="form-group">
-                                        <label class="control-label">Ciudad *</label> 
+                                        <label class="control-label">Ciudad</label> 
                                         <input class="form-control" data-inputmask="" data-mask="" type="text" value="CABA">
                                     </div>
                                 </div>    
                                 <div class="col-md-2 col-sm-3">
                                     <div class="form-group">
-                                        <label class="control-label">CP *</label> 
+                                        <label class="control-label">Código Postal</label> 
                                         <input class="form-control" data-inputmask="" data-mask="" type="text" value="1414">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="control-label">Teléfono *</label> 
+                                        <label class="control-label">Teléfono</label> 
                                         <input class="form-control" data-inputmask="" data-mask="" type="text" value="011 4567 23453">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="control-label">E-mail *</label> 
+                                        <label class="control-label">Correo electrónico</label> 
                                         <input class="form-control" id="" type="email" value="incubainc@incubainc.com.ar">
                                     </div>
                                 </div>
 
-                                <p class="col-lg-12"><small>* Campo obligatorio</small></p>
+                                <p class="col-lg-12"><small>Todos los campo son obligatorio</small></p>
                                 
                                 <div class="col-lg-12 m-t-1 m-b-1">
                                     <div align="center">
@@ -578,7 +588,7 @@
                                         <th>DNI/CUIT</th>
                                         <th>Programa</th>
                                         <th>ID</th>
-                                        <th>Ult. modificación</th>
+                                        <th>Última modificación</th>
                                         <th>Estado</th>
                                     </tr>
                                 </thead>                            
@@ -621,8 +631,6 @@
                                 </a>
                               </li>
                             </ul>      
-                            <div class="clearfix"></div>
-                            <button type="button" class="btn btn-primary bg-aqua" onClick="$('#tableResult').tableExport({type:'excel',escape:'false',fileName:'id'});">Descargar XLS</button>
                         </div>         
                         
                     </div>
