@@ -366,7 +366,7 @@
                 <!--
                 <div class="panel panel-default">
                     <div class="panel-body">-->
-                        <h5>Vincular Empresa</h5>
+                        <h5>Seleccioná a una empresa</h5>
                         <form class="m-t-1" role="search">
                         <label>CUIT de la Empresa</label>
                         <div class="input-group custom-search-form">
@@ -403,7 +403,7 @@
                                         <td>Equipo DNA²</td>
                                         <td align="center">
                                             <ul class="list-inline">
-                                            	<li><a href="javascript:window.parent.tb_remove();window.parent.addsel('2720768218','10894','C10894');" class="btn btn-sm btn-primary">Agregar</a></li>
+                                            	<li><a href="javascript:window.parent.tb_remove();window.parent.addsel('2720768218','10894','C10894');" class="btn btn-sm btn-primary">Seleccionar</a></li>
                                             	<li><a href="javascript:window.parent.tb_remove();window.parent.addsel('2720768218','10894','C10894');" class="btn btn-sm btn-danger hidden">Eliminar</a></li>
                                             </ul>                                            
                                         </td>
@@ -412,12 +412,11 @@
                             </table>
                             
                         </div>                        
-                        <p class="m-b-1">
-                        	<span id="addEmpresa" class=""><small>Haga click en <b>"AGREGAR"</b> para incorporar la empresa o vuelva a realizar la búsqueda si desea incorporar otra.</small></span>
-                        </p>
-                        <p class="m-b-1">
-                            <span id="addEmpresa" class=""><small>Haga click en <b>"ELIMINAR"</b> para descartar la aplicación de la empresa en Fondo Semilla.</small></span>
-                        </p>
+                        <div class="m-b-1">
+                        	<p id="addEmpresa" class=""><small>Hacé clic en <b>"SELECCIONAR"</b> para vincular a la empresa con tu incubadora o volvé a buscar por CUIT.</small></span></p>
+                            <p id="delEmpresa" class=""><small>Haga click en <b>"ELIMINAR"</b> para descartar la aplicación de la empresa en Fondo Semilla.</small></span></p>
+                            <p id="regEmpresa" class=""><small>Si no la encontrás, pedile que se registre.</small></span></p>
+                        </div>
                         
                         <div class="clearfix"></div>
 
@@ -425,7 +424,7 @@
                             <button aria-hidden="true" class="close" data-dismiss="alert" type="button">×</button>
                             <div class="media">
                                 <div class="media-body">
-                                    <p class="margin-0" id="textoalerta"><small>La empresa ha sido agregada con éxito.</small></p>
+                                    <p class="margin-0" id="textoalerta">La empresa fue seleccionada con éxito. Hacé ckic en <b>"Guardar"</b> para confirmar la vinculación.</p>
                                 </div>
                             </div>
                         </div>
@@ -434,7 +433,7 @@
                             <button aria-hidden="true" class="close" data-dismiss="alert" type="button">×</button>
                             <div class="media">
                                 <div class="media-body">
-                                    <p class="margin-0" id="textoalerta"><small>Este es un mensaje de error.</small></p>
+                                    <p class="margin-0" id="textoalerta">La empresa fue desvinculada.</p>
                                 </div>
                             </div>
                         </div>
