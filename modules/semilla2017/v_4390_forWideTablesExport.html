@@ -621,7 +621,7 @@
             
             <div class="col-md-12">
                 <h2>Miembros del Equipo<br />
-                <small>Describí la formación, experiencia laboral y antecedentes de cada miembro.</small></h2>
+                <small>Cargá la formación y los antecedentes laborales de cada integrante del equipo.</small></h2>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
@@ -644,45 +644,43 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label">Empresa</label> 
                                         <input id="empresa11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>                                
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label">Rubro</label> 
                                         <input id="rubro11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>    
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label">Cargo</label> 
                                         <input id="cargo11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>          
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
                                         <label class="control-label">Funciones</label> 
                                         <input id="funciones11137" type="text" name="myInputDNA" class="form-control">
                                     </div>
                                 </div>   
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label">Tipo de estudio</label> 
                                         <select id="estudio11137" class="form-control selectoruno disabled" name="myInputDNA">
                                             <option value="">- Seleccione -</option>
                                             <option value="1">Postgrado</option>
-                                            <option value="2">Universitario completo</option>
-                                            <option value="3">Universitario en curso</option>
-                                            <option value="4">Terciario completo</option>
-                                            <option value="5">Terciario en curso</option>
+                                            <option value="2">Universitario</option>
+                                            <option value="4">Terciario</option>
                                             <option value="6">Secundario</option>
                                         </select>                                        
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label">Título/Nombre del Curso</label> 
                                         <input id="titulo11137" type="text" name="myInputDNA" class="form-control">
@@ -691,22 +689,27 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label">Estado de avance</label> 
-                                        <input id="avance11137" type="text" name="myInputDNA" class="form-control">
+                                         <select id="avance11137" class="form-control selectoruno disabled" >
+                                            <option value="">- Seleccione -</option>
+                                            <option value="1">En curso</option>
+                                            <option value="2">Finalizado</option>
+                                            <option value="3">Incompleto</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Inicio</label> 
-                                        <input id="inicio11137" type="text" name="myInputDNA" class="form-control dateinput">
+                                        <input id="inicio11137" type="text" name="dateinput" class="form-control pull-right dateinput" data-inputmask='"mask": "99/99/9999"' data-mask>
                                     </div>
                                 </div>                                
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Finalización</label> 
-                                        <input id="finaliza11137" type="text" name="myInputDNA" class="form-control dateinput">
+                                        <input id="finaliza11137" type="text" name="myInputDNA" class="form-control pull-right dateinput" data-inputmask='"mask": "99/99/9999"' data-mask>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-xs-12 m-b-1">
+                                <div class="col-lg-12 col-xs-12 m-b-1 m-t-1">
                                     <div class="input-group width100">
                                         <label class="control-label">¿Ha creado (solo o como parte de un equipo) alguna empresa con anterioridad?</label><br>
                                         <div id="hascreado" class="btn-group width100">
@@ -732,7 +735,7 @@
                         </form>
                         
                         <div class="clearfix"></div>
-                    	<h4>Tabla de Miembros del Equipo</h4>
+                    	<h4>Tabla de miembros del equipo</h4>
                         
                         <div class="table-responsive">
                             <table class="table" id="tablaproc">
@@ -1179,6 +1182,16 @@
 		clearBtn: true,
 		orientation: "top"
 	});
+</script>
+
+<!-- InputMask -->
+<script src="../../plugins/input-mask/jquery.inputmask.js"></script>
+<script src="../../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="../../plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script>
+    //Datemask dd/mm/yyyy
+    $("#dateinput").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+    $("[data-mask]").inputmask();
 </script>
 
 <!-- Fileupload -->
