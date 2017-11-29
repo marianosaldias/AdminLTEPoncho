@@ -45,11 +45,16 @@
 <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
 
 
+
 <!-- PALTA dist-palta -->
 <link rel="stylesheet" href="dist-palta/css/poncho.min.css">
 <!-- bootstrap wysihtml5 - text editor -->
 <link rel="stylesheet" href="dist-palta/css/palta.css">
 <link rel="stylesheet" href="dist-palta/css/palta-adminLTE.css">    
+
+<!-- Fileupload -->  
+<link rel="stylesheet" href="plugins/fileupload/pp_cf7.css">
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -479,28 +484,8 @@
                                 </select>
                             </div>        
                         </div>
-                        
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="control-label">Código de Área</label>
-                                <input type="text" class="form-control" data-inputmask='"mask": "9999"' data-mask>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="control-label">Teléfono</label>
-                                <input type="text" class="form-control" data-inputmask='"mask": "(999)-99999999"' data-mask>
-                            </div>
-                        </div>
-                
-                        <div class="col-md-5">
-                            <div class="form-group">
-                                <label class="control-label">Teléfono Movil</label>
-                                <input type="text" class="form-control" data-inputmask='"mask": "(999)-99999999"' data-mask>
-                            </div>
-                        </div>
-                        
+
+
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label class="control-label">Menú Multiple</label>
@@ -527,14 +512,22 @@
                             </div>        
                         </div>
                         
-                        <div class="col-md-12 hidden" id="otros">
+                        <div class="col-md-2">
                             <div class="form-group">
-                                <label class="control-label">Ingrese otras opciones para su Menú múltiple<small></small></label>
-                                <input id="capitales" type="text" value="" data-role="tagsinput" />
+                                <label class="control-label">Código de Área</label>
+                                <input type="text" class="form-control" data-inputmask='"mask": "9999"' data-mask>
                             </div>
-                        </div>        
+                        </div>
                         
-                        <div class="col-md-4">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label">Teléfono</label>
+                                <input type="text" class="form-control" data-inputmask='"mask": "(999)-99999999"' data-mask>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="control-label">Fecha de Nacimiento</label>
                                 <div class="input-group">
@@ -547,19 +540,6 @@
                             </div>
                         </div>
                         
-                        
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Date:</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control pull-right" id="reservation">
-                                    <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                        <i class="fa fa-calendar"></i>
-                                    </div>
-                                </div>
-                            </div>   
-                        </div>                    
-    
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">CUIT/CUIL</label>
@@ -567,13 +547,24 @@
                             </div>
                         </div>
                         
-                        <div class="col-md-6">
+
+                        
+                        <div class="col-md-12 hidden" id="otros">
+                            <div class="form-group">
+                                <label class="control-label">Ingrese otras opciones para su Menú múltiple<small></small></label>
+                                <input id="capitales" type="text" value="" data-role="tagsinput" />
+                            </div>
+                        </div>        
+                        
+
+                        
+                        <div class="col-md-12">
                             <label class="control-label" for="txtxxx">Asisto actualmente a esta empresa <span class="requiredField">*</span></label>
-                            <div class="input-group m-b-2">
-                                <div id="radioBtn" class="btn-group">
-                                    <span class="btn active btn-primary" data-toggle="estado" data-value="Y">Si</span>
-                                    <span class="btn notActive btn-default" data-toggle="estado" data-value="N">No</span>
-                                    <span class="btn notActive btn-default" data-toggle="estado" data-value="W">NS/NC</span>
+                            <div class="input-group m-b-2 width100">
+                                <div id="radioBtn" class="btn-group width100">
+                                    <span class="btn active btn-primary" data-toggle="estado" data-value="Y" style="width:33%;">Si</span>
+                                    <span class="btn notActive btn-default" data-toggle="estado" data-value="N" style="width:33%;">No</span>
+                                    <span class="btn notActive btn-default" data-toggle="estado" data-value="W" style="width:34%;">NS/NC</span>
                                 </div>
                                 <input type="hidden" name="estado" id="estado" value="Y">
                             </div>                        
@@ -1014,7 +1005,7 @@
                             </div>
                         </div>      
                         
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <!-- checkbox -->
                             <label class="control-label">iCheck Checkbox</label>
                             <div class="form-group">
@@ -1030,10 +1021,10 @@
                             </div>
                         </div>           
                         
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <!-- radio -->
                             <label class="control-label">iCheck Radio</label>
-                            <div class="form-group">
+                            <div class="form-group width100">
                                 <label>
                                 <input type="radio" name="r1" class="minimal" checked> Si 
                                 </label>
@@ -1046,12 +1037,23 @@
                             </div>
                         </div>        
                         
-                        <div class="col-md-12" id="otros">
+                        <div class="col-md-6" id="otros">
                             <div class="form-group">
                                 <label class="control-label">Email</label>
                                 <input id="" class="form-control" type="email" value="" />
                             </div>
-                        </div>                        
+                        </div>    
+                        
+                        <div class="form-group col-xs-12">
+                            <label class="control-label">Adjuntar información adicional (xls, word, pdf, jpg y png / máximo 8mb / nombre sin caracteres especiales)</label>
+                            <p>
+                                <label class="btnInputFile" for="fileUpld">Subir Archivo</label><br />
+                                <span class="limit8mb">
+                                    <input type="file" name="limit:8mb" size="40" class="hidden" id="fileUpld" aria-invalid="false">
+                                </span>
+                            </p>
+                            <p id="file-selected"></p>
+                        </div>                                              
     
                         <div class="col-xs-12">
                             <div class="alert alert-info">
@@ -1197,33 +1199,6 @@
     });
 </script>
 
-<!-- Clone informacion academica -->
-<script>
-var regex = /^(.+?)(\d+)$/i;
-var cloneIndex = $(".clonedInput").length;
-function clone(){
-    $(this).parents(".clonedInput").clone()
-        .appendTo("#infoacademica")
-        .attr("id", "clonedInput" +  cloneIndex)
-        .find("*")
-        .each(function() {
-            var id = this.id || "";
-            var match = id.match(regex) || [];
-            if (match.length == 3) {
-                this.id = match[1] + (cloneIndex);
-            }
-        })
-        .on('click', 'button.clone', clone)
-        .on('click', 'button.remove', remove);
-    cloneIndex++;
-}
-function remove(){
-    $(this).parents(".clonedInput").remove();
-}
-$("button.clone").on("click", clone);
-
-$("button.remove").on("click", remove);
-</script>
 <script>
 //iCheck for checkbox and radio inputs
     $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
@@ -1240,51 +1215,10 @@ $("button.remove").on("click", remove);
       checkboxClass: 'icheckbox_flat-green',
       radioClass: 'iradio_flat-green'
     });
-
-  $(function () {
-    //Enable iCheck plugin for checkboxes
-    //iCheck for checkbox and radio inputs
-    $('.mailbox-messages input[type="checkbox"]').iCheck({
-      checkboxClass: 'icheckbox_flat-blue',
-      radioClass: 'iradio_flat-blue'
-    });
-
-    //Enable check and uncheck all functionality
-    $(".checkbox-toggle").click(function () {
-      var clicks = $(this).data('clicks');
-      if (clicks) {
-        //Uncheck all checkboxes
-        $(".mailbox-messages input[type='checkbox']").iCheck("uncheck");
-        $(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
-      } else {
-        //Check all checkboxes
-        $(".mailbox-messages input[type='checkbox']").iCheck("check");
-        $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
-      }
-      $(this).data("clicks", !clicks);
-    });
-
-    //Handle starring for glyphicon and font awesome
-    $(".mailbox-star").click(function (e) {
-      e.preventDefault();
-      //detect type
-      var $this = $(this).find("a > i");
-      var glyph = $this.hasClass("glyphicon");
-      var fa = $this.hasClass("fa");
-
-      //Switch states
-      if (glyph) {
-        $this.toggleClass("glyphicon-star");
-        $this.toggleClass("glyphicon-star-empty");
-      }
-
-      if (fa) {
-        $this.toggleClass("fa-star");
-        $this.toggleClass("fa-star-o");
-      }
-    });
-  });
 </script>
+
+<!-- Fileupload -->
+<script src="plugins/fileupload/cf7_fileupload.js"></script>
 
 <!-- AdminLTE for demo purposes -->
 <!--<script src="dist/js/demo.js"></script>-->

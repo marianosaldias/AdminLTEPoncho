@@ -437,6 +437,149 @@
         
             <div class="panel panel-default">
                 <div class="panel-heading bg-goscuro text-white text-left">
+                    <h4>Documentos y descargas</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table" id="tablaproc">
+                            <thead>
+                                <tr style="font-size:14px;">
+                                    <th>#</th>
+                                    <th width="22%">Tipo de Inversión</th>
+                                    <th>Bien a aquirir</th>
+                                    <th>Cant.</th>
+                                    <th width="8%">Pcio. Unit.</th>
+                                    <th width="8%">Pcio. Total</th>
+                                    <th width="18%">Proveedor</th>
+                                    <th colspan="2"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="data" id="fila" valign="middle">
+                                    <td>1</td>
+                                    <td>Activos fijos<br>
+                                    Maquinaria y equipos <input class="form-control hidden" disabled="disabled" id="primero" name="myInputDNA" style="display:none;" type="text"></td>
+                                    <td>Plotter de corte HP <input class="form-control hidden" disabled="disabled" id="segundo" name="myInputDNA" style="display:none;" type="text"></td>
+                                    <td class="text-right">1</td>
+                                    <td class="text-right">$25000 <input class="form-control hidden" disabled="disabled" id="precio" name="myInputDNA" style="display:none;" type="text"></td>
+                                    <td class="text-right">$25000</td>
+                                    <td>Torn Ink SA<br>
+                                    CUIT: 20-12546723-2 <input class="form-control hidden" disabled="disabled" id="nombreproveedor" name="myInputDNA" type="text"> <input class="form-control hidden" disabled="disabled" id="cuitproveedor" name="myInputDNA" type="text"></td>
+                                    <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                    <td><button class="btn btn-danger btn-sm" type="button">Borrar</button></td>
+                                </tr>
+                                <tr class="data" id="fila" valign="middle">
+                                    <td>2</td>
+                                    <td>Activos intangibles<br>
+                                    Marcas <input class="form-control hidden" disabled="disabled" id="primero" name="myInputDNA" type="text"></td>
+                                    <td>Registro de Marcas de "Very Design SA"<input class="form-control hidden" disabled="disabled" id="segundo" name="myInputDNA" type="text"></td>
+                                    <td class="text-right">1</td>
+                                    <td class="text-right">$10000 <input class="form-control hidden" disabled="disabled" id="precio" name="myInputDNA" type="text"></td>
+                                    <td class="text-right">$10000</td>
+                                    <td>Brand Gestoria SA<br>
+                                    CUIT: 20-22544563-2 <input class="form-control hidden" disabled="disabled" id="nombreproveedor" name="myInputDNA" type="text"> <input class="form-control hidden" disabled="disabled" id="cuitproveedor" name="myInputDNA" type="text"></td>
+                                    <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                    <td><button class="btn btn-danger btn-sm" type="button">Borrar</button></td>
+                                </tr>
+                                <tr class="data" id="fila" valign="middle">
+                                    <td>3</td>
+                                    <td>Capital de trabajo<br>
+                                    Certificaciones <input class="form-control hidden" disabled="disabled" id="primero" name="myInputDNA" style="display:none;" type="text"></td>
+                                    <td>Gastos de Certificaciones y Sellos "Very Design"<input class="form-control hidden" disabled="disabled" id="segundo" name="myInputDNA" type="text"></td>
+                                    <td class="text-right">1</td>
+                                    <td class="text-right">$11000 <input class="form-control hidden" disabled="disabled" id="precio" name="myInputDNA" type="text"></td>
+                                    <td class="text-right">$11000</td>
+                                    <td>Brand Gestoria SA<br>
+                                    CUIT: 20-22544563-2 <input class="form-control hidden" disabled="disabled" id="nombreproveedor" name="myInputDNA" type="text"> <input class="form-control hidden" disabled="disabled" id="cuitproveedor" name="myInputDNA" type="text"></td>
+                                    <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                    <td><button class="btn btn-danger btn-sm" type="button">Borrar</button></td>
+                                </tr>
+                                <tr class="data" id="fila" valign="middle">
+                                    <td>4</td>
+                                    <td>Gastos<br>
+                                    Servicios Profesionales <input class="form-control hidden" disabled="disabled" id="primero" name="myInputDNA" style="display:none;" type="text"></td>
+                                    <td>Servicio de asistencia técnica HP<input class="form-control hidden" disabled="disabled" id="segundo" name="myInputDNA" style="display:none;" type="text"></td>
+                                    <td class="text-right">1</td>
+                                    <td class="text-right">$23000 <input class="form-control hidden" disabled="disabled" id="precio" name="myInputDNA" type="text"></td>
+                                    <td class="text-right">$23000</td>
+                                    <td>HP Tech Asis<br>
+                                    CUIT: 20-10654568-2 <input class="form-control hidden" disabled="disabled" id="nombreproveedor" name="myInputDNA" type="text"> <input class="form-control hidden" disabled="disabled" id="cuitproveedor" name="myInputDNA" type="text"></td>
+                                    <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                    <td><button class="btn btn-danger btn-sm" type="button">Borrar</button></td>
+                                </tr>
+                            </tbody>
+                        </table><!-- /.table -->
+                        <!--
+                                    <table class="table" id="tablaproc">
+                                        <thead>
+                                            <tr style="font-size:14px;">
+                                                <th>#</th>
+                                                <th width="22%">Tipo de Inversión</th>
+                                                <th>Bien a aquirir</th>
+                                                <th>Cant.</th>
+                                                <th width="8%">Pcio. Unit.</th>
+                                                <th width="8%">Pcio. Total</th>
+                                                <th width="18%">Proveedor</th>
+                                                <th colspan="2"></th>
+                                            </tr>                                
+                                         </thead>                                    
+                                        <tbody>
+                                            <tr class="data" id="fila" valign="middle">
+                                                <td>3</td>
+                                                <td>
+                                                    Capital de trabajo<br />
+                                                    Certificaciones
+                                                </td>
+                                                <td>Gastos de Certificaciones y Sellos "Very Design"</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">
+                                                    $11000
+                                                </td>
+                                                <td class="text-right">$11000</td>
+                                                <td>
+                                                    Brand Gestoria SA<br />
+                                                    CUIT: 20-22544563-2
+                                                </td>
+                                            </tr>    
+                                        </tbody>
+                                    </table>                            
+                                    -->
+                    </div>
+                    <div align="center">
+                        <ul class="pagination m-t-1 m-b-1">
+                            <li>
+                                <a aria-label="Previous" href="#"><span aria-hidden="true">«</span></a>
+                            </li>
+                            <li class="active">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a aria-label="Next" href="#"><span aria-hidden="true">»</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>        
+    
+                        
+                        
+                        
+                   
+        
+            <div class="panel panel-default">
+                <div class="panel-heading bg-goscuro text-white text-left">
                   <h4>Documentos y descargas</h4>
                 </div>
                 
@@ -460,7 +603,7 @@
                             </div>
                         </div>
                     </td>
-                    <td width="15%" align="center"><a href="#" class="btn btn-sm btn-primary btn-block"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a></td>
+                    <td width="15%" align="center"><a href="#" class="btn btn-sm btn-primary btn-block">Editar</a></td>
                     <td width="5%" align="center"><a href="#"><p class="text-muted"> <i class="fa fa-search fa-1x"></i></p></a></td>
                   </tr>
                   <tr>
@@ -517,10 +660,6 @@
                       <li><a href="#">3</a></li>
                       <li><a href="#">4</a></li>
                       <li><a href="#">5</a></li>
-                      <li><a href="#">6</a></li>
-                      <li><a href="#">7</a></li>
-                      <li><a href="#">8</a></li>
-                      <li><a href="#">9</a></li>
                       <li>
                         <a href="#" aria-label="Next">
                           <span aria-hidden="true">»</span>
@@ -613,10 +752,6 @@
                       <li><a href="#">3</a></li>
                       <li><a href="#">4</a></li>
                       <li><a href="#">5</a></li>
-                      <li><a href="#">6</a></li>
-                      <li><a href="#">7</a></li>
-                      <li><a href="#">8</a></li>
-                      <li><a href="#">9</a></li>
                       <li>
                         <a href="#" aria-label="Next">
                           <span aria-hidden="true">»</span>

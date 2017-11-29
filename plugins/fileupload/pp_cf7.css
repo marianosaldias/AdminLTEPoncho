@@ -1,0 +1,292 @@
+div.wpcf7 {
+  margin: 0;
+  padding: 0;
+}
+
+div.wpcf7 p {
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+}
+
+div.wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 0.2em 1em;
+}
+
+div.wpcf7 .screen-reader-response {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+  border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+  border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+  border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+  background: #fff0c9;
+  border-color: #fed054 !important;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.wpcf7-form-control-wrap {
+  position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+  color: #BB4945;
+  font-size: 1em;
+  font-weight: normal;
+  display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 100;
+  border: 1px solid color: #BB4945;
+  background: #fff;
+  padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+span.wpcf7-list-item-label::before, span.wpcf7-list-item-label::after {
+  content: " ";
+}
+
+.wpcf7-display-none {
+  display: none;
+}
+
+div.wpcf7 .ajax-loader {
+  visibility: hidden;
+  display: inline-block;
+  background-image: url('../images/ajax-loader.gif');
+  width: 16px;
+  height: 16px;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 4px;
+  vertical-align: middle;
+}
+
+div.wpcf7 .ajax-loader.is-active {
+  visibility: visible;
+}
+
+div.wpcf7 div.ajax-error {
+  display: none;
+}
+
+div.wpcf7 .placeheld {
+  color: #888;
+}
+
+div.wpcf7 .wpcf7-recaptcha iframe {
+  margin-bottom: 0;
+}
+
+div.wpcf7 input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.btnInputFile {
+  display: inline-block;
+  background-color: #0695d6;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+.btnInputFile:hover, .btnInputFile:focus {
+  background-color: #17b2f8;
+}
+
+div.wpcf7 input[type="file"]:disabled {
+  cursor: default;
+  color: transparent !important;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+.alert-success {
+  color: #333 !important;
+}
+
+.alert-warning {
+  color: #333 !important;
+}
+
+.wpcf7-submit {
+  height: 54px !important;
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  margin-bottom: 10px;
+  /*height: 30px;*/
+  font-size: 16px;
+}
+
+.wpcf7-list-item {
+  display: block;
+}
+
+.wpcf7-captchac {
+  height: 40px;
+}
+
+.wpcf7-text {
+  color: #111 !important;
+}
+
+.wpcf7-not-valid {
+  border-color: #BB4945 !important;
+}
+
+span.wpcf7-list-item {
+  display: block;
+  margin-left: 0px;
+  padding-top: 5px;
+}
+
+.wpcf7-list-item-label{
+  font-weight: 700;
+}
+
+fieldset.form-group{
+  padding-top:3em;
+  border-top:1px solid #ccc;
+  border-bottom:none;
+  margin-bottom: 10px;
+}
+
+.primerFieldset{
+  border-top: 0px !important;
+  padding-top: 0 !important;
+}
+
+.wpcf7-checkbox > .btn{
+  float: none;
+}
+
+.btn-group > .btn-default{
+  border-right: 0px;
+}
+
+@media only screen and (max-width: 425px) {
+  .btn-group-justified > .btn{
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+.text-blanco {
+    color: #ffffff !important;
+}
+
+.g-recaptcha{
+  display: inline-block;
+}
+
+.g-recaptcha > div{
+    margin : auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .g-recaptcha{
+    transform: scale(1.225);
+    -webkit-transform: scale(1.225);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    margin-bottom: 30px;
+  }
+  .g-recaptcha > div{
+    margin-left : 0px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .g-recaptcha{
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .g-recaptcha{
+    transform: scale(0.89);
+    -webkit-transform: scale(0.89);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+}
+@media only screen and (max-width: 392px) and (min-width: 367px) {
+  .g-recaptcha{
+    transform: scale(0.89);
+    -webkit-transform: scale(0.89);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 26%;
+  }
+}
+@media only screen and (max-width: 366px) and (min-width: 340px) {
+  .g-recaptcha{
+    transform: scale(0.76);
+    -webkit-transform: scale(0.76);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 26%;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .g-recaptcha{
+    transform: scale(0.76);
+    -webkit-transform: scale(0.76);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .fixReCaptcha-sm{
+    padding: 0!important;
+  }
+}
+/*Arreglo Radio Button*/
+/*Cuando los Radio son muchos sus textos van en varias lineas, para esos casos usar esta clase*/
+.btn-group-justified.btn-radio > .btn-default{
+display: block;
+width: 100%;
+border: 0 !important;
+margin-bottom: 2px;
+border-radius: 4px !important;
+font-size: 14px;
+}
