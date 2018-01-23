@@ -531,7 +531,7 @@
                             <div class="form-group">
                                 <label class="control-label">Fecha de Nacimiento</label>
                                 <div class="input-group">
-                                    <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask='"mask": "99/99/9999"' data-mask>
+                                    <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask='"mask": "99/99/9999"' data-mask placeholder="dd/mm/aaaa">
                                     <div class="input-group-addon bg-primary p-l-2 p-r-2">
                                         <i class="fa fa-calendar"></i>
                                     </div>
@@ -1164,7 +1164,8 @@
 		language: "es",
 		autoclose: true,
 		clearBtn: true,
-		orientation: "top"
+		orientation: "top",
+		format: "dd/mm/yyyy"
 	});
 </script>
 <!-- TagsInput -->
@@ -1178,7 +1179,7 @@
 	$('#menuMultiple').mobileSelect();
 </script>
 <!-- Autocomplete -->
-<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+<script src="plugins/bootstrap-chosen-master/chosen.jquery.min.js"></script>
 <script>
   $(function() {
 	$('.chosen-select').chosen();
