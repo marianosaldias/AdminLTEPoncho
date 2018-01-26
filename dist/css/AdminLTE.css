@@ -5048,3 +5048,16 @@ table.text-center th {
 .media {
     margin-top: 0px;
 }
+
+
+
+
+@media (min-width: 1024px) {
+	.table-responsive {
+		min-height: .01%;
+			overflow-x: visible !important;
+		/* overflow-x: auto; */
+	}
+}
+
+thead tr th { font-size:16px !important;}
