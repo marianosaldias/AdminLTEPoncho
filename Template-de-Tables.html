@@ -457,7 +457,7 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading bg-aqua">
-                    <h4>Documentos y descargas</h4>
+                    <h4>Proyectos</h4>
                 </div>
                 <div class="panel-body">
 
@@ -580,7 +580,7 @@
         
             <div class="panel panel-default">
                 <div class="panel-heading bg-aqua">
-                    <h4>Documentos y descargas</h4>
+                    <h4>Tabla de Inversiones</h4>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
@@ -684,7 +684,7 @@
         
             <div class="panel panel-default">
                 <div class="panel-heading bg-aqua">
-                  <h4>Documentos y descargas</h4>
+                  <h4>Título de table</h4>
                 </div>
                 
                 <div class="panel-body">
@@ -708,7 +708,6 @@
                         </div>
                     </td>
                     <td width="15%" align="center"><a href="#" class="btn btn-sm btn-primary btn-block">Editar</a></td>
-                    <td width="5%" align="center"><a href="#"><p class="text-muted"> <i class="fa fa-search fa-1x"></i></p></a></td>
                   </tr>
                   <tr>
                     <td width="5%" align="center"><i class="fa fa-list-ul fa-1x text-muted"></i></td>
@@ -727,7 +726,6 @@
                         </div>
                     </td>
                     <td width="15%" align="center"><a href="#" class="btn btn-sm btn-primary btn-block">CONTINUAR</a></td>
-                    <td width="5%" align="center"><a href="#"><p class="text-muted"> <i class="fa fa-search fa-1x"></i></p></a></td>
                   </tr>   
                   </tbody>
                 </table>
@@ -756,71 +754,213 @@
       </div>        
         
 
-      <div class="row">
-        <!-- /.col -->
-        <div class="col-md-12">
-        
-            <div class="panel panel-default">
-                <div class="panel-heading bg-aqua">
-                  <h4>Documentos respaldatorios</h4>
-                </div>
+        <div class="row m-t-2">        
+            <div class="col-md-12">
+                <h2>Form + Table <small>de Fondo Semilla</small></h2>            
                 
-                <div class="panel-body">
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                            <th></th>
-                            <th>Documento</th>
-                            <th class="text-center">Fecha</th>
-                            <th class="text-center">Estado</th>
-                            <th class="text-center" colspan="3"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                        <td width="5%" align="center"><i class="fa fa-list-ul fa-1x text-muted"></i></td>
-                        <td width="35%">
-                            <a href="#" class="unlink">
-                                <p class="text-muted">Formulario de inscripción</p>
-                            </a>
-                        </td>
-                        <td width="15%" align="center">11/11/2017</td>
-                        <td width="25%" align="center"><a href="#" class="text-muted"><i class="fa fa-check fa-1x"></i></a></td>
-                        <td width="5%" align="center"><a href="#"><i class="fa fa-download fa-1x"></i></a></td>
-                        <td width="5%" align="center"><a href="#"><i class="fa fa-search fa-1x"></i></a></td>
-                        <td width="5%" align="center"><a href="#"><i class="fa fa-envelope fa-1x"></i></a></td>
-                      </tr>  
-                      </tbody>
-                    </table>
-                    <!-- /.table -->
-                  </div>
-                
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-aqua">
+                        <h4>Plan de Inversiones</h4>
+                    </div>                
+                    <div class="panel-body">
+                        <form class="form-azul col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-xs-12">
+                            <div class="col-lg-12">
+                                <div class="alert alert-error" role="alert" style="display:none;">
+                                    Alert "warning". Ej.: en caso de que la CUIT esté siendo utilizada por otro usuario.
+                                </div>
+                                <div class="alert alert-warning" role="alert" style="display:none;">
+                                    Consectetur adipiscing elit lorem ipsum dolor sit.
+                                </div>
+                                <div class="alert alert-success" role="alert" style="display:none;">
+                                    Alerta de éxito en la carga de datos.
+                                </div>
+                            </div>
+                            <div id="tipopersona" style="">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Tipo de inversión</label> 
+                                        <select id="primero" class="form-control selectoruno disabled" name="myInputDNA">
+                                            <option value="1">Activos fijos</option>
+                                            <option value="2">Activos intangibles</option>
+                                            <option value="3">Capital de trabajo</option>
+                                            <option value="4">Gastos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Tipo de tarea</label> 
+                                        <select id="segundo" class="form-control selectordos disabled" name="myInputDNA">
+                                            <option value="1">Maquinaria y equipo</option>
+                                            <option value="2">Mobiliario</option>
+                                            <option value="3">Obras civiles edilicias</option>
+                                            <option value="4">Patentes</option>
+                                            <option value="5">Marcas</option>                                    
+                                            <option value="6">Insumos</option>
+                                            <option value="7">Materia prima</option>
+                                            <option value="8">Mano de obra tercerizada</option>
+                                            <option value="9">Servicios profesionales</option>
+                                            <option value="10">Certificaciones y legalizaciones</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Nombre del bien a adquirir <small>(detallar marca, modelo)</small></label> 
+                                        <input id="nombre" type="text" name="myInputDNA" size="10" class="form-control">
+                                    </div>
+                                </div>                                
+                                <!--
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Etapa del proceso productivo a la que pertenece</label> 
+                                        <input id="etapapro" type="text" name="myInputDNA" size="10" align="left" class="form-control">
+                                    </div>
+                                </div>
+                                -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Precio Unitario</label> 
+                                        <input id="preciounitario" name="myInputDNA" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Cantidad</label> 
+                                        <input id="cantidad" name="myInputDNA"  type="text" class="form-control">
+                                    </div>
+                                </div>    
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Precio Total</label> 
+                                        <input id="precio" name="myInputDNA" type="text" class="form-control" disabled="disabled">
+                                    </div>
+                                </div>          
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Nombre del proveedor</label> 
+                                        <input id="nombreproveedor" name="myInputDNA" type="text" size="10" class="form-control">
+                                    </div>
+                                </div>   
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">CUIT del proveedor</label> 
+                                        <input id="inicio11137" type="text" name="myInputDNA" class="form-control">
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="col-lg-12 m-b-1">
+                                <div align="center">
+                                    <button class="btn btn-success col-lg-4 col-lg-offset-4" type="button">Agregar</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div class="clearfix"></div>
+                    	<h4>Tabla de Plan de Inversiones</h4>
+                        
+                        <div class="table-responsive">
+                            <table class="table" id="tablaproc">
+                                <thead>
+                                    <tr style="font-size:14px;">
+                                        <th>#</th>
+                                        <th width="22%">Tipo de Inversión</th>
+                                        <th>Bien a aquirir</th>
+                                        <th>Cant.</th>
+                                        <th width="8%">Pcio. Unit.</th>
+                                        <th width="8%">Pcio. Total</th>
+                                        <th width="18%">Proveedor</th>
+                                        <th colspan="2"></th>
+                                    </tr>                                
+                                 </thead>                                    
+                                <tbody>
+                                    <tr class="data" id="fila" valign="middle">
+                                        <td>1</td>
+                                        <td>
+                                        	Activos fijos<br />
+                                            Maquinaria y equipos
+                                        	<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
+                                        <td>
+                                            Plotter de corte HP
+                                            <input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">
+                                        	$25000
+                                            <input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
+                                        <td class="text-right">$25000</td>
+                                        <td>
+                                        	Torn Ink SA<br />
+                                            CUIT: 20-12546723-2
+                                            <input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                            <input id="cuitproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
+                                    </tr>
+                                    <tr class="data" id="fila" valign="middle">
+                                        <td>2</td>
+                                        <td>
+                                        	Activos intangibles<br />
+                                            Marcas
+                                        	<input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
+                                        <td>Registro de Marcas de "Very Design SA"<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled"></td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">
+                                        	$10000
+                                            <input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
+                                        <td class="text-right">$10000</td>
+                                        <td>
+                                        	Brand Gestoria SA<br />
+                                            CUIT: 20-22544563-2
+                                            <input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                            <input id="cuitproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">                                            
+                                        </td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>                                    </tr>
+                                    <tr class="data" id="fila" valign="middle">
+                                        <td>3</td>
+                                        <td>
+                                        	Capital de trabajo<br />
+                                            Certificaciones
+                                            <input id="primero" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled" style="display:none;">
+                                        </td>
+                                        <td>Gastos de Certificaciones y Sellos "Very Design"<input id="segundo" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled"></td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">
+                                        	$11000
+                                            <input id="precio" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                        </td>
+                                        <td class="text-right">$11000</td>
+                                        <td>
+                                        	Brand Gestoria SA<br />
+                                            CUIT: 20-22544563-2
+                                            <input id="nombreproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">
+                                            <input id="cuitproveedor" type="text" name="myInputDNA" class="form-control hidden" disabled="disabled">                                           
+                                        </td>
+                                        <td><button class="btn btn-primary btn-sm" type="button">Editar</button></td>
+                                        <td><button class="btn btn-danger btn-sm" type="button">Borrar</td>
+                                    </tr>    
+                                </tbody>
+                            </table><!-- /.table -->
+                        </div>
+                        <div class="col-xs-4 col-xs-offset-4" align="center">
+                            <h3>Monto Total: $69000<input id="miembro11137" type="text" name="myInputDNA" class="form-control" disabled="disabled" style="display:none;"></h3>
+                        </div>
+                    </div>
                 </div>
+
+
                 
-                <div align="center">
-                    <ul class="pagination m-t-1 m-b-1">
-                      <li>
-                        <a href="#" aria-label="Previous">
-                          <span aria-hidden="true">«</span>
-                        </a>
-                      </li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li>
-                        <a href="#" aria-label="Next">
-                          <span aria-hidden="true">»</span>
-                        </a>
-                      </li>
-                    </ul>
-                </div>
- 			</div>
-             
-        </div>
-      </div>   
+            </div>                        
+            
+            
+            
+        </div>    
 
       
 
